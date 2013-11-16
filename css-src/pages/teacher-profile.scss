@@ -1,0 +1,567 @@
+
+@import "compass/css3";
+
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+
+
+
+$maroon: #96171a;
+$blue:#3b237b;
+$orange:#f37021;
+$orange2:#545b60;
+$blue2:#1e398d;
+$grey:#5f6a72;
+$white:#ffffff;
+$black:#000000;
+$grey2:#dcc298;
+
+
+/** Global Fonts **/
+$Normal: 'ProximaNova-Regular';
+$Semibold: 'ProximaNova-Semibold';
+$Bold: 'ProximaNova-Bold';
+$Italic: 'ProximaNova-RegularIt'; 
+
+ 
+.DnnModule{
+	margin:0;
+}
+#yas-dnncontent .yas-dnnrow .yas-marginlr{
+	padding:0;
+}
+
+body{padding:0;}
+
+@mixin border-radius($radius: 5px){
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+	 
+}
+
+.ya-teacher-profile{
+
+
+	a:link.ya-active, a:active.ya-active, a:visited.ya-active {
+		color: $red;
+	}
+	.ya-page-title {
+		border:none;
+	}
+	a.up-down-link {
+		color:$red;
+	}
+
+
+	padding: 10px;
+	.ya-stars{ .icon{color: #FECC0A;}	}
+	.ya-content{
+		background: #F4B327; /* Old browsers */
+		background: linear-gradient(bottom, rgb(255,255,255) 40%, rgb(244,179,35) 80%, rgb(240,142,45) 99%);
+		background: -o-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(244,179,35) 80%, rgb(240,142,45) 99%);
+		background: -moz-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(244,179,35) 80%, rgb(240,142,45) 99%);
+		background: -webkit-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(244,179,35) 80%, rgb(240,142,45) 99%);
+		background: -ms-linear-gradient(bottom, rgb(255,255,255) 40%, rgb(244,179,35) 80%, rgb(240,142,45) 99%);
+	
+		background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.40, rgb(255,255,255)),
+			color-stop(0.80, rgb(244,179,35)),
+			color-stop(0.99, rgb(240,142,45))
+		);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f4b323, EndColorStr=#ffffff); /* IE6-9 */
+	/*background:url('../images/bg-blue-gradient.png') repeat-x;*/
+	@include border-radius(15px 15px 0 0);
+
+	}
+	.ya-breadcrumb{
+		@include makeFluidColumn(12);position:relative; z-index:100;
+		ul{
+			background:none;
+			border:0 none;
+			margin:0;
+			padding: 15px 40px 0 40px;
+			li{
+				a,.divider{text-shadow: 0 0 0; color:#ffffff;}
+			}
+			.active{text-shadow: 0 0 0; color:#ffffff;}
+		}
+	}
+
+	.ya-left-column{
+	min-width:250px;
+	min-height: 429px;
+	overflow:visible !important;
+
+	.ya-logo-watermark{
+	background:url('../../Images/teacher-profile/bg-logo.png') no-repeat; 
+	position:absolute; 
+	width:489px; 
+	height:446px;
+	margin: 0 0 0 -30px;
+	z-index: 50;
+		.ya-school-logo{
+			margin:0;
+			border: 18px solid #F27022;
+		    margin: 59px 0 0 59px;
+		    width: 230px;
+		    overflow: hidden;
+		    @include border-radius(100%);
+
+		    img {
+				
+				height: 194px;
+				@media(max-width:510px){
+					height: 150px;
+					width: 100%;
+				}
+			}
+			/*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
+			
+		}
+		@media(max-width:510px){ background:url("../../Images/teacher-profile/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  position:relative; padding:40px;
+			background-size:100%;
+			 height: auto;
+		    left: 0;
+		    margin: auto;
+		    max-width: 270px;
+		    top: 0;
+		    width: auto;
+		    .ya-school-logo{margin:0; width:auto;}			
+		}
+	}
+	.ya-white-panel{
+		background:$white; 
+		margin: 375px 0 0;
+		position:relative;
+		padding-left: 30px;
+		
+		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
+		@include border-radius(0px 20px 20px 0);
+		.ya-box{
+		   padding:18px 15px;
+		.ya-title{
+			color:$orange; font-family:$Semibold;
+			font-size:20px;	
+			 padding: 0 0 5px;
+			line-height: normal;
+			border-bottom: 1px solid $grey2;
+		}
+		.ya-description{color:$gray;	p{margin:0;	}}	
+		
+	}
+	.ya-yoga-taught,.ya-languages{
+		ul{
+			color:$gray; margin:0;
+			li{
+				list-style-type:none; @include font-semi-bold;
+			}
+		}
+	}	
+	.ya-contact-with-me{
+		.ya-social-icons{
+
+		.fs1 {
+			font-size: 1.7em;color: #909090; display: inline;
+			}
+		}
+	}
+	.ya-teacher-locations{
+	.ya-address{ margin:0 0 10px 0 !important;
+	}
+	}	
+	.ya-link{color:$blue2;}
+
+	}	
+
+	}
+	.ya-middle-column{position:relative; z-index:100; padding: 40px 0 0;font-family: $Normal;    
+  		
+
+		.ya-column-center{
+			p{@extend .ya-page-title;}
+			.ya-address{
+				color: #000;
+			}
+			padding:0 0;
+			
+
+			.ya-column-center-box{
+			padding:0 15px;margin: 0 0 40px;
+			}
+			.ya-about-container{	
+				margin:0 0 60px 0; 
+
+				.ya-about
+				{
+					margin:0;
+				}
+				.ya-about, .ya-about p{	
+				font-family: arial, sans-sarif;
+				font-size:15px;
+
+				}
+				.ya-about-active{
+					background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+
+
+					border:1px solid #F27022; @include border-radius($radiusNormal);margin: 0 0 15px;
+				}
+
+				
+			}
+			.ya-about-container-active{   margin: 0 0 50px;}
+			
+			.ya-teaching-experience{
+				.ya-teacher-experience-block{}
+					.ya-badge{margin:10px 0 0 0;}
+					.ya-row{margin:0 0 15px 0;}
+			}
+			
+		}
+
+		a{font-family:$Semibold;
+		i{ font-size: 25px;
+		    line-height: normal;
+		    margin: -5px 5px 0 0;}}
+		.prev-exp{
+			display:inline-block;
+		}
+
+	}
+	.ya-right-column{
+		.ya-right-box{margin: 0 15px 45px;}
+ 		padding: 0 0px 0;
+ 		.ya-logo-box-container{
+ 			/*border-left: 1px solid $grey2;  */
+			//border-bottom: 1px solid #DCC298;
+			padding: 0 0 15px;
+			.ya-logo-box{
+				background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+
+
+				/*min-height: 260px;*/
+				padding: 15px 5px;
+				
+				text-align:center;
+				width:100%;
+				img{padding:4px;height: 92px;}
+				
+				span{color:#ffffff; @include font-semi-bold;;margin: 10px 0 0; display:block }
+				.ya-value{color:#f3efeb; font-size:25px; @include font-semi-bold;}
+				.ya-label{font-size:16px; @include font-regular;}
+			}
+		}
+		
+
+		.ya-photo-gallery{
+					
+			.ya-gallery{
+				@include makeFluidRow();
+				.ya-thumbnail{@include makeFluidColumn(6,0,0); padding:5px;border: 1px solid $grey2; @include border-radius($radiusNormal); margin:1px;}
+				.photoItem,.photoItemAlt{@include makeFluidColumn(6,0,0); @include border-radius($radiusNormal); margin:1px;
+					img{width: 100%;}
+				}
+			}
+			.ya-button-row{text-align:center; margin:10px 0 0 0;}
+		}
+	}
+
+
+	.ya-page-title{ 
+		color:white; 
+  	}
+  	.ya-page-title-medium{color:#5F6A72; font-family:  $Semibold; font-size:20px;
+		    		 border-bottom: 1px solid $grey2;    
+	    line-height: normal;
+	    padding: 0 0 5px;
+  	}	
+  	.ya-orange-btn{background:#ff9814;font-family:$Semibold;font-size:14px;color:$white; @include text-shadow(0 0 0);border: 0 none; @include box-shadow(0 1px 2px rgba(119, 119, 224, 0.5)); margin: 8px 0 10px;
+  		.fs1{ float:left;padding: 0 10px 0 0; font-size:1.3em;}
+  	}
+  	.ya-grey-btn{
+  		//@extend .ya-orange-btn;
+  		//background:#f3efeb;
+  		//@include box-shadow(0 0 0);
+  		//color:$grey;
+  		//@include border-radius(7px);
+  	}
+  	.ya-bold{@include font-bold;}
+  	.ya-italic{@include font-italic;}
+  	
+  	.ya-logo-box-tablet{ 
+	background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+				padding:15px 10px  15px 10px;
+				.ya-value{color:#f3efeb; font-size:25px; @include font-semi-bold;}
+				.ya-label{font-size:16px; @include font-regular;}
+	@media(max-width:767px)
+	{
+
+	
+
+	}
+	 			display:none;
+  		img{display:block; margin:0 0 10px 0; }
+  		span{display:block; @include font-semi-bold; color:#ffffff;}
+	}	
+
+
+}/* end school profile*/
+
+
+a{color:$red;}
+a:hover,a:focus{color:$red;}
+$blue: #3bbfdd;
+$margin: 16px;
+
+.content-navigation {
+  border-color: $blue;
+  color:
+    darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+
+/*******media queries******/
+/* Large desktop */
+@media (min-width: 1200px) {
+	/*body{background:red;}*/
+	.ya-teacher-profile{		
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 375px 0 0 -40px; 
+				width: 291px;
+				*width: 261px;
+			}
+		}
+		.ya-middle-column{
+			.ya-column-center{
+				
+			}
+		}
+	}	
+}
+ 
+@media (min-width: 980px) and (max-width: 1199px) { 
+	body{}
+	.ya-teacher-profile{
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 375px 0 0 -40px; width: 291px;
+			}
+		}
+		.ya-middle-column{
+			width:65%;
+			.ya-column-center{width:100%;}
+			.ya-right-column{width:100%;}
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{margin:0 15px 45px 0;}
+			.ya-logo-box-container {
+				display:none;
+			}
+			
+		}
+		.ya-logo-box-tablet{
+			display:block;text-align: center;
+				
+			img{
+			    display: inline-block;
+			}
+		}
+	}
+
+} 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	/*body{background:green;}*/
+	.ya-teacher-profile{
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 375px 0 0 -40px; width: 291px;
+			}
+		}
+		.ya-middle-column{
+			width:58%;
+			.ya-column-center{width:100%;
+				.ya-about-container{margin:0 0 30px;}					
+			}
+			.ya-right-column{width:100%; }			 
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{margin:0 15px 45px 0;}
+			.ya-logo-box-container {
+				display:none;
+			}
+			
+		}
+		.ya-logo-box-tablet{
+			display:block;text-align: center;
+				
+			img{
+			    display: inline-block;
+			}
+		}
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	/*body{background:blue;}*/
+	
+	.ya-teacher-profile {
+	    
+		.ya-left-column {
+			.ya-white-panel{
+				display:none;
+			}
+			min-height:300px;
+		}
+		.ya-middle-column{
+			
+			.ya-column-center{
+				.ya-about-container{margin:0 0 30px;}					
+			}
+			.ya-right-column{ }
+			padding:0;			 
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{}
+			.ya-logo-box-container {
+				display:none;
+			}
+		
+		}
+		.ya-logo-box-tablet{display:block;text-align: center;
+			img{
+				 display: inline-block;
+			}
+		}
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	/*body{background:teal;}*/
+
+}
+
+
+#ie7 
+{
+.ya-teacher-profile{
+	.ya-left-column{
+		
+		
+		.ya-logo-watermark{ 
+			position:relative;
+		.ya-school-logo{ 
+			width:200px;
+			margin-left:50px;
+			height:200px;
+			img{width:100%; height:100%;}
+		}
+
+		}
+		.ya-social-icons{
+			.fs1{margin:0 5px 0 0;}
+		}
+		.ya-white-panel{margin-left:0px; margin-top:0;}
+		
+	}
+	
+	.ya-right-column{
+		.ya-photo-gallery{
+				
+			.ya-gallery{				
+				.ya-thumbnail{width:44%; }
+				.photoItem,.photoItemAlt{width:44%; }
+			}
+			
+		}
+	}
+	}
+}
+
+#ie8, #ie7{
+	.ya-left-column{
+		.ya-white-panel{
+			padding-left:0; width:100%; margin-left:0;
+		}
+	}
+}
+
+#ie9 {
+	.ya-teacher-profile
+	{
+		.ya-left-column{		
+			.ya-white-panel{
+	    		width: auto !important ;
+				margin: 375px 0 0 0 !important;
+			}
+		}
+	}
+}
+
+#yas-dnncontent, #yas-footer {
+    padding: 0;
+}

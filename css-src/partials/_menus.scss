@@ -1,0 +1,105 @@
+// ##### MENU / NAVIGATION #####
+
+
+
+.breadcrumb {
+    @include default-border;
+}
+
+.divider:before {
+    @include font-bold;
+
+    content: "\003E";
+    line-height: 1;
+    speak: none;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/*
+.ya-context-menu {
+  @include box-shadow(0 1px 4px rgba(0,0,0,.065));
+  margin-bottom: $defaultMargin * 3;
+
+  ul {
+    padding: 0;
+  }
+
+  li span[data-icon]{
+    margin-right: $defaultMargin;
+    position-top: 32px;
+    font-size: fontCalc(20);
+    color: $gray;
+  }
+
+  li  a {
+    font-size: fontCalc(15);
+    margin: 0 0 -1px;
+    padding: 6px 14px;
+    border: 1px solid $borderColor;
+  }
+
+  li:first-child > a {
+    -webkit-border-radius: 6px 6px 0 0;
+       -moz-border-radius: 6px 6px 0 0;
+            border-radius: 6px 6px 0 0;
+  }
+
+  li:last-child > a {
+    -webkit-border-radius: 0 0 6px 6px;
+       -moz-border-radius: 0 0 6px 6px;
+            border-radius: 0 0 6px 6px;
+  }
+  
+  .active > a {
+    background-color: $tanLight;
+    color: $brownDark;
+    position: relative;
+    z-index: 2;
+    padding: 7px 15px;
+    border: 1px solid $borderColor;
+    text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    -webkit-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+       -moz-box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+            box-shadow: inset 1px 0 0 rgba(0,0,0,.1), inset -1px 0 0 rgba(0,0,0,.1);
+  }
+}
+
+.ya-vertical-nav {
+    @include default-border;
+    @include large-box-shadow;
+
+    .nav-list {
+        padding: 0;
+
+        .nav-list {
+            padding: $defaultMargin 0 0 $defaultMargin;
+
+            li {
+                padding: 0;
+                border: none;
+            }
+        }
+    }
+
+    a {
+        &:visited {
+            color: $blue;
+        }
+
+        &:hover {
+          text-decoration: none;
+        }
+    }
+
+    li {
+        padding: $defaultMargin;
+        border-bottom: 1px solid $borderColor;
+
+        &:hover {
+          background-color: lighten($blue, 30%);
+        }
+    }
+}
+*/

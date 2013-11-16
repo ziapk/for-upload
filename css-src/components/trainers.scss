@@ -1,0 +1,10 @@
+@import "../variables/variables";
+@import "../variables/mixins";
+
+
+.ya-trainers-block{
+	.ya-name { //The trainer's name
+		font-size: 20px;
+		@include font-semi-bold;
+	}
+}

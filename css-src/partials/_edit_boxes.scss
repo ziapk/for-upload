@@ -1,0 +1,95 @@
+.ya-btn-edit {
+    @extend .btn-warning;
+    @extend .btn-mini;
+    font-size: fontCalc(12);	
+}
+
+.ya-btn-delete {
+    @extend .ya-action;    
+    font-size: fontCalc(16);
+    cursor: pointer;
+}
+
+.ya-edit-box {
+    &.collapse.in {
+        @include default-border;
+        @include medium-border-radius;
+        @include medium-box-shadow;
+
+        background-color: $redLight; 
+        margin-bottom: $defaultMargin*2;
+        padding: $defaultMargin * 2;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    label {
+        padding-left:4px;
+        margin-bottom: 2px;
+
+        &.radio {
+            font-size: fontCalc(12);
+
+            input[type="radio"] {
+                margin: 2px 5px 0 0;
+            }
+        }
+
+        &.checkbox {
+            input[type="checkbox"] {
+                margin: 3px 7px 0 0;
+            }
+        }
+
+        &.row-fluid {
+            margin-bottom: $defaultMargin;
+        }
+    }
+
+    input,
+    select {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        margin-top: $defaultMargin * 2;
+        margin-bottom: 0;
+    }
+
+    [class*="span"] {
+        margin-bottom: $defaultMargin;
+    }
+}
+
+.ya-editable-region { 
+    border: 1px dotted $grayDark;
+    min-height: $defaultMargin * 4;
+    padding: 5px;
+    position: relative;
+    
+    &:hover{
+        background-color: darken(white, 10%);
+
+        // TODO: Investigate compass transition mixin/function... 
+        -webkit-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -o-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+    .ya-btn-edit {
+        bottom: $defaultMargin / 2;
+        height: 25px;
+        margin: 0;
+        padding: 0 $defaultMargin;
+        position: absolute;        
+        right: $defaultMargin / 2;
+
+        span[data-icon] {
+            margin: 0;
+        }  
+    }
+}

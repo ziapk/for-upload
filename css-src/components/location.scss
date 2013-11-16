@@ -1,0 +1,42 @@
+
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+
+.ya-add-location-panel {
+
+	.showPermission,
+	.control-group,
+	.combobox{
+		@include clearfix();
+	}
+	.RadComboBox{
+		margin-left:0 !important;}
+	.ya-school-registration span.dnnInputFileWrapper {
+	padding: 4px 18px;
+	}
+	.ya-school-registration .RadAsyncUpload span.ruFileWrap {
+	     height: 32px;
+	}
+	// Select button 
+	.ya-school-registration .RadUpload_Default .ruButton {
+	     background: none;
+	     color: gray;
+	}
+	.ya-school-registration .RadUpload .ruUploadSuccess {
+	     font-size: 12px;
+	}
+	.checkbox{
+		display:block !important;
+		.dnnCheckbox{ 
+			float:left; 
+			margin-left: -20px;
+		}
+	}
+	.dnnRadiobutton + label{
+		vertical-align: top;
+	}
+	.btn{
+		min-width:150px;
+	}
+
+}

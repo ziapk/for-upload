@@ -1,0 +1,280 @@
+@import "school-registration-1";
+@import "school-registration-2"; 
+@import "school-registration-3"; 
+@import "school-registration-4";
+
+@import "../variables/variables";
+@import "../variables/mixins"; 
+  
+
+
+
+
+// Create School - Add Staff Member Search Results Select link
+.ya-school-registration .rgRow a {
+	color: $red !important;
+}
+
+
+// TODO: IS THIS REQUIRED?
+.ya-article {
+    @include makeFluidRow();
+    margin: $margin_padding * 2 0;
+    .ya-main {
+        @include makeFluidColumn(12);
+		width:100% !important;
+		@media (max-width: 979px) {
+			 @include makeFluidColumn(12, 0, 0);
+		}
+    }
+    .ya-right-sidebar {
+        @include makeFluidColumn(3);
+    }
+}
+
+
+// TODO: is this required?
+.ya-school-registration .ya-edit-box .btn{
+	margin-top:0 !important;
+}
+
+
+
+
+// @function color-contrast($background){
+// 	@if lightness($background) < 50% {
+// 		@return lighten($background, 100%)
+// 	}
+// 	@else{
+// 		@return darken($background, 100%)
+// 	}
+// }
+
+
+
+
+
+// Basic Style
+// $AlternateFontSize		:	16px;
+// $baseFontSize			:	14px;
+// $baseLineHeight			:	1.3;
+// $borderColor			:	#F4F0EB;
+// $basePadding			:	20px;	
+
+
+// You Can Change Easily Classes name
+
+// $pageHeader				:	ya-pageheader;
+// $pageHeaderheading		:	h2;
+// $pageNav				:	ya-pagenav;
+// $accountBar				:	ya-account-bar;
+// $contentArea			:	ya-main-content;
+// $footerTop				:	ya-footer-top;
+// $footerBottom			:	ya-footer-bottom;
+// $forBoxSizing			:	boxSized;
+
+
+#ie7 .container,
+#ie8 .container{
+	width:auto;
+	max-width:1170px;
+	min-width:940px;
+}
+#yas-header{
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+
+// .#{$pageHeader}{
+// 	padding:28px 0 0;
+// 	margin:0;
+// 	min-height:123px;
+// 	border:none;
+// 	@include gradient-vertical-three-colors(#DDDDDD, #FFFFFF, 50% ,#FFFFFF);
+// 	.ya-logo{
+// 		text-align:center;
+// 	}
+// 	#{$pageHeaderheading}{
+// 		margin:44px 0 0;
+// 		font-size:28px;
+// 		color: $red;
+// 		font-weight:normal;
+// 		text-transform:capitalize;
+// 	}
+// }
+
+// .#{$pageNav}{
+// 	text-align:center;
+// 	padding: $basePadding 0;
+// 	@include gradient-vertical(#CB4810, #971512);
+// 	ul{
+// 		margin:0;
+// 	}
+// 	a{
+// 		color: $white;
+// 		display:block;
+// 		@include font-semi-bold;
+// 		font-size:$AlternateFontSize;
+// 		padding: 2px $basePadding;
+// 		@include border-radius(20px);
+// 		&:focus,
+// 		&:hover{
+// 			text-decoration : 	none;
+// 			outline			:	none;
+// 			background		: $red;
+// 		}
+// 	}
+// }
+// .#{$accountBar}{
+// 	min-height:58px;
+// 	text-align:right;
+// 	margin:0;
+// 	border-bottom: 1px solid #D6CDBF;
+// 	background:url(http://yadnn7pdev.azurewebsites.net/Portals/_default/Skins/Bootstrap/img/account-bar-bg.jpg?1374791703) repeat-x;
+
+// 	ul{
+// 		margin:0;
+// 		padding:$basePadding - 2 $basePadding * 2;
+// 	}
+// 	li{
+// 		padding:0 $basePadding / 2 !important;
+// 	}
+// 	a{
+// 		@include font-semi-bold;
+// 		color: $black;
+// 		display:block;
+// 	}
+	
+// }
+// .yas-marginlr{
+// 	padding:$basePadding;
+// }
+
+// .#{$contentArea}{
+// 	min-height:420px;
+// 	border:none !important;
+// //	padding: $basePadding * 2 $basePadding + ($basePadding / 2);
+// }
+// .#{$footerTop}{
+// 	@include gradient-vertical(#CB4810, #971512);
+// 	padding: $basePadding * 2 0;
+// 	text-align:center;
+// }
+// .#{$footerBottom}{
+// 	padding: $basePadding * 2 $basePadding * 2 $basePadding * 3 + 14 ;
+// 	text-align:center;
+// 	.divider{
+// 		&:before{
+// 			content:'';
+// 		}
+// 	}
+// }
+// .#{$forBoxSizing} {
+// }
+
+// @media (max-width: 979px) { 
+// .#{$pageHeader}{
+// 	padding-top:25px;
+// }
+
+// .#{$pageNav}{
+// 	a{
+// 		padding:0 $basePadding / 2;	
+// 	}
+// }
+// .yas-marginlr{
+// 	padding:$basePadding;
+// }
+
+// .#{$contentArea}{
+// //	padding: $basePadding;
+// }
+// }
+// @media (max-width: 767px) { 
+// body{
+// 	padding:0;
+// }
+// .#{$pageHeader}{
+// 	padding-top:0;
+// 	.ya-tagline{
+// 		padding: $basePadding / 2 $basePadding;
+// 	}
+// 	.ya-logo{
+// 		@extend .ya-tagline;
+// 	}
+// 	#{$pageHeaderheading}{
+// 		margin:0;
+// 	}
+// }
+// .#{$pageNav}{
+// 	padding:$basePadding / 2;
+	
+// 	li:not(.divider){
+// 		display:block !important;
+// 		text-align:left;
+// 		padding:0;
+// 	}
+// 	ul{
+// 		display:none;
+// 	}
+// 	a{
+// 		padding:$basePadding / 2;
+// 		@include border-radius(0)
+// 	}
+	
+// }
+// .#{$pageHeader}{ 
+// 	#{$pageHeaderheading}{
+// 		text-align:center;
+// 	} 
+// }
+
+
+
+
+
+// .ya-footer-bottom{
+// 	@extend .#{$pageNav}; 
+// 	.divider{
+// 		display:none;
+// 	}
+// }
+
+// }
+.ya-badge [data-icon]{
+	font-size:1em !important;
+}
+.ya-create-new-track,
+.ya-widget{
+	@include clearfix ();
+}
+// .ya-page-title{
+//     border-bottom: 1px solid #D3D1C7;
+//     padding-bottom: 5px;	
+// }
+// .btn:link, .btn:active, .btn:visited {
+//     border: 0 none;
+//     color: #fff;
+//     outline: 0 none;
+//     text-decoration: none;
+// }
+
+/* Haroon Style for new Section ".ya-trainers-info"  */
+
+.icon-120px:hover,
+.icon-120px{
+	font-size:120px !important;
+	line-height:1 !important;
+	height: auto !important;
+	width:auto !important;
+	margin:0 auto !important;
+}
+.ya-trainers-info{
+	margin-top:30px;
+	p{
+		font-size:16px;
+	}
+}
+/* Haroon Style for new Section  */

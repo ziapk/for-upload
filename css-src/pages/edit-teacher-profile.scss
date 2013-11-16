@@ -1,0 +1,899 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> 
+
+@import "compass/reset";*/
+@import "compass/css3";
+//@import "bootstrap/mixins";
+
+@import "../variables/variables.scss";
+@import "../variables/mixins";
+
+*, *:before, *:after {
+-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+input {
+    box-sizing: content-box;
+}
+
+$maroon: #96171a;
+$blue:#3b237b;
+$orange:#f37021;
+$orange2:#545b60;
+$blue2:#1e398d;
+$grey:#5f6a72;
+$white:#ffffff;
+$black:#000000;
+$grey2:#dcc298;
+
+$gridFluidColumnWidth: 6.38298%;
+$gridFluidGutterWidth: 2.12766%;
+
+@mixin makeFluidRow() {
+  width: 100%;
+  @include clearfix();
+}
+@mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
+  float: left;
+  margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
+  width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
+ 
+ *width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1)) - 0.0532%;
+
+ &:first-child {
+    margin-left: 0;
+  }
+}
+.DnnModule{
+	margin:0;
+}
+#yas-dnncontent .yas-dnnrow .yas-marginlr{
+	padding:0;
+}
+
+body{padding:0;}
+
+@mixin border-radius($radius: 5px){
+	-moz-border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+	-o-border-radius: $radius;
+	border-radius: $radius;
+	
+}
+
+@mixin input-medium(){
+  width: 150px;
+}
+@mixin input-small(){
+  width: 90px;
+}
+@mixin input-large(){
+  width: 210px;
+}
+
+$margin_padding: 15px;
+$icon_font_size: 17px;
+	
+	@mixin ya-grey-border-bottom {
+		padding-bottom: 10px;
+		margin: $margin_padding 0;
+		border-bottom: 2px solid #ccc;
+	  }
+	  @mixin ya-black-border-bottom {
+		@include ya-grey-border-bottom;
+		border-bottom: 2px solid #333;
+	  }
+	  span[data-icon] {
+  font-size: $icon_font_size;
+}
+/** Global Fonts **/
+$Normal: 'ProximaNova-Regular';
+$Semibold: 'ProximaNova-Semibold';
+$Bold: 'ProximaNova-Bold';
+$Italic: 'ProximaNova-RegularIt'; 
+
+
+$PageHeading: 30px $Normal;
+$PageHeading2: 28px $Normal;
+$PageHeading3: 20px $Normal;
+$PageHeading4: 18px $Normal;
+  h1 {
+    font: $PageHeading;
+    @media (max-width: 460px) {
+      font-size: 25px;
+    }
+  }
+  h2 {
+    font: $PageHeading2;
+    @media (max-width: 460px) {
+      font-size: 21px;
+    }
+  }
+  h3 {
+    font: $PageHeading3;
+    @media (max-width: 460px) {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font: $PageHeading4;
+    @media (max-width: 460px) {
+      font-size: 16px;
+    }
+  }
+
+.ya-teacher-edit-profile{
+	padding: 10px;
+	.ya-stars{ .icon{color: #FECC0A;}	}
+	.main-content-inner{
+		background: #F4B327; /* Old browsers */
+		background: linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -o-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -moz-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -webkit-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+		background: -ms-linear-gradient(bottom, rgb(255,255,255) 51%, rgb(244,179,35) 86%, rgb(240,142,45) 99%);
+	
+		background: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.51, rgb(255,255,255)),
+			color-stop(0.86, rgb(244,179,35)),
+			color-stop(0.99, rgb(240,142,45))
+		);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr=#f4b323, EndColorStr=#ffffff); /* IE6-9 */
+	/*background:url('../images/bg-blue-gradient.png') repeat-x;*/
+	@include border-radius(15px 15px 0 0);
+
+	}
+	
+	.ya-left-column{
+	min-width:250px;
+	
+	overflow:visible !important;
+	.ya-left-menu{}
+	
+	.ya-white-panel{
+		background:$white; 
+		margin: 0 0 0;
+		position:relative;
+		padding-left: 30px;
+		
+		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
+		@include border-radius(0px 20px 20px 0);
+		.ya-box{
+		   padding:18px 15px;
+		.ya-title{
+			color:$orange; font:{
+			family:ProximaNova-Semibold;
+			size:20px;weight:normal;		
+			}
+			 padding: 0 0 5px;
+			line-height: normal;
+			border-bottom: 1px solid $grey2;
+		}
+		.ya-description{color:$grey;	p{margin:0;	}}	
+		.ya-widget{margin-bottom:0px;}
+	}
+	.ya-yoga-taught,.ya-languages{
+		ul{
+			color:$grey; margin:0;
+			li{
+				list-style-type:none; font-family:ProximaNova-SemiBold;
+			}
+		}
+	}		
+	.ya-link{color:$blue2;}
+		
+		.ya-photo-gallery{
+					
+				.ya-gallery{
+					@include makeFluidRow();
+					.photoItem,.photoItemAlt{
+						@include makeFluidColumn(6,0,0); margin:1px;
+						.img-polaroid{border: 1px solid $grey2; @include border-radius(5px); width: 95%; height:100px;}
+					}
+				}
+				.ya-button-row{text-align:center; margin:10px 0 0 0;}
+			}
+			.ya-gallery-icon{margin:0 3px 0 0;font-size: 18px;}
+
+		}
+		
+	}
+	.ya-middle-column{
+		
+		.ya-edit-profile{color:#ffffff; border-color: #FFFFFF;
+			.helpIcon{color:#ffffff;}
+		}
+		.ya-logo-container	{
+			position:relative; min-height: 240px;
+			.ya-logo-watermark{
+				background:url('../../Images/edit-teacher-profile/bg-logo.png') no-repeat; 
+				position:absolute; 
+				width:489px; 
+				height:446px;
+				margin: -60px 0 0 -30px;
+				z-index: 50;
+				.ya-school-logo{
+					margin:0;
+					border: 18px solid #F27022;
+					/*margin: 59px 0 0 59px;*/
+					width: 230px;
+					overflow: hidden;
+					@include border-radius(100%);
+					/*@media(max-width:767px){  width: 200px;  margin: 72px 0 0 75px;}*/
+			
+		}
+				@media(max-width:510px){
+				 background:url("../../Images/edit-teacher-profile/ya-pink-flower.png") no-repeat scroll 0 0 / 100% auto transparent;  
+				 position:relative; padding:0px;
+					background-size:100%;
+					 height: auto;
+					left: 0;
+					margin: auto;
+					max-width: 270px;
+					top: 0;
+					width: auto;
+					.ya-school-logo{margin: 43px;    width: 180px;}
+					
+				}
+
+				.ya-editable-region{ margin: 59px 0 0 59px;width: 241px;
+					@media(max-width:510px){margin:0 0 10px; width:auto;}
+					.ya-btn-delete{position: absolute;left: 250px;}
+				}
+		}
+	}
+		position:relative; z-index:100; padding: 40px 0 0;font-family: ProximaNova-Regular;font-weight: normal;	     		
+
+		.ya-column-center{
+			p{}
+			.ya-address{
+				color: #000;
+			}
+			@media(max-width:767px){
+			padding:0 10px;}
+			
+
+			.ya-column-center-box{
+			/*padding:0 15px; */margin: 0 0 20px;
+			}
+			.ya-edit-profile-image,.ya-edit-personal-information{
+			position:relative; z-index:1000;
+		}
+		.ya-edit-profile-image{margin-bottom:10px;}
+			.ya-about-container{	
+				margin:0 0 0px 0; position:relative; z-index:100;
+				.ya-about{		
+					.ya-editable-content{padding:0px;
+						p{margin:0;}
+					}	
+					.ya-btn-edit{}		
+				}
+				.ya-about-active{
+					background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+
+
+					border:1px solid #F27022; @include border-radius(7px);margin: 0 0 15px;
+				}
+			}
+			.ya-about-container-active{   margin: 0 0 0;}
+			
+			.ya-teaching-experience{
+				.ya-teacher-experience-block{
+					.ya-editable-region{margin-bottom:10px !important;}
+				}
+					.ya-badge{margin:10px 0 0 0; display:inline-block;}
+					.ya-row{margin:0 0 15px 0;}
+			}
+			
+
+			.ya-two-column-section{
+				 @include makeFluidRow();
+				.ya-column-1{@include makeFluidColumn(6);
+					@media (max-width:979px){
+						@include makeFluidColumn(12,0,0); 						
+					}
+				}
+				.ya-column-2{@include makeFluidColumn(6); position:relative; z-index:100; @media (max-width:979px){@include makeFluidColumn(12,0,0); }}
+			  }
+			  #id-edit-logo{z-index:100;}
+			.ya-personal-details{
+				.ya-name{font-size:20px;font-family:$Semibold;margin:0;}
+				.ya-label{ width:100%; float:left; font-family:$Bold;}
+				.ya-value{ width:100%; float:left; font-family:$Normal;}
+				.row-fluid{margin:2px 0;}
+				.ya-address{margin:0;}
+			}
+			/**for mobile -in center column - block start**/
+			.ya-profile-publish{
+				display:none; width:100%; float:left;
+				@media(max-width:767px){width:100%;}
+				@media(max-width: 1199px) {
+					display:block;
+				}
+				.ya-control-box{padding: 0 15px 15px;}
+				@media(min-width:979px){
+					.ya-publish-now {
+						margin: 0 0 5px;
+					}	
+					h4{margin-bottom:0px;}
+					h3{margin-top:0px;}
+				}
+			}
+			.ya-privacy-settings{
+				display:none;width:48%; float:left; 
+				@media(max-width:767px){width:100%;}
+				@media(min-width:768px){margin-left:2%;}
+				@media(max-width:1199px){
+					display:block;
+				}
+				.ya-alert-info{margin-top:0;padding:15px;}
+			}
+			.ya-my-profile-pic{display:none;
+				@media(max-width:767px){display:block;}
+				.ya-btn-edit{z-index:100;}
+			}
+			.ya-yoga-taught{display:none;
+				@media(max-width:767px){display:block;}
+				ul{margin:0; list-style-type:none;}
+			}
+			.ya-languages{display:none;
+				@media(max-width:767px){display:block;}
+				ul{margin:0; list-style-type:none;}
+			}
+			.ya-photo-gallery{display:none;
+				@media(max-width:767px){display:block;}					
+				.ya-gallery{
+					@include makeFluidRow();
+					.ya-thumbnail{@include makeFluidColumn(6,0,0); padding:5px;border: 1px solid $grey2; @include border-radius(5px); margin:1px;}
+				}
+				.ya-button-row{text-align:center; margin:10px 0 0 0;}
+			}
+			.ya-gallery-icon{margin:0 3px 0 0;font-size: 18px;}
+			/**for mobile - in center column - block end***/			
+		}
+
+		a{font-family:ProximaNova-Semibold;
+			/*background:none !important;*/
+		i{ font-size: 25px;
+		    line-height: normal;
+		    margin: -5px 5px 0 0;}}
+		.prev-exp{
+			display:inline-block;
+		}
+
+	}
+	.ya-right-column{
+		.ya-profile-publish{
+				@media(max-width: 1199px) {
+					display:none;
+				}
+			}
+			.ya-privacy-settings{
+				@media(max-width:1199px){
+					display:none;
+				}
+			}
+		.ya-right-box{margin: 0 15px 25px;}
+ 		padding: 0 0px 0;
+ 		.ya-logo-box-container{
+ 			
+			.ya-logo-box{
+				background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+
+
+				/*min-height: 260px;*/
+				padding: 15px 5px;
+				
+				text-align:center;
+				width:100%;
+				img{padding:4px;height: 92px;}
+				
+				span{color:#ffffff; font-family:ProximaNova-Semibold;margin: 10px 0 0; display:block }
+				.ya-value{color:#f3efeb; font-size:25px; font-family:ProximaNova-Semibold;}
+				.ya-label{font-size:16px; font-family:ProximaNova-Regular;}
+			}
+		}
+		
+		.ya-designations-and-teaching-hours{margin:0;}
+		
+
+	}
+
+	.ya-teching-hours-panel{margin:25px 0 0;
+			position: relative; z-index:100;
+		.ya-label{ font-family:$Semibold; font-size:20px;padding-left: 10px;}
+		.ya-value{ padding-left:5px;font-family:$Semibold; font-size:20px;}	
+		.ya-teaching-hours{padding:10px 0 0 0;}
+	}
+
+	.ya-my-profile-pic{@include makeFluidRow();
+		.ya-profile-image{
+			max-width:194px;
+			img{width:194px; height:194px;}
+		}
+	}
+
+	.ya-profile-publish{
+		.ya-control-box{/*@include makeFluidColumn(4);*/ border: 2px solid #333;  @include border-radius(15px); padding: 15px;
+          background-color: #EEEEEE;
+		  .ya-publish-now{margin:0 0 10px 0;}
+         
+            .btn{
+              width: 100%;color:#333333; font-family:$Normal;
+			  span{top:0;}
+             }
+          
+          @media(max-width:767px){            
+            .btn{margin:5px 5px 0 0;  display:inline-block;}
+            @include border-radius(0px);
+              margin: 0 0 15px;
+          }
+        }
+		}
+		
+	
+	.ya-privacy-settings{
+			.ya-alert-info{padding: 8px 14px;}
+			.ya-privacy-btn{margin:10px 0 0 0;}
+			
+		}
+	.ya-page-title{ 
+		/*font-size:30px;*/
+		small{font-size:18px;margin:0 0 0 10px;}
+		@include ya-black-border-bottom(); padding-bottom: 5px;
+  	}
+  	.ya-page-title-medium{color:$grey; font-family: ProximaNova-SemiBold;
+	    font-weight: normal;font-size:20px;	    
+  		
+  		 border-bottom: 1px solid $grey2;    
+	    line-height: normal;
+	    padding: 0 0 5px;
+		small{margin:0 0 0 5px;}
+  	}	
+  	.ya-orange-btn{background:#ff9814;font-family:ProximaNova-Regular;font-size:14px;color:$white; @include text-shadow(0 0 0);border: 0 none; @include box-shadow(0 1px 2px rgba(119, 119, 224, 0.5)); margin: 8px 0 10px;
+  		.fs1{ float:left;padding: 0 10px 0 0; font-size:1.3em;}
+  	}
+  	.ya-grey-btn{
+  		//@extend .ya-orange-btn;
+  		//background:#f3efeb;
+  		//@include box-shadow(0 0 0);
+  		//color:$grey;
+  		//@include border-radius(7px);
+  	}
+  	.ya-bold{font-weight:bold;}
+  	.ya-italic{font-style:italic;}
+  	
+  	.ya-logo-box-tablet{ 
+	background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+				padding:15px 10px  15px 10px; position:relative; z-index:100;
+				.ya-value{color:#f3efeb; font-size:25px; font-family:ProximaNova-Semibold;}
+				.ya-label{font-size:16px; font-family:ProximaNova-Regular;}
+	@media(max-width:767px)
+	{
+
+	
+
+	}
+	 			display:none;
+  		img{display:block; margin:0 0 10px 0; }
+  		span{display:block; font-family:ProximaNova-Semibold; color:#ffffff;}
+	}	
+
+	.ya-notifications{margin-bottom:0px !important;}
+
+	/**********ya-editable-region start*************/
+	.ya-editable-region
+	{
+		@include makeFluidRow();border:1px dotted #888888; padding: 0px;@include border-radius(4px);margin: 0 0 10px;
+		position:relative;
+		
+		//---- 24 Oct 2013, Change button position: absolute, and its position properties right: 5px; bottom: 10px; margin:0;
+		//---- due to old style it little jummpy becouse its position static.
+		/* Changes Here */
+	   .ya-btn-delete{display:none;color:#96171A;font-family:ProximaNova-Semibold; font-font-weight:normal; font-size: 14px;padding:0;position:absolute;top:3px;right:3px;z-index:100;					margin:0;
+			@media(max-width: 979px){ display: block;}
+		}
+		
+		//---- 24 Oct 2013, Change button position: absolute, and its position properties right: 5px; bottom: 10px; margin:0;
+		//---- due to old style it little jummpy becouse its position static.
+		/* Changes Here */
+		.ya-btn-edit{display:none; z-index:100; position:absolute; right:3px; bottom:3px; margin:0;min-width:50px; 
+			.ya-edit-icon{ color: #FFFFFF;    font-size: 14px;    padding: 0 3px 0 0; margin:0;top:0;				
+			}			
+			@media(max-width: 979px){ display: block;}
+		}
+		.ya-editable-content{min-height:55px;}		
+		
+		
+		 &:hover {
+			border:1px dotted #BF9000;  background:#FFE599;
+			.ya-btn-delete{ display:block; }
+			.ya-btn-edit{display:block;}
+		 }
+	}
+		.panel-on{
+			border:1px dotted #BF9000;  background:#FFE599;
+			.ya-btn-delete{ display:block; }
+			.ya-btn-edit{display:block;}
+		}
+		.panel-over{
+			.ya-btn-delete{ display:none;@media(max-width: 979px){ display: block;}}
+			.ya-btn-edit{display:none;@media(max-width: 979px){ display: block;}}
+		}
+	/**************ya-editable-region end **************/
+
+	#btn-EditProfileImageTab,#EditProfileImageTab{display:none; 
+				@media (max-width:979px)
+				{
+					display:block;
+				}
+			}
+			#btn-EditProfileImage,#EditProfileImage{/*display:block;*/
+				@media (max-width:979px)
+				{
+					display:none;
+				}
+			}
+	.ya-personal-information{
+		margin-bottom:20px;
+	}
+}
+
+
+
+/* end teacher profile*/
+
+$yellow: #E5A053;
+.ya-additional-panel{
+   @include makeFluidRow(); margin:0 0 10px 0;
+  .ya-additional-panel-wrraper{
+    background:#fff9e6; @include border-radius(15px); padding:15px; border:2px solid #999999;    
+  }
+  .help-block{
+      h3{padding:0;}
+  }
+  ul,li{list-style-type:none; margin:0;}
+  .right{text-align:right;}
+  .left{text-align:left;}
+  .ya-add-staff-modal{background:#fff2cc;}
+  .ya-title{ border-bottom: 2px solid #CCCCCC;font-size: 21px;}
+  .ya-note{border:2px solid #CCCCCC;  @include border-radius(15px); padding:15px; background:#ffffff; margin:0 0 10px 0;.ya-button-row{text-align:left !important;}}
+  .ya-file{height:auto;}
+  .ya-profile-image{max-width:240px;margin: 0 auto;}
+  .ya-button-row-center{text-align:center;}
+  .control-group{margin:0;}
+  .help-inline{float: right;}
+  a.helpIcon {	  color: $yellow; margin:0 0 0 3px;	}
+  .ya-two-column-row{
+     @include makeFluidRow();
+    .ya-column-1{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-column-2{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+  }
+
+	.ya-button-row{ 
+		.btn{@include input-small(); min-width:80px;}
+		@media(max-width:767px){text-align:center; .btn{ margin-bottom:1px;}}
+	}	
+	/*privacy panel*/
+	.ya-privacy-settings-panel{
+				.ya-information{ @include ya-grey-border-bottom();}
+				.ya-options-row{
+					strong{ display:inline-block;}
+					.btn{}
+				}
+				.ya-block{
+					th{text-align:left;word-wrap:break-word;}					
+				}				
+			}
+			.ya-datepicker{float:left; margin-bottom:0;
+		@media (max-width: 767px){
+			@include makeFluidColumn(10,0,0); 
+		}
+	}
+	.ui-datepicker-trigger{
+		margin:4px 0 0 5px;cursor:pointer;
+			@media (max-width: 767px){
+				margin:4px 0 0 5px;
+			}
+	}
+
+}/*end of additional panel*/
+
+	
+.ya-astrix{color:$maroon; font-size: 20px;    font-weight: normal;    margin-left: 5px;}
+a{color:$maroon;}
+a:hover,a:focus{color:$maroon;}
+$blue: #3bbfdd;
+$margin: 16px;
+
+.content-navigation {
+  border-color: $blue;
+  color:
+    darken($blue, 9%);
+}
+
+.border {
+  padding: $margin / 2;
+  margin: $margin / 2;
+  border-color: $blue;
+}
+.ya-alert-info{
+margin-top:15px;background-color: #BEDEFF;
+			border: 2px solid #003E8C;
+			color: #003E8C;
+			  span[data-icon]{font-size: 17px;float: right;}
+}
+
+.ya-social-icons{
+	span{font-size:24px;}
+}
+
+
+
+
+/*******media queries******/
+/* Large desktop */
+@media (min-width: 1200px) {
+	/*body{background:red;}*/
+	.ya-teacher-edit-profile{		
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 0 0 0 -40px; 
+				width: 291px;
+				*width: 261px;
+			}
+		}
+		.ya-middle-column{
+			.ya-column-center{
+				
+			}
+		}
+	}	
+}
+ 
+@media (min-width: 980px) and (max-width: 1199px) { 
+	body{}
+	.ya-teacher-edit-profile{
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 0 0 0 -40px; width: 291px;
+			}
+		}
+		.ya-middle-column{
+			width:65%;
+			.ya-column-center{width:100%;}
+			.ya-right-column{width:100%;}
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{margin:0 15px 25px 0;}
+			.ya-logo-box-container,.ya-teching-hours-panel {
+				display:none;
+			}
+			
+		}
+		.ya-logo-box-tablet{
+			display:block;text-align: center;
+				
+			img{
+			    display: inline-block;
+			}
+		}
+	}
+
+} 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	/*body{background:green;}*/
+	.ya-teacher-edit-profile{
+		.ya-left-column{
+			.ya-white-panel{
+				margin: 0 0 0 -40px; width: 291px;
+			}
+		}
+		.ya-middle-column{
+			width:58%;
+			.ya-column-center{width:100%;
+				.ya-about-container{margin:0 0 0px;}					
+			}
+			.ya-right-column{width:100%; }			 
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{margin:0 15px 25px 0;}
+			.ya-logo-box-container,.ya-teching-hours-panel {
+				display:none;
+			}
+			
+		}
+		.ya-logo-box-tablet{
+			display:block;text-align: center;
+				
+			img{
+			    display: inline-block;
+			}
+		}
+	}
+
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+	/*body{background:blue;}*/
+	
+	.ya-teacher-edit-profile {
+	    
+		.ya-left-column {
+			.ya-white-panel{
+				display:none;
+			}
+			
+		}
+		.ya-middle-column{
+			
+			.ya-column-center{
+				.ya-about-container{margin:0 0 0px;}					
+			}
+			.ya-right-column{ }
+			padding:0;			 
+		}
+		.ya-right-column {
+			padding:0;
+			.ya-right-box{}
+			.ya-logo-box-container,.ya-teching-hours-panel {
+				display:none;
+			}
+		
+		}
+		.ya-logo-box-tablet{display:block;text-align: center;
+			img{
+				 display: inline-block;
+			}
+		}
+	}
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) { 
+	/*body{background:teal;}*/
+
+}
+
+input[type="radio"], input[type="checkbox"]
+{
+	float:left; margin-right:10px;
+}
+
+
+#ie7 
+{
+	.ya-left-column{
+		
+		.ya-social-icons{
+			span{margin:0 5px 0 0;}
+		}
+		.ya-photo-gallery{
+				
+			.ya-gallery{				
+				.ya-thumbnail{width:43%; }
+			}
+			
+		}
+		.ya-white-panel{
+			.ya-box{padding-left:0;}
+			.ya-my-profile-pic{width:94%;}
+		}
+	}
+	.ya-logo-watermark{ 
+			.ya-school-logo{ 
+				width:200px;
+			}
+			.ya-editable-region{width:236px;}
+		}
+	
+}
+#ie8
+{
+	.ya-logo-watermark{ 
+			
+			.ya-editable-region{width:234px;}
+		}
+}
+
+#ie8, #ie7{
+	.ya-left-column{
+		.ya-white-panel{
+			padding-left:0;
+		}
+	}
+	.ya-middle-column{
+		/*width:810px;*/
+	}
+	.container{width:1170px;}
+}
+input.span12{
+    *width:95% !important;
+    *min-height:20px !important;
+    *height: 20px !important;
+}
+select.span12{
+    *width:98% !important;    
+}
+.btn{
+    *margin-left: 10px;
+}    
+textarea.span12{
+ *width:95% !important;   
+}
+//=== remove from Global Styles screen.scss ==//
+
+/* line 14, ../css-src/partials/_alert_badge_label.scss */
+// .alert span {
+//  float: right;
+//  font-size: 20px;
+//  position: relative; // remove this property
+//  right: -35px; // remove this property
+//}
+
+.alert span{
+	position:static;
+}
+a.helpIcon {	  color: $yellow; margin:0 0 0 3px;	}
+a.btn{text-decoration:none;}
+/*.yas-dnnrow a.collapsed{background:none;}*/
+.alert-block{padding:0;}
+#yas-dnncontent, #yas-footer{padding:0;}
+a{ cursor:pointer;}

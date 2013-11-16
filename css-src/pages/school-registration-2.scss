@@ -1,0 +1,95 @@
+// @import "school-registration-1";
+
+@import "../variables/variables";
+@import "../variables/mixins";
+
+
+
+.school-registration-2 {
+	
+  .ya-location-section{
+    .ya-button-row{ @media (max-width:767px){text-align:center;}}
+
+    .btn{@media(max-width:767px){ wdith: $input-medium; }} 
+    
+    .ya-note{.btn{@media(max-width:767px){width:100% !important;}} }
+    
+    .ya-change-profile-image{@media(max-width:767px){width: $input-large;}} 
+    
+    .ya-location-block{
+      .ya-badge-block{
+        @include makeFluidRow();
+      	.badge{margin:0 10px 10px 0;}
+      }
+      .ya-total-row{ 
+        border:0 none;
+      	.ya-label{@include font-bold; color:$yellowDark; font-size:18px;float:right; margin:0 15px 0 0;}
+      	.ya-value{@include font-bold; color:$yellowDark; font-size:18px;float:right;}
+      }
+
+      .ya-location-row{
+        @extend .ya-grey-border-bottom;
+        @include makeFluidRow();
+        .ya-box-one{@include makeFluidColumn(8,0,0);}
+        .ya-box-two{
+          @include makeFluidColumn(4); 
+        	.ya-price{
+            display: block;    float: left;    text-align: right;    width: 100%;margin: 73px 0 0;
+        		@media(max-width:450px){margin:90px 0 0;}
+        	}
+        }
+        .ya-location-address{ 
+          .ya-lead {
+            @include font-bold;
+            font-size:20px;
+          }
+          margin:0 0 0px 0; 
+          span{color:$grayDark;}
+        }
+      }
+    }
+      .ya-delete-btn{}
+  }
+
+  .ya-additional-panel{
+    @include makeFluidRow(); margin:0 0 10px 0;
+    // .ya-additional-panel-wrraper{
+    //   background:#fff9e6; @include border-radius($radiusLarge); padding:15px; border:2px solid #999999;    
+    // }
+    .help-block{
+      h3{padding:0;}
+    }
+    ul,li{list-style-type:none; margin:0;}
+    .right{text-align:right;}
+    .left{text-align:left;}
+    .ya-add-staff-modal{background:#fff2cc;}
+    // .ya-title{ border-bottom: 2px solid #CCCCCC;}
+    .ya-note{
+      border:2px solid #CCCCCC;  
+      @include border-radius($radiusLarge); 
+      padding:15px; 
+      background:#ffffff; 
+      margin:0 0 10px 0;
+      .ya-button-row{text-align:left !important;}
+    }
+    .ya-file{height:auto;}
+    .ya-profile-image{
+      max-width:240px;margin: 0 auto; 
+  		img{margin: 0 auto  !important; float:none !important;}
+    }
+    .ya-button-row-center{text-align:center;}
+    .ya-add-location-panel{
+      .ya-left-column{@include makeFluidColumn(8); @media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+      .ya-right-column{@include makeFluidColumn(4); @media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+      .ya-button-row{ @media (max-width:767px){text-align:center;}}
+    }
+  }
+/*end of panel*/
+}
+
+
+
+
+
+
+

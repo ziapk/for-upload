@@ -1,0 +1,189 @@
+// ##### BORDERS #####
+
+@import "../vendor/bootstrap/mixins"; 
+
+@mixin default-border {
+    border: 1px solid $borderColor;
+    @include border-radius($baseBorderRadius);
+}
+@mixin small-border-radius {    
+    @include border-radius($radiusSmall);
+}
+@mixin medium-border-radius {    
+    @include border-radius($radiusNormal);
+}
+@mixin large-border-radius {    
+    @include border-radius($radiusLarge);
+}
+
+// ##### SHADOWS #####
+
+// TODO: Add argument passing(?)
+// TODO: Install and configure CSS3 PIE (http://css3pie.com/)
+@mixin small-box-shadow {
+    @include box-shadow($shadowColor 0 0 2px);
+}
+@mixin medium-box-shadow {
+    @include box-shadow($shadowColor 3px 3px 5px);
+}
+@mixin large-box-shadow {
+	@include box-shadow($shadowColor 0 0 10px);	
+}
+
+
+// ############# ANNE AND NEWTON'S MAKE FLUID COLUMN AND ROW MIXINS ###############
+
+@mixin makeFluidRow() {
+  width: 100%;
+  @include clearfix();
+}
+@mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
+  float: left;
+  margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
+  width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
+  *width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1)) - 0.0532%;
+
+  &:first-child {
+        margin-left: 0;
+  }
+}
+
+// ############# HAROON'S MEDIA QUERY MIXIN START ########################
+
+$desktop-screen: 1200px;
+$tablet-screen: 979px;
+$mobile-screen: 767px;
+$mobile-small-screen: 479px;
+    
+@mixin for-screen($media) {
+    
+    // this media query generate style greater than 960px or 940px layout;
+    @if $media == desktop-large-screen {
+       @media (min-width: $desktop-screen){ @content; }
+    }
+          
+    // this media query some bootstrap style to be change for defalut secreen i.e defult screen style;  
+    @else if $media == desktop-screen {
+       @media (max-width: $desktop-screen){ @content; }
+    }
+          
+    // this media query generate style less than 960px or 940px layout;
+    @else if $media == tablet-screen {
+       @media (max-width: $tablet-screen) { @content; }
+    }
+          
+    // this media query generate style less than 767px layout, ;
+    @else if $media == mobile-screen {
+       @media (max-width: $mobile-screen) { @content; }
+    }
+      
+    // this media query generate style less than 480 layout, here style for mobile potrait screen;
+    @else if $media == mobile-small-screen {
+       @media (max-width: $mobile-small-screen) { @content; }
+    }
+}
+
+// ############# EXAMPLES ##############
+
+
+// #### EXAMPLE 1 ####
+
+// .profile-pic {
+//     float: left;
+//     width: 250px;
+    
+//     @include for-screen(desktop-large-screen) { width: 100% ;}
+//     @include for-screen(tablet-screen) { width: 125px; }
+//     @include for-screen(mobile-screen) { float: none; }
+//     @include for-screen(mobile-small-screen) { float: none; }
+// }
+
+// THE ABOVE SASS WOULD OUTPUT THIS CSS:
+
+// .profile-pic { float: left; width: 250px; }
+
+// @media (min-width: 1200px) { .profile-pic { width: 100%; } }
+// @media (max-width: 979px) { .profile-pic { width: 125px; } }
+// @media (max-width: 767px) { .profile-pic { float: none; } }
+// @media (max-width: 479px) { .profile-pic { float: none; } }
+
+
+// #### EXAMPLE 2 ####
+
+// @include for-screen(desktop-large-screen) { 
+//     body{
+//         background: white;
+//         font-size: 14px
+//         color: black;
+//         line-height: 1.3;
+//     }
+//     .navbar {
+//         @include clearfix;
+//         nav {
+//             li {
+//                 display:inline-block;
+//                 vartical-align: middle;
+//                 font-size: 18px;
+//                 a {
+//                     text-decoration: none;
+//                     color: $link-color;
+//                     &:hover {
+//                         text-decoration: underline;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+// @include for-screen(tablet-screen) { 
+//     .navbar {
+//         nav {
+//             li {
+//                 font-size: 16px;
+//             }
+//         }
+//     }
+// }
+// @include for-screen(mobile-screen) { 
+//     .navbar {
+//         nav {
+//             li {
+//                 font-size: 14px;
+//             }
+//         }
+//     }
+// }
+
+// THE ABOVE SASS WOULD OUTPUT THIS CSS:                       
+    
+// @media (min-width: 1200px) { 
+//     body { background: white; font-size: 14px; color: black; line-height: 1.3; }
+//     .navbar { *zoom: 1; }
+//     .navbar:before, .navbar:after { display: table; content: ""; line-height: 0; }
+//     .navbar:after { clear: both; }
+//     .navbar nav li { display: inline-block; vartical-align: middle; font-size: 18px; }
+//     .navbar nav li a { text-decoration: none; color: blue; }
+//     .navbar nav li a:hover { text-decoration: underline; } 
+// }
+// @media (max-width: 979px) { 
+//     .navbar nav li { font-size: 16px; } 
+// }
+// @media (max-width: 767px) { 
+//     .navbar nav li { font-size: 14px; } 
+// }
+    
+
+// ############# HAROON'S MEDIA QUERY MIXIN END ########################
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,314 @@
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+
+.ModMyPhotoGalleryC {
+
+
+	// MODAL POPUP WINDOWS CONTENTS
+	// Each popup windows is a ya-gallery-modal
+	.ya-gallery-modal {
+		padding: 12px 20px;
+		background-color: white;
+	
+		h1 {
+		border-bottom: 1px solid $borderColor;
+		padding-bottom: 6px;
+		}
+	
+		h2 {
+			font-size: 28px;
+		}
+	
+		label {
+			@include font-semi-bold;
+			font-size: 16px;
+		}
+	
+		.btn {
+			margin-right: 10px;
+			margin-top: 30px;
+		}
+	
+		// Stoppping this "Normal" class from overriding our styles
+		.alert .Normal {
+			font-size: inherit;
+			color: inherit;
+		}
+	}
+	 
+	.ya-add-album {
+		@include medium-border-radius;
+	
+		width: 200px;
+		height: 160px;
+	
+		.ya-add-album-button {
+			@include font-bold; 
+			font-size: fontCalc(60);
+			margin-top: 125px;
+	
+			span {
+				display: block;
+				font-size: 16px;
+				margin-top: 10px;
+			}
+	
+			.ya-add-icon {
+				@include font-bold;
+	
+				display: block;
+				font-size: fontCalc(70);
+				margin-bottom: $defaultMargin;
+				text-decoration: none;
+			}
+		}
+	
+		a {
+			color: $red;
+		}
+	}
+	
+	// PHOTO ALBUMS PAGE
+	.ya-photo-album,
+	.ya-add-album,
+	.ya-gallery-image {
+		@include medium-border-radius;
+		@include medium-box-shadow;
+	
+		border: 2px solid $brownDark;
+		height: 300px;
+		float: left;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		min-height: 200px;
+		padding: 4px;
+		position: relative;
+		text-align: center;
+		width: 200px;
+	
+		img {
+			max-height: 150px;
+		}
+	
+		.ya-edit {
+			a {
+				color: $red;
+			}
+		}
+	
+		.ya-title {
+			@extend .muted;
+		}
+	}
+	
+	// An individual album
+	.ya-photo-album {
+		// Photo album title
+		.ya-title {		
+			@include font-semi-bold;
+	
+			text-align: center;
+			width: 190px;
+			word-wrap: break-word;
+		}
+	
+		// The edit button
+		.ya-edit {
+			display: inline-block;
+			position: absolute;
+			bottom: 4px;
+			left: 6px;
+			a {
+				color: $red;
+			}
+		}
+	
+		// The add button
+		.ya-add {
+			a {
+				color: $red;
+			}
+	
+			display: inline-block;
+			position: absolute; 
+			bottom: 4px;
+			right: 6px;
+	
+			// Put the icon on the right of the text
+			span[data-icon]{
+				margin-right: 0;
+				margin-left: .4em;			
+			}
+		}
+	}
+	
+	.ya-back-to-album,
+	.ya-edit-album,
+	.ya-upload {
+		margin-right: $defaultMargin;	
+	}
+	
+	// NEW PHOTO ALBUM POPUP
+	
+	// Gallery name text box
+	.ya-gallery-new-album {
+		input[type="text"] {
+			width: 400px;
+		}
+	
+		// Textarea is border-box where textbox is content-box so need to adjust for padding
+		textarea {
+			width: 414px;
+		}
+	}
+	
+	.ya-gallery-edit-photo {
+		.ya-gallery-image {	
+			height: 200px;
+		}
+	}
+	
+	// UPLOAD PHOTOS POPUP
+	.ya-gallery-upload-photos {
+		.btn-success {
+			margin-bottom: 30px;
+		}
+	
+		// The album description
+		p {
+			font-size: inherit;
+		}
+	
+		h2 {
+		margin-top: 30px;
+		}
+	}
+	
+	// INDIVUDUAL PHOTOS
+	.ya-gallery-image {	
+		height: 320px;
+		
+		// The photo title
+		.ya-title {
+			@include font-semi-bold;
+	
+			text-align: center;
+			word-wrap: break-word;
+		}
+	
+		// the edit button
+		.ya-edit {
+			display: inline-block;
+			position: absolute;
+			bottom: 4px;
+			left: 6px;
+		}
+	
+		// the delete button
+		.ya-delete {
+			@extend .ya-action;
+	
+			display: inline-block;
+			position: absolute;
+			bottom: 4px;
+			right: 6px;
+		}
+	
+		// the approve / unapprove link
+		.ya-btn-approval {
+			display: inline-block;
+			position: absolute;
+			bottom: 4px;
+			left:50%;
+	    	margin-left:-34px;
+		}
+	
+		.ya-gallery-thumb {
+			height: 150px;
+		}
+	}
+	
+	.ya-unapproved {
+		border: 3px solid $red;
+	
+		.ya-unapproved-image {
+			color: $red;
+		}
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//################### MODULE.CSS ######################### 
+
+// Legacy code - used to be in Module.css - do we need to keep it? 
+
+.dnnHTMLSettings, .dnnMyWork, .dnnEditHtml {
+    margin: 2em auto;
+}
+
+.dnnFormItem input[type=checkbox], .dnnPageSettings .dnnFormItem input[type=radio] {
+    width: auto;
+}
+
+.dnnFormItem .dnnHTMLSRadioButtons label, .dnnFormItem .dnnPSRadioButtons input, .dnnFormItem .dnnHTMLSRadioButtons label, .dnnFormItem .dnnHTMLSRadioButtons input {
+    float: left;
+    padding: 0;
+    width: 2%;
+    text-align: left;
+}
+
+.dnnFormItem .dnnHTMLSRadioButtons label {
+    width: auto;
+    padding: 0 15px 0 6px;
+    font-weight: normal;
+}
+
+.dnnHTMLSRadioButtons br {
+    display: none !important;
+    font-size: 0;
+    line-height: 0;
+    border-collapse: collapse;
+}
+
+
+.divUploader span.dnnInputFileWrapper > span.dnnSecondaryAction {
+    display: none !important;
+}
+
+.divUploader {
+    text-align:left;
+    position:absolute;
+    left:0px;    
+}
+
+.uploadedFiles {
+    position:relative;
+}

@@ -1,0 +1,294 @@
+//@import "compass/css3";
+//@import "bootstrap/mixins";
+
+@import "../variables/variables.scss";
+@import "../variables/mixins";
+
+.alert-block{padding:0;}
+.ya-notifications{margin-bottom:0;}
+.ya-btn-edit{
+	min-width:inherit;
+	line-height:25px;
+	span:hover,
+	span{
+		position:static;
+	}
+}
+.helpIcon{
+	color: #E9B422;
+	&:hover, &:link, &:active, &:visited{
+		color: #E9B422;
+	}
+}
+$maroon: #96171a;
+$blue:#3b237b;
+$orange:#f37021;
+$orange2:#545b60;
+$blue2:#1e398d;
+$grey:#5f6a72;
+$white:#ffffff;
+$black:#000000;
+$grey2:#dcc298;
+
+/** Global Fonts **/
+$Normal: 'ProximaNova-Regular';
+$Semibold: 'ProximaNova-Semibold';
+$Bold: 'ProximaNova-Bold';
+$Italic: 'ProximaNova-RegularIt'; 
+
+$PageHeading: 30px $Normal;
+$PageHeading2: 28px $Normal;
+$PageHeading3: 20px $Normal;
+$PageHeading4: 18px $Normal;
+  h1 {
+    font: $PageHeading;
+    @media (max-width: 460px) {
+      font-size: 25px;
+    }
+  }
+  h2 {
+    font: $PageHeading2;
+    @media (max-width: 460px) {
+      font-size: 21px;
+    }
+  }
+  h3 {
+    font: $PageHeading3;
+    @media (max-width: 460px) {
+      font-size: 18px;
+    }
+  }
+  h4 {
+    font: $PageHeading4;
+    @media (max-width: 460px) {
+      font-size: 16px;
+    }
+  }
+
+@mixin input-medium(){
+  width: 150px;
+}
+@mixin input-small(){
+  width: 90px;
+}
+@mixin input-large(){
+  width: 210px;
+}
+
+#yas-dnnwrapper{min-width:1020px;}
+#yas-dnncontent, #yas-footer{padding:0;}
+
+.ya-teacher-edit-profile{
+	min-width:1000px; 
+	.ya-left-pane{@include makeFluidColumn(3);}
+	.ya-main-right{@include makeFluidColumn(9);}
+	.ya-center-pane{@include makeFluidColumn(8);}
+	.ya-right-pane{@include makeFluidColumn(4);}
+
+	.ya-white-panel{
+		margin: 0 0 0 -50px; 
+		/*width: 291px;
+		*width: 261px;
+		margin: 0 0 0;*/
+		background:$white; 
+		
+		position:relative;
+		padding-left: 30px;
+		
+		@include box-shadow(3px 1px 3px rgba(199, 199, 224, 0.8));
+		@include border-radius(0px 20px 20px 0);
+		.ya-box{
+		   padding:18px 15px;
+		.ya-title{
+			color:$orange; font-family:$Semibold;font-size:20px;font-weight:normal;				
+			 padding: 0 0 5px;
+			line-height: normal;
+			border-bottom: 1px solid $grey2;
+		}
+		.ya-description{color:$grey;	p{margin:0;	}}	
+		
+		}
+
+		/***/
+		.ya-yoga-taught,.ya-languages{
+			ul{
+				color:$grey; margin:0;
+				li{
+					list-style-type:none; font-family:$Semibold;					
+				}
+			}			
+		}	
+		.ya-edit-ypga-types{			
+			input[type="checkbox"]{float:left;margin-right: 10px;}			
+		}
+		/**end of yoga taught**/
+		.ya-photo-gallery{
+			.ya-gallery{
+				.photoItem,.photoItemAlt{
+					@include makeFluidColumn(6,0,0); margin:1px;
+					.img-polaroid{border: 1px solid $grey2; @include border-radius(5px); width: 95%; height:100px;}
+				}
+			}
+		}
+		/**end of ya-photo-gallery**/
+
+	}
+
+	.ya-profile-publish{
+		.ya-control-box{border: 2px solid #333;  @include border-radius(15px); padding: 15px;
+          background-color: #EEEEEE;
+		  .ya-publish-now{margin:0 0 10px 0;}
+         
+            .btn{
+              width: 100%;
+             }
+          
+          @media(max-width:767px){            
+            .btn{margin:5px 5px 0 0;  display:inline-block;}
+            @include border-radius(0px);
+              margin: 0 0 15px;
+          }
+        }
+	}
+
+	.ya-designations-and-teaching-hours{
+		/*margin-bottom:0;*/
+		.ya-designations{
+				background:#f09324; /* Old browsers */
+				background: linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -o-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -moz-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -webkit-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+				background: -ms-linear-gradient(bottom, rgb(248,196,91) 26%, rgb(244,172,25) 50%, rgb(240,147,36) 82%);
+
+				background: -webkit-gradient(
+					linear,
+					left bottom,
+					left top,
+					color-stop(0.26, rgb(248,196,91)),
+					color-stop(0.5, rgb(244,172,25)),
+					color-stop(0.82, rgb(240,147,36))
+				);
+				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09324', endColorstr='#f8c45b',GradientType=0 ); /* IE6-9 */
+
+
+				/*min-height: 260px;*/
+				padding: 15px 5px;
+				margin-bottom:30px;
+				text-align:center;
+				width:100%;
+				img{padding:4px;height: 92px;}
+				
+				span{color:#ffffff; font-family:ProximaNova-Semibold;margin: 10px 0 0; display:block }
+				.ya-value{color:#f3efeb; font-size:25px; font-family:ProximaNova-Semibold;}
+				.ya-label{font-size:16px; font-family:ProximaNova-Regular;}
+
+
+			.ya-designation{
+			}
+		}
+	}
+	.ya-edit-designations{
+		input[type="radio"]{float:left;}
+	}
+
+	.ya-right-pane{
+		.ya-right-box{
+			margin-bottom:30px;
+		}
+	}
+	.ya-additional-panel.collapse.in
+	{
+		margin-bottom:20px;
+	}
+	.ya-edit-biography{
+		input[type="radio"]{float:left;margin-right: 10px;}
+	}
+	.ya-edit-teaching-experience{
+		input[type="radio"]{float:left;margin-right: 10px;}
+	}
+	.ya-edit-billing-address{
+		input[type="checkbox"]{float:left;margin-right: 10px;}
+	}
+}
+
+
+/**********ya-editable-panel start*************/
+	.ya-editable-region
+	{	
+		&:hover{
+			background-color: #FFE599;
+			// TODO: Investigate compass transition mixin/function... 
+			-webkit-transition: background-color 200ms linear;
+			-moz-transition: background-color 200ms linear;
+			-o-transition: background-color 200ms linear;
+			-ms-transition: background-color 200ms linear;
+			transition: background-color 200ms linear;
+		}	
+		@include makeFluidRow();border:2px dashed #888888; padding: 0px;@include border-radius(4px);margin: 0 0 10px;
+		.ya-delete-button{ display:none;float: right;color: #96171A;font-family: $Semibold;padding:0; margin-bottom: -22px; position: relative;    z-index: 100;
+			@media(max-width: 979px){ display: block;}
+		}
+		.ya-edit-button{display:none;float: right;margin-top: -33px;z-index:100; position:relative;
+			.ya-edit-icon{ color: #FFFFFF;    font-size: 14px;    padding: 0 3px 0 0;}
+			@media(max-width: 979px){ display: block;}
+		}
+		.ya-editable-content{min-height:55px;}				
+	}	
+		.panel-on{
+			border:2px dashed #BF9000;  background:#FFE599;
+			.ya-delete-button{ display:block; }
+			.ya-edit-button{display:block;}
+		}
+		.panel-over{
+			.ya-delete-button{ display:none;@media(max-width: 979px){ display: block;}}
+			.ya-edit-button{display:none;@media(max-width: 979px){ display: block;}}
+		}
+/**************ya-editable-panel end **************/
+
+
+/***ya-additional-panel***/
+.ya-additional-panel{
+   @include makeFluidRow(); margin:0 0 10px 0;
+  .ya-additional-panel-wrraper{
+    background:#fff9e6; @include border-radius(15px); padding:15px; border:2px solid #999999;    
+  }
+  .help-block{
+      h3{padding:0;}
+  }
+  ul,li{list-style-type:none; margin:0;}
+  .right{text-align:right;}
+  .left{text-align:left;}
+  .ya-add-staff-modal{background:#fff2cc;}
+  .ya-title{ border-bottom: 2px solid #CCCCCC;font-size: 21px;}
+  .ya-note{border:2px solid #CCCCCC;  @include border-radius(15px); padding:15px; background:#ffffff; margin:0 0 10px 0;.ya-button-row{text-align:left !important;}}
+  .ya-file{height:auto;}
+  .ya-profile-image{max-width:240px;margin: 0 auto;}
+  .ya-button-row-center{text-align:center;}
+  .control-group{margin:0;}
+  .help-inline{float: right;}
+  .ya-help-icon {	  color: $yellow; margin:0 0 0 3px;	}
+  .ya-two-column-row{
+     @include makeFluidRow();
+    .ya-column-1{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-column-2{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+  }
+
+	.ya-button-row{ 
+		.btn{@include input-small(); min-width: 0;}
+		@media(max-width:767px){text-align:center; .btn{ margin-bottom:1px;}}
+	}	
+	
+	.ya-datepicker{float:left; margin-bottom:0;
+		@media (max-width: 767px){
+			@include makeFluidColumn(10,0,0); 
+		}
+	}
+	.ui-datepicker-trigger{
+		margin:4px 0 0 5px;cursor:pointer;
+			@media (max-width: 767px){
+				margin:4px 0 0 5px;
+			}
+	}
+
+}/*end of additional panel*/

@@ -1,0 +1,244 @@
+// All bootstrap partials
+@import "vendor/bootstrap";
+// Responsive Bootstrap styles
+@import "vendor/responsive";
+@import "vendor/jquery-ui"; 
+
+// A few Compass mixins
+@import "compass/css3/images";
+@import "compass/utilities"; 
+
+// Our variables
+
+
+@import "variables/variables";
+// OUR MIXINS
+@import "variables/mixins"; 
+
+// OUR PARTIALS - Overriding Bootstrap and our own additions
+@import "partials/fonts_icons";
+@import "partials/typography_links";  
+@import "partials/alert_badge_label";
+@import "partials/buttons";  
+@import "partials/menus"; 
+@import "partials/tables";
+@import "partials/login"; // Login Forms  
+@import "partials/modals_help";
+@import "partials/edit_boxes"; 
+@import "partials/editor_styles";  // Classes for content editors
+
+
+
+// ##### DNN EDITOR DIALOGUE BOX #####
+.ui-front {
+  z-index: 1000; // make sure it is in front of menus and other elements
+}
+
+// ##### DNN Form Popup #####
+// fix the close button, which was too low
+.dnnFormPopup .dnnModalCtrl .ui-dialog-titlebar-close {
+	
+	margin: -9px 0 0 0;
+}
+
+.ui-widget-header {
+  border: 1px solid $red;
+  background-color: $red;
+  color: #ffffff;
+  font-weight: normal;
+  @include font-semi-bold;
+  @include gradient-vertical(#cb4810, $red);
+}
+
+// ##### rePager - the pagination table at the bottom of some datatables #####
+.rgPagerCell.NumericPages {
+	text-align: center;
+	.rgNumPart span {
+		padding: 4px;
+		margin: 2px;
+		font-size: 16px;
+		&:hover {
+			background-color: $grayLight;
+		}
+	}
+}
+
+
+
+// ##### BOX SIZING #####
+// Apply border-box to everything except input boxes. See http://css-tricks.com/box-sizing/
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+input, .uneditable-input { // This bootstrap control collapses without this
+    @include box-sizing(content-box);
+}
+
+// TESTS
+// Haroon says this will fix the issue where buttons are being set to width: auto; 
+//and not retaining the size we set, like input-medium
+.btn{
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;
+}
+ 
+ 
+ 
+// ##### BARE BONES SKIN #####
+#yas-dnncontent.ya-BareBones .yas-dnnrow {
+	background: white;
+}
+
+
+
+// ##### YA-MAIN-CONTENT #####
+
+// First wrapper for every module.
+.ya-main-content {
+	padding: 40px 20px;
+	@include for-screen(tablet-screen) { padding: 15px 15px;}                
+	@include for-screen(mobile-screen) { padding: 10px 10px; }              
+	@include for-screen(mobile-small-screen) { padding: 0 10px; }     
+}
+
+// ##### YA-WIDGET #####
+// Each block of content should be .ya-widget
+.ya-widget{    
+    margin-bottom: $defaultMargin * 3;
+    padding-top: 0;
+
+    .ya-title {
+        border-bottom: 1px solid $borderColor;
+        padding-bottom: $defaultMargin / 2;
+    }
+
+    &.collapse {
+        border: none;
+    	margin: 0;
+    	padding: 0; 
+    }
+}
+
+
+// Little blue text under an input controls
+.help-block {
+    margin-top:-6px;
+    &.ya-info-text {
+        color: $blueMedium; 
+    }
+}
+
+// ##### YA-EDIT-PANEL #####
+// The yellow panels for Add / Edit sections
+.ya-edit-panel {
+	background:#fff9e6; 
+	@include border-radius(10px); 
+	padding:20px; 
+	border: 1px solid $grayDark;
+	@include for-screen(mobile-screen) {
+		padding: 15px;
+	}
+	@include for-screen(mobile-small-screen) {
+		padding:10px;
+	}
+}
+
+
+// ##### YA-CONTENT-PAGE #####
+// Skin for the Content Editors to use
+#yas-main-content.ya-content-page {
+	padding: 40px 20px;	
+}
+
+// For jumping to another school account
+// Is on Manage School
+// YA.Controls/School/ListSchools.ascx
+.ya-school-chooser {
+	margin-bottom: 15px;
+	label {
+		@include font-bold;
+	}
+}
+
+// ##### input-block-level fix #####
+// Was getting overridden by width: auto; for input[type="button"]
+body .input-block-level {
+	width: 100%;
+}
+
+
+
+// ###### DNN OVERRIDES #####
+#PhotoListContainer {
+	display: none;  // ???
+}
+
+
+.DnnModule {
+	margin-bottom: 0;  // Get rid of the gap at the  bottom of the content area
+}
+
+// Set the DNN control bar back to box-sizing to the heights are right
+#ControlBar{
+	box-sizing:content-box;
+	a {box-sizing:content-box;}
+}
+
+
+// ##### Telerik Rad Control Overrides #####
+.ya-main-content {
+	.RadComboBox_Default {
+		margin-bottom: 10px;  //All Bootstrap controls have a 10px bottom margin. Make this match. 
+	}
+}
+
+
+
+// ##### MICHAEL STYLES #####
+//Requested by Michael to be added on Oct 8, 2013
+ .rbDecorated {
+	background: transparent !important;
+	border: 0 !important;
+	color: white;
+}
+
+
+
+// ############### HAROON SASS FOR STYLE AND CODE GUIDE 22-10-2013 #############//
+
+// Add in Globel styles for 
+
+$accordianRed: #B63313;
+
+
+#haroon-accordian{ // you can delete '#haroon-accordian' if you choose these style and syntax of html.
+.accordion-group{
+	@extend .ya-widget;
+	border:none;
+}
+.accordion-inner{
+	border:none;	
+}
+.accordion-toggle{
+	@include clearfix();
+}
+
+.accordion-heading{
+	
+	a{
+		color:$accordianRed; font: 20px "ProximaNova-Semibold";	@include border-radius(4px); border:1px solid $accordianRed;
+		.ya-collapse-icon{
+			float:right;font-size:40px;line-height:20px;
+			
+			&:before{
+				content: 'E'; font-family: 'YogaAlliance';
+			}}
+			
+	&.collapsed{
+		background:none !important;
+		
+		.ya-collapse-icon{
+			&:before{
+				content: 'C';}}}}}
+}

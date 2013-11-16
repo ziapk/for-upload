@@ -1,0 +1,131 @@
+// ##### ALERTS / BADGES / LABELS / VALIDATION MESSAGES #####
+
+.alert {
+    @include medium-border-radius;
+    @include font-semi-bold;
+
+    background-color: $yellowLight;
+    border: 1px solid $yellow;
+    padding-right: 14px;
+    position: relative;
+}
+
+// The icon
+.alert span {
+    float: right;
+    font-size: fontCalc(20);
+	margin:0 0 5px 5px;
+}
+
+.alert-error, .dnnFormMessage.dnnFormError {
+    @include font-bold;
+    background-color: $red;
+    border: 1px solid $red;
+    color: white;
+}
+
+.alert-info, .dnnFormMessage.dnnFormInfo {
+    background-color: $blueLight;
+    border: 1px solid $blue;
+    color: $blue;
+}
+
+.alert-warning, .dnnFormMessage.dnnFormWarning {
+    background-color: $yellowLight;
+    border: 1px solid $yellow;
+}
+
+.alert-success, .dnnFormMessage.dnnFormSuccess {
+    background-color: $greenLight;
+    border: 1px solid $greenDark;
+    color: $greenDark;
+}
+
+.label {
+    @include font-regular;
+    border-radius: 20px;
+    color: $brownDark;
+    background-color: $brownLight;
+    padding: 3px 10px;
+}
+
+.ya-badge-yellow,
+.ya-badge-green,
+.ya-badge-red { 
+    @include font-bold;
+}
+
+.ya-badge-yellow {
+    border-color: $yellowDark;
+    color: $yellowDark;
+}
+
+.ya-badge-green {
+    border-color: $greenDark;
+    color: $greenDark;
+}
+
+.ya-badge-red {
+    border-color: $red;
+    color: $red; 
+}
+
+.ya-label-light {
+    background-color: lighten($brownLight, 20%);
+}
+
+// ############ VALIDATION MESSAGES ##############
+// <span> under input controls
+.ya-validation-message {
+    @include font-semi-bold;
+    display: block;
+    color: $red;
+    margin-top: -6px;
+    margin-bottom: 10px;
+}
+.ya-validation-message:before {
+    content: "R";
+    font-family: YogaAlliance;
+    margin-left: 2px;
+    margin-right: 6px;
+}
+// Class applied to the input control if there is an error
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input { 
+    &.ya-validation-error {
+        border-color: $red;
+        border: 1px solid $red;
+        background-color: $redLight;
+    }
+}
+
+// ############ DNN Form Messages ################
+.dnnFormMessage {
+    @include medium-border-radius;
+    margin:0 auto;  // Center the DNN system message. Looks like an error message at top of screen
+    margin-top:15px;
+// Do we need to add anything for these? They appear at the top of the page
+    &.dnnFormWarning{
+
+    }   
+    &.dnnFormInfo {
+
+    }
+    &.dnnFormSuccess {
+
+    }
+    &.dnnFormError {
+
+    }
+    &.dnnFormValidationSummary {
+
+    }
+}
+
+
+
+
+
+
+
+
+

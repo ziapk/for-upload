@@ -1,0 +1,89 @@
+@import "variables/variables";
+@import "variables/mixins"; 
+
+.Font-SemiBold {
+	@include font-semi-bold;
+}
+
+Heading-underline {
+	border-bottom: 1px solid $gray;
+	padding-bottom: 3px;
+}
+
+.Blockquote {
+	@include font-regular;
+	padding: 0 0 0 15px;
+	margin: 20px 40px 20px 20px;
+	border-left: 5px solid #eeeeee;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 1.25;
+	color: $brown !important;
+	display: block;
+}
+
+.DropCaps { 
+	float: left; 
+	color: $red; 
+	font-size: 60px; 
+	line-height: 53px; 
+	padding-right: 3px; 
+	font-family: Georgia; 
+}
+
+// ##### COLORS #####
+.Color-Red {
+	color: $red;
+}
+.Color-Yellow {
+	color: $yellow;
+}
+.Color-Yellow-Dark {
+	color: $yellowDark;
+}
+.Color-Orange {
+	color: $orange;
+}
+.Color-Brown {
+	color: $brown;
+}
+.Color-Brown-Dark {
+	color: $brownDark;
+}
+.Color-Gray-Dark {
+	color: $grayDark;
+}
+
+
+
+
+.Small {
+	font-size: smaller;
+	color: #C7C6C6;
+}
+
+.Bulleted-List li {
+	list-style: disc;
+}
+
+.Box-Square, .Box-Rounded, .Box-Square-Bold, .Box-Rounded-Bold, .Box-Round-Red-Bold, .Box-Square-Red-Bold {
+	padding: 10px 15px;
+}
+
+.Box-Rounded, .Box-Rounded-Bold, .Box-Round-Red-Bold {
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.Box-Rounded, .Box-Square {
+	border: 1px solid #EDECEA;
+}
+.Box-Rounded-Bold, .Box-Square-Bold {
+	border: 2px solid $brownDark;
+}
+
+.Box-Round-Red-Bold, .Box-Square-Red-Bold {
+	border: 2px solid $red;
+}
+

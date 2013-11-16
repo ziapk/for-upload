@@ -1,0 +1,404 @@
+// ##### Styles that apply to more than one section go here #####
+
+// ##### STRUCTURE #####
+// $siteMinWidth: 1170px;
+
+
+// Apply border-box to everything except input boxes. See http://css-tricks.com/box-sizing/
+*, *:before, *:after {
+    @include box-sizing(border-box);
+}
+
+input,
+.uneditable-input { // This bootstrap control collapses without this
+    @include box-sizing(content-box);
+}
+
+// .span12,
+// .container {
+//     width: $siteMinWidth;
+// }
+
+// .container-fluid {    
+//     min-width: $siteMinWidth;
+// }
+
+// ##### TYPOGRAPHY #####
+
+body {
+    @include font-regular;
+    font-size: fontCalc(14);
+    color: $darkBrown;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  font-family: inherit;
+  line-height: 1.1em;
+  color: inherit;
+  text-rendering: optimizelegibility;
+}
+
+h1 {
+  @include font-regular;
+  font-size: fontCalc(36);
+  color: $red;
+}
+
+h2 {
+    @include font-semi-bold;
+    font-size: fontCalc(28);
+}
+
+h3, legend {
+    @include font-semi-bold;
+    font-size: fontCalc(20);
+}
+
+h4 {
+    @include font-semi-bold;
+    font-size: fontCalc(16);
+}
+
+h5 {
+    @include font-semi-bold;
+    font-size: fontCalc(14);
+    color: $grayDark;
+}
+
+h6 {
+    @include font-regular;
+    font-size: fontCalc(13);
+    color: $lightBrown;
+}
+
+a {
+    color: $blue;
+    font-size: fontCalc(14);
+
+    // &:visited {
+    //     color: $white;
+    // }
+}
+
+strong {
+  @include font-bold;
+}
+
+hr {
+  margin: 20px 0;
+  border-top: none;
+  border-bottom: 1px solid $lightBrown;
+}
+
+blockquote p {
+  @include font-regular;
+  font-size: fontCalc(18);
+  line-height: 1.25;
+}
+
+label.radio {
+  @include font-regular;
+}
+
+.muted{
+    color: $lightBrown;
+}
+
+// ##### ICON FONT #####
+
+[data-icon]:before {
+  font-family: 'YogaAlliance';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  // This is required so no underline on hover
+    display: inline-block;
+}
+
+// ##### BASE #####
+
+.collapse {
+    @include box-shadow(none);
+    @include ya-reset;
+}
+
+.footer {
+    border-color: transparent;
+}
+
+.main-border {
+    @include main-border;
+}
+
+.main-box {
+    @include main-border;   
+
+    background-color: transparent;
+    border-color: $pageBorderColor;
+    border-bottom: none;        
+}
+
+.progress {
+    margin: $defaultMargin 0;
+}
+
+.ya-btn-edit {
+    @extend .btn-warning;
+    @extend .btn-mini;
+
+    font-size: fontCalc(12);	
+}
+
+.ya-btn-delete {
+    @extend .ya-action;    
+    font-size: fontCalc(16);
+    cursor: pointer;
+}
+
+.ya-edit-box {
+    &.collapse.in {
+        @include default-border;
+        @include medium-border-radius;
+        @include medium-box-shadow;
+
+        background-color: $pinkLighter; 
+        margin-bottom: $defaultMargin*2;
+        padding: $defaultMargin * 2;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+    label {
+        padding-left:4px;
+        margin-bottom: 2px;
+
+        &.radio {
+            font-size: fontCalc(12);
+
+            input[type="radio"] {
+                margin: 2px 5px 0 0;
+            }
+        }
+
+        &.checkbox {
+            input[type="checkbox"] {
+                margin: 3px 7px 0 0;
+            }
+        }
+
+        &.row-fluid {
+            margin-bottom: $defaultMargin;
+        }
+    }
+
+    input,
+    select {
+        margin-bottom: 0;
+    }
+
+    .btn {
+        margin-top: $defaultMargin * 2;
+        margin-bottom: 0;
+    }
+
+    [class*="span"] {
+        margin-bottom: $defaultMargin;
+    }
+}
+
+.ya-editable-region { 
+    border: 1px dotted $grayDark;
+    min-height: $defaultMargin * 4;
+    padding: 5px;
+    position: relative;
+    
+    &:hover{
+        background-color: darken($white, 10%);
+
+        // TODO: Investigate compass transition mixin/function... 
+        -webkit-transition: background-color 200ms linear;
+        -moz-transition: background-color 200ms linear;
+        -o-transition: background-color 200ms linear;
+        -ms-transition: background-color 200ms linear;
+        transition: background-color 200ms linear;
+    }
+
+    .ya-btn-edit {
+        bottom: $defaultMargin / 2;
+        height: 25px;
+        margin: 0;
+        padding: 0 $defaultMargin;
+        position: absolute;        
+        right: $defaultMargin / 2;
+
+        span[data-icon] {
+            margin: 0;
+        }  
+    }
+}
+.ya-page-title{ 
+    padding-bottom: 10px;
+    margin: 15px 0;
+    border-bottom: 1px solid $grayDark; 
+    color: $red;     
+}
+
+.ya-subtitle{
+	@include font-italic;
+}
+
+.ya-help {
+	color: $orange;
+}
+
+sup a.ya-help {
+	font-size: .6em;
+}
+
+.ya-tagline {
+    color: $red;
+    font-size: fontCalc(28);
+}
+
+.ya-widget {    
+    margin-bottom: $defaultMargin * 3;
+    padding-top: 0;
+
+    .ya-title,
+    h3 {
+        border-bottom: 1px solid $borderColor;
+        margin-right: $defaultMargin * 2;
+        padding-bottom: $defaultMargin / 2;
+    }
+
+    &.collapse {
+        @include ya-reset;
+    }
+}
+
+// ##### LINKS #####
+
+.ya-link, .ya-link:visited, .ya-link:active, .ya-link:link {
+    color: #0088CC; 
+    @include font-semi-bold;
+    text-decoration: none;
+}
+
+.ya-link:hover, .ya-link:focus{
+    color: #0088CC; 
+    text-decoration: underline;
+}
+
+.ya-action, .ya-action:visited, .ya-action:active, .ya-action:link  {
+	@include font-semi-bold;
+	color: $red;
+    text-decoration: none;
+}
+
+.ya-action:hover {
+    text-decoration: underline;
+}
+
+// ##### ICONS #####
+
+span[data-icon="E"], span[data-icon="C"]{
+	font-size: 120%;
+}
+
+span[data-icon]{
+	margin-right: .4em;
+}
+
+// ##### SOCIAL MEDIA ICONS #####
+
+.ya-twitter {
+	color: #00AEF3;
+}
+
+.ya-facebook {
+	color: #24589E;
+}
+
+.ya-pinterest {
+	color: #CF1912;
+}
+
+// ##### ALERTS / BADGES / LABELS #####
+
+.alert {
+    @include medium-border-radius;
+
+    background-color: $lightYellow;
+    border: 2px solid $yellow;
+    margin-bottom: 0;
+    padding-right: 3em;
+    position: relative;
+}
+
+.alert span {
+    float: right;
+    font-size: fontCalc(20);
+    position: relative;
+    right: -$defaultMargin * 3.5;
+}
+
+.alert-error {
+    background-color: $lightRed;
+    border: 1px solid $red;
+}
+
+.alert-info {
+    background-color: $blueLight;
+    border: 1px solid $blue;
+}
+
+.alert-warning {
+    background-color: $lightYellow;
+    border: 1px solid $yellow;
+}
+
+.label {
+    @include font-regular;
+    border-radius: 20px;
+    color: $darkBrown;
+    background-color: $lightBrown;
+    padding: 3px 10px;
+}
+
+.ya-badge-yellow,
+.ya-badge-green,
+.ya-badge-red { 
+    @include font-bold;
+}
+
+.ya-badge-yellow {
+    border-color: $orange;
+    color: $orange;
+}
+
+.ya-badge-green {
+    border-color: $darkGreen;
+    color: $darkGreen;
+}
+
+.ya-badge-red {
+    border-color: $red;
+    color: $red;
+}
+
+.ya-label-light {
+    background-color: lighten($lightBrown, 20%);
+}
+
+// ###### DNN OVERRIDES #####
+
+#PhotoListContainer {
+	display: none;
+}

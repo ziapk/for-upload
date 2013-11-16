@@ -1,0 +1,90 @@
+// Styles for modal content and Bootstrap Modal overrides
+
+// TODO: Some of these colors need to be placed in variables inside library/variable
+.modal {
+    @include box-shadow(none);
+    @include large-box-shadow;
+}
+
+.modal-backdrop {
+    background-color: transparent;
+}
+
+.ya-modal {
+    display: none;    
+    overflow-y: hidden;
+    height: 550px;
+    max-width: 800px;
+}
+
+.ya-help-header {
+    border-bottom: 1px solid $grayLight;
+    float: right;
+    width: 95%;
+
+    h1 {
+        color: #d89848;
+        font-weight: bold;
+    }
+
+    hr {
+        margin: 0;
+    }
+}
+
+.ya-new-window, .ya-new-window:hover {
+    float: right;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: -10px;
+    color: #A40000;
+}
+
+.ya-new-window-link {
+    color: #a5a5a5;
+    font-size: 21px;
+    margin-top: 5px;
+}
+
+.ya-close, .ya-close:hover {
+    @include border-top-right-radius($borderRadiusSmall);
+    @include border-bottom-left-radius($borderRadiusSmall);
+
+    background-color: #a2010b;
+    background-image: none;
+    color: #f1dedd;
+    margin: 0;    
+    padding: 5px 10px 5px 10px;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    top: 0;
+}
+
+.ya-help-icon, .ya-help-icon:hover {
+    bottom: -13px;
+    font-size: 100px;
+    left: -15px;
+    margin: 0;
+    position: absolute;
+    color: #e5a053;
+}
+
+.ya-help-content {
+    height: 400px;
+    overflow-y: scroll;    
+    padding-right: 10px;
+}
+
+.ya-help-item {
+    margin-bottom: 30px;
+
+    * {
+        color: #696563;
+        border: none;
+    }
+
+    h3 {
+        border: none;
+    }
+}

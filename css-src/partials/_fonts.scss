@@ -1,0 +1,58 @@
+// ################ WEB FONT ######################
+@font-face {
+  font-family: 'ProximaNova-RegularIt';
+  src: url("../fonts/web-font/27BA9B_0_0.eot");
+  src: url("../fonts/web-font/27BA9B_0_0.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/web-font/27BA9B_0_0.woff") format("woff"), 
+  url("../fonts/web-font/27BA9B_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Semibold';
+  src: url("../fonts/web-font/27BA9B_1_0.eot");
+  src: url("../fonts/web-font/27BA9B_1_0.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/web-font/27BA9B_1_0.woff") format("woff"), 
+  url("../fonts/web-font/27BA9B_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Regular';
+  src: url("../fonts/web-font/27BA9B_2_0.eot");
+  src: url("../fonts/web-font/27BA9B_2_0.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/web-font/27BA9B_2_0.woff") format("woff"), 
+  url("../fonts/web-font/27BA9B_2_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'ProximaNova-Bold';
+  src: url("../fonts/web-font/27BA9B_3_0.eot");
+  src: url("../fonts/web-font/27BA9B_3_0.eot?#iefix") format("embedded-opentype"), 
+  url("../fonts/web-font/27BA9B_3_0.woff") format("woff"), 
+  url("../fonts/web-font/27BA9B_3_0.ttf") format("truetype");
+}
+
+// ################ ICON FONT ######################
+@font-face {
+  font-family: 'YogaAlliance';
+  src: url("../fonts/icon-font/YogaAlliance.eot");
+  src: url("../fonts/icon-font/YogaAlliance.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/icon-font/YogaAlliance.woff") format("woff"), 
+    url("../fonts/icon-font/YogaAlliance.ttf") format("truetype"), 
+    url("../fonts/icon-font/YogaAlliance.svg#YogaAlliance") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: 'YogaAlliance';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  font-variant: normal; 
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+

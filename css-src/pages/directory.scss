@@ -1,0 +1,409 @@
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+
+
+
+
+
+$margin_padding: 15px;
+
+
+
+.ya-two-column-row{
+	 @include makeFluidRow();
+	.ya-column-1{@include makeFluidColumn(6);}
+	.ya-column-2{@include makeFluidColumn(6);}		
+}
+	
+
+
+.ya-button-row{ 
+	@media(max-width:767px){
+		text-align:center;
+		.btn{
+			width: $input-medium;
+		} 
+	}
+}
+
+.ya-read-more-less{display:block;  text-decoration:none !important;
+  .ya-label{
+  	padding: 2px 0 0;
+  	display:inline;
+  }	  
+  .ya-show-link-icon{margin: 2px 0 0;display:inline;}
+}
+.ya-grey-border-bottom {
+padding-bottom: 15px;
+margin: $margin_padding 0;
+border-bottom: 2px solid #ccc;
+}
+.ya-black-border-bottom {
+@extend .ya-grey-border-bottom;
+border-bottom: 2px solid #333;
+}
+.ya-social-icons { 
+line-height: normal;
+.ya-icon {
+  color: #909090;
+  display: inline;
+  font-size: 1.7em;
+  margin:0 2px 0 0;
+  }
+}
+
+
+
+
+
+  
+
+
+#ie7 input.span12{
+	width:95% !important;
+}
+#ie7 .ya-directory input.span12{
+	width:95% !important;
+}
+
+
+
+// Main <div> .ya-main-content .ya-directory
+.ya-directory{
+
+
+
+	.nav-tabs {
+		border-bottom:1px solid black;
+		margin-top:20px;
+		h4{
+			@include font-bold;
+			font-size: 24px;
+		}
+		a {
+			
+			text-decoration: none;
+			text-align: center;
+			// we require border with 'a' not 'li'.
+			border:1px solid black;
+			border-bottom:none;
+			margin:0;
+			
+			&:focus,
+			&:hover{
+				border-color: transparent;
+				outline:none;
+			}
+			
+		}
+	}
+	.nav-tabs > li {
+		border: none;
+		width: 50%;
+		padding:0 15px;
+	}
+	.nav-tabs >li > a {
+			border-top-right-radius: 12px;
+			border-top-left-radius: 12px;
+			&:hover {
+				color: #9A1307;
+			}
+	}
+	.nav-tabs > .active a{
+		border-bottom-color: transparent;
+		text-align: center;
+		background-color: #9A1307;
+		border: 1px solid #444444;
+		color: white;
+		&:hover{
+			color:white;
+		}
+
+		
+	}
+	
+	// The <section>s below the tabs
+	.ya-find-teacher,.ya-find-training-school{	
+		// Make the search controls labels bold
+		.ya-label {
+			@include font-bold;
+		}
+		 	
+		.ya-column-one{			
+			@media (min-width: 768px) and (max-width: 1199px){
+				@include makeFluidColumn(3,0,0);
+				.ya-control-row{@include makeFluidColumn(12,0,0);}
+				.checkbox{font-size:13px;}
+			}
+		}
+		.ya-column-two{
+			@media (min-width: 768px) and (max-width: 1199px){
+				@include makeFluidColumn(9);
+				.checkbox{font-size:13px;}
+			}
+		}
+		.ya-offering-training-in{
+			@media (min-width: 768px) and (max-width: 1199px){
+				@include makeFluidColumn(4.4); 				
+			}
+		}
+		.ya-training-schedues{
+			@media (min-width: 768px) and (max-width: 1199px){
+				@include makeFluidColumn(7.7,0,0);				
+			}
+		}
+
+
+		// center the search button
+		.ya-button-row{text-align:center;}
+
+		// Links that show and hide seactions
+		.ya-read-more-less{display:inline-block;}
+
+		// Magnifying glass in More Search Options button 
+		.ya-search-icon{font-size: 13px; margin:2px 2pxpx 0 0;}
+		
+		// // The More Search Options <button> 
+		// .ya-more-search-option{
+		// 	// width: auto; 
+		// 	// margin:10px 0; 
+		// 	text-decoration:none;
+		// 	border: 1px solid black;
+		// 	@include border-radius($borderRadiusSmall);
+		// }
+		// Search button on the left
+		.ya-btn-search{ 
+			width:100%; 
+			@media(max-width:767px) {
+				width: $input-medium;
+			}
+		}
+		// Search button at the bottom, when you open the More Search Options panel
+		.ya-btn-search-2{
+			width: $input-medium;
+			margin:10px 0;
+		}
+		
+		.ya-column-1{@media(max-width:767px){@include makeFluidColumn(12,0,0);}}
+		.ya-column-2{@media(max-width:767px){@include makeFluidColumn(12,0,0);}}
+		
+		// The red line behind More Search Options
+		.ya-button-row-border{
+			@extend .ya-black-border-bottom; 
+			border-color:$red; 
+			margin:0 0 20px 0; 
+			padding:0;
+			
+			// The More Search Options <button>
+			.ya-more-search-option{
+		     	background: none repeat scroll 0 0 #FFFFFF;
+				margin: 10px 0 -15px;
+				width: auto;
+				padding: 2px 12px;
+				text-decoration:none;
+				border: 1px solid black;
+				@include border-radius($radiusSmall);
+			}	
+		}
+	}
+// ############### SEARCH RESULTS #################
+
+	.ya-search-result-panel,.ya-search-training-school-panel{
+	
+		.ya-result-block{margin:0;
+				// @extend .ya-black-border-bottom;
+
+					.btn.btn-warning{
+					text-align: left;
+					@include font-bold;
+					font-size:18px;
+					color:white;
+					border:1px solid #CF982E;
+					text-shadow:none;
+					margin-top:0;
+				}
+				.RadRating {
+					min-height: 25px !important;
+					min-width: 150px !important;
+				}
+				.ya-left-section {
+					padding-right: 25px;
+				}
+
+
+		
+			.ya-left-section{
+				margin-left:0;
+				
+				.ya-record-row{
+					@extend .ya-grey-border-bottom;
+					//position:relative;
+					.ya-message-button-row,
+					.ya-two-column-row{
+						margin-left: 25px !important;
+						//width:auto;
+					}
+				}
+				.ya-google-letter{
+					float:left;
+					@include font-bold;
+					font-size: 18px;
+					//position:absolute;
+					//left:0;top:0;
+				}
+				
+			
+
+
+				.ya-message-button-row{
+					margin:0 !important;
+
+					.ya-message.btn {
+						padding-left:5px !important;
+						padding-right:5px !important;
+					}
+				}
+				
+				.ya-two-column-row{
+					margin:0 0 15px 0;
+				@include makeFluidRow();
+					.ya-column-1{@include makeFluidColumn(4);
+						@media(max-width:480px){
+							@include makeFluidColumn(6);
+						}
+						@media(max-width:540px){
+							@include makeFluidColumn(5);
+						}
+					}
+					.ya-column-2{
+						li{@include makeFluidRow();}
+						@include makeFluidColumn(8);
+						@media(max-width:480px){
+							@include makeFluidColumn(6);
+						}
+						@media(max-width:540px){
+							@include makeFluidColumn(7);
+						}
+					.ya-name{margin-top:0;
+						@media(max-width:767px){@include font-bold;}
+					}
+						ul{margin:0; list-style-type: none;
+							li{border:0 none; margin:0;padding:0;}
+						}
+					}
+				}
+				.ya-row{@include makeFluidRow();}
+				.ya-social-icons{
+					.ya-icon{}
+				}
+				.ya-read-more-less{margin:2px 0;}
+				.ya-more-details-panel{
+					margin: 10px 0 0 25px;
+					.ya-label{ 
+						@include font-bold;
+						@include makeFluidColumn(3);
+						@media(max-width:480px){@include makeFluidColumn(4);}
+					}
+					.ya-value{
+						@include font-regular;
+						@include makeFluidColumn(9);
+						@media(max-width:480px){@include makeFluidColumn(8);}
+					}
+					p{margin:10px 0;}
+				}
+
+			}
+	
+		}
+		.ya-message-btn{
+			span[data-icon] {    font-size: 15px;}
+			@media(min-width: 768px) and (max-width: 979px){
+				padding:0;
+				span[data-icon] {    font-size: 12px;}
+				.ya-label{font-size:12px;}
+			}
+			@media(max-width:480px){
+				padding:0;
+				span[data-icon] {    font-size: 12px;}
+				.ya-label{font-size:12px;}
+			}
+		}
+		.ya-school-rating{
+            .ya-rating-stars{
+				display: inline-block;    margin: 4px 0 0;
+				.ya-star{margin:0 0 0 5px;color:$yellow; float:left; font-size: 17px; }
+            }
+			.ya-rating-number{float: left;font-size: 25px;line-height: 27px;}
+        }
+		.ya-programs-panel{
+			@include makeFluidRow();
+			margin-left:25px;
+			.ya-title{
+				@include makeFluidColumn(12); 
+				@include font-bold;
+				
+			}
+			.ya-link-row{
+				@include makeFluidColumn(12,0,0); 				
+				
+				.ya-link{ color: #0088CC;  margin:10px 0;
+					@include font-bold;
+				}
+			}
+			.ya-programs-panel-block{
+					@include makeFluidRow();
+					.ya-name{@include makeFluidColumn(4);
+						@media(max-width:767px){@include makeFluidColumn(12);}
+					}
+					.ya-program-code{@include makeFluidColumn(4);
+						@media(max-width:767px){@include makeFluidColumn(6,0,0);}
+					}
+					.ya-date{@include makeFluidColumn(4);
+						@media(max-width:767px){@include makeFluidColumn(6,0,0);}
+					}
+			}
+		}
+	}
+
+	
+		
+}
+.tab-content{
+	overflow:inherit;
+}
+
+// .DnnModule{
+// 	margin-bottom:0 !important;
+// 	padding:0 0 20px !important;
+// }
+
+
+
+
+
+.ya-directory .ya-search-result-panel .ya-result-block .ya-left-section .ya-two-column-row .ya-column-2 ul.rrtItem li {
+	width: 25px;
+}
+.ya-record-row{
+	.ya-column-1{
+		width:100px !important;
+		margin-right:10px;
+		img{
+			width:100px;
+			height:100px;
+		}
+	}
+}
+.unstyled .ya-two-column-row{
+	width:auto !important;
+}
+.ya-record-row{
+	.ya-column-2{
+		width:auto !important;
+		margin:0 !important;
+		float:none !important;
+		overflow:hidden;
+	}
+}
+
+

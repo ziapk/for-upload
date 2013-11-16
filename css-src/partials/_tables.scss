@@ -1,0 +1,39 @@
+
+
+// ################ DATA TABLES ###########################
+
+// Overrides Bootstrap's adding outer rounded table border
+
+
+td.ya-right-border{
+	border-right: 1px solid $grayLighter;
+}
+// Striped table row
+.ya-striped, .ya-row-striped{
+	background-color: $tanLight; 
+}
+
+.ya-row-red{
+	background-color: $redLight;
+}
+.ya-row-yellow{
+	background-color: $yellowLight;
+}
+.ya-row-green{
+	background-color: $greenLight;
+}
+
+// ###################### INFORMATION TABLES ####################
+
+
+td.ya-label {
+	padding-right: $defaultMargin;
+	vertical-align: top;
+}
+
+// Dollar totals at the bottom of tables
+table.table .ya-total{
+	@include font-bold;
+	color: $yellowDark;
+	font-size: fontCalc(16);
+}

@@ -1,0 +1,177 @@
+body {
+    @include font-regular;
+    font-size: fontCalc(14);
+    color: $brownDarkest;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 10px 0;
+  line-height: 1.1em;
+  color: inherit;
+}
+
+h1 {
+  @include font-regular;
+  font-size: fontCalc(36);
+  color: $red;
+  @include for-screen(tablet-screen) { font-size: fontCalc(34) }
+  @include for-screen(mobile-screen) { font-size: fontCalc(30) }
+  @include for-screen(mobile-small-screen) { font-size: fontCalc(24) }
+}
+
+h2 {
+    @include font-semi-bold;
+    font-size: fontCalc(28);
+    @include for-screen(tablet-screen) { font-size: fontCalc(28) }
+    @include for-screen(mobile-screen) { font-size: fontCalc(26) }
+    @include for-screen(mobile-small-screen) { font-size: fontCalc(24) }
+}
+
+h3, legend {
+    @include font-semi-bold;
+    font-size: fontCalc(20);
+    @include for-screen(tablet-screen) { font-size: fontCalc(20) }
+    @include for-screen(mobile-screen) { font-size: fontCalc(20) }
+    @include for-screen(mobile-small-screen) { font-size: fontCalc(18) }
+}
+
+h4 {
+    @include font-semi-bold;
+    font-size: fontCalc(16);
+}
+
+h5 {
+    @include font-semi-bold;
+    font-size: fontCalc(14);
+    color: $grayDark;
+}
+
+h6 { 
+    @include font-regular;
+    font-size: fontCalc(13);
+    color: $brownLight;
+}
+
+
+a,/* Haroon Changes 12-Nov-2013 i removed here a:link, because its creates problems for all theme buttons, the other links*/
+a:active, a:visited {
+    color: $blue;
+    text-decoration: none;
+}
+
+strong {
+  @include font-bold;
+}
+
+hr {
+  margin: 20px 0;
+  border-top: none;
+  border-bottom: 1px solid $brownLight;
+}
+
+blockquote p {
+  @include font-regular;
+  font-size: fontCalc(18);
+  line-height: 1.25;
+}
+
+label.radio {
+  @include font-regular;
+}
+
+.muted{
+    color: $brownLight;
+}
+
+.ya-page-title{ 
+    padding-bottom: 10px;
+    margin: 15px 0;
+    border-bottom: 1px solid $grayDark; 
+    color: $red;     
+}
+
+.ya-subtitle{
+  @include font-italic;
+}
+
+.ya-italic {
+  @include font-italic;
+}
+
+.ya-tagline {
+    color: $red;
+    font-size: fontCalc(28);
+}
+
+// For data labels like Address or First Name as plain text (not forms)
+.ya-label{
+  @include font-regular;
+  font-size: fontCalc(14);
+}
+
+// Display only values
+.ya-value{
+  @include font-bold;
+  font-size: fontCalc(14);
+}
+
+label.ya-label {
+  @include font-bold;
+}
+
+
+// Displaying total dollar values at the bottom of tables and receipts
+
+// Dollar totals
+.ya-total{
+  color: $yellowDark;
+}
+
+// ##### LINKS #####
+
+
+.ya-link, .ya-link:visited, .ya-link:active, .ya-link:link {
+    color: $blue; 
+    @include font-semi-bold;
+    text-decoration: none;
+}
+
+.ya-link:hover, .ya-link:focus{
+    color: $blue;
+    text-decoration: underline;
+}
+
+.ya-action, .ya-action:visited, .ya-action:active, .ya-action:link  {
+  @include font-semi-bold;
+  color: $red;
+    text-decoration: none;
+}
+
+.ya-action:hover {
+    text-decoration: underline;
+}
+
+.btn-link {
+    color: $red;
+    font-size: 15px;
+    padding: 0;
+    @include font-regular;
+}
+
+// The red * indicating a required field
+.ya-required, .ya-astrix {
+  color: $red;
+  font-size: 22px;
+  padding-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+

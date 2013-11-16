@@ -1,0 +1,12 @@
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+.date-wrap{
+	margin-bottom:20px;
+}
+.training-hour-entry{
+	padding-bottom:20px;
+}
+.dnnControlError{
+	display:block;
+	color:$red;
+}

@@ -1,0 +1,496 @@
+/* ####################################################
+NOTE
+scss file for review
+###################################################
+*/
+@import "../variables/variables.scss";
+@import "../variables/mixins.scss";
+
+// Import all the variables into the main css file.
+//@import "variables";
+
+// I gather this file is a starting point for the project.
+//@import "bootstrap";
+
+// Include responsive Bootstrap styles
+//@import "bootstrap";
+//@import "bootstrap-responsive";
+@import "compass";
+//@import "partials/fonts";
+
+
+// $gridFluidColumnWidth: 6.38298%;
+// $gridFluidGutterWidth: 2.12766%;
+
+// @mixin makeFluidRow() {
+//   width: 100%;
+//   @include clearfix();
+// }
+// @mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
+//   float: left;
+//   margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
+//   width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
+  
+//   &:first-child {
+//     margin-left: 0;
+//   }
+// }
+
+
+.ya-article {
+    @include makeFluidRow();
+    .ya-main-section {
+
+         // @include makeFluidColumn(9);
+        @include makeFluidColumn(12);
+
+
+		@media (max-width: 979px) {
+			@include makeFluidColumn(12, 0, 0);
+		}
+    }
+
+}
+
+$margin_padding: 15px;
+$marginZero:0px !important;
+$maroon:#96171A;
+$light-blue:#085394;
+$grey:#888888;
+$green:#447e2b;
+$yellow: #E5A053;
+$lead_font_size: 16px;
+
+@mixin input-medium(){
+  width: 150px;
+}
+@mixin input-small(){
+  width: 90px;
+}
+@mixin input-large(){
+  width: 210px;
+}
+
+/*******ya-manage-school Classes*******/
+.ya-manage-school{
+
+	
+
+	// make a bit of space below the school profile image
+	.ya-school-profile-image-container img {
+		margin-bottom: 20px;
+	}
+	// doctor up the context menu
+	#divNav ul li.active > a {
+		color: #9A1307;
+		text-shadow: none;
+		border:none;
+		span[data-icon]{
+			color: #9A1307;
+		}
+	} 
+
+   
+	.ya-manage-school-header {
+	    @include makeFluidRow();
+	    margin-bottom: $margin_padding * 2;
+	    .ya-manage-school-header-left {
+
+
+	        @include makeFluidColumn(3);
+	    }
+	    .ya-manage-school-header-right {
+
+	      @include makeFluidColumn(9);
+
+
+
+	  		@media (max-width: 767px) {
+	  			@include makeFluidColumn(12, 0, 0);
+	  		}
+	      > h3 {
+	        @media (max-width: 767px) {
+	         font-size: 17px;
+	        }
+	      }
+
+	      .ya-header-box{
+	      		 /*@include makeFluidRow();*/
+				.ya-header-box-left{/*@include makeFluidColumn(8);*/
+          .ya-school-details{
+            .ya-school-details-block{
+                @include makeFluidRow();
+                margin: 0 0 10px;
+                .ya-label{@include makeFluidColumn(6);}
+                .ya-value{@include makeFluidColumn(6);}
+                .ya-overall-rating{@include makeFluidColumn(12);}
+                .ya-btn-renewals{margin:$marginZero; padding: 0; display:block; color:$maroon;}
+                .ya-school-rating{
+                  .ya-rating-stars{
+                    .ya-star{margin:0 0 0 5px;color:$yellow; float:left; font-size: 15px; }
+                  }
+                }
+                .ya-rating-number{float: left;font-size: 25px;}
+                .ya-school-rating-title{}
+            }
+          }
+        }
+				.ya-control-box{/*@include makeFluidColumn(4);*/ border: 2px solid #333;  @include border-radius(15px); padding: 15px;
+          background-color: #EEEEEE;
+          @media(min-width:768px){
+            .btn{
+              width: 100%;
+             }
+          }
+          @media(max-width:767px){ 
+            h4{float:left;}
+            h3{margin: 3px 0 0 3px; float:left;}
+            .btn{margin:5px 5px 0 0;  display:inline-block;}
+            @include border-radius(0px);
+              margin: 0 0 15px;
+          }
+        }
+			}
+	    }
+      .ya-page-title{ padding-bottom: 10px;
+          margin: $margin_padding 0;
+          border-bottom: 2px solid #333; }
+	}
+
+  .ya-school-profile-section{
+
+    .ya-school-profile-block{
+      
+        @include makeFluidRow();
+        margin: 0 0 10px;
+          .ya-school-profile-left{
+          @include makeFluidColumn(4);
+            .ya-school-profile-image-container{ 
+              img{width:100%;}
+              @media(max-width:767px){
+                @include makeFluidColumn(5);
+              }
+            }
+            @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+          }
+          .ya-school-profile-right{
+            @include makeFluidColumn(8);  
+            @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }        
+          }
+            @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+
+          .ya-school-address{
+
+             @media(max-width:767px){
+              @include makeFluidColumn(7,0,0);
+              h2{font-size:16px; margin-top:0;padding: 0 0 0 5px;}
+              
+            }
+          }
+          .ya-address-box{
+            @media(max-width:767px){
+            padding: 0 0 0 5px;}
+          }
+          .ya-training-box{@include makeFluidColumn(6,0,0);ul,li{margin:$marginZero;list-style-type: none;}
+              @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+          }
+          .ya-training-formats{@include makeFluidColumn(6,0,0);ul,li{margin:$marginZero;list-style-type: none;}
+            @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+          }
+          .ya-school-bio{@include makeFluidColumn(12,0,0);
+             @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+          }
+          .ya-contact{
+            @media(max-width:767px){
+              @include makeFluidColumn(12,0,0);
+            }
+          }
+
+    }
+    .btn{@media(max-width:767px){ @include input-medium(); }} 
+  .ya-note{.btn{@media(max-width:767px){width:100% !important;}} }
+  .ya-change-profile-image{@media(max-width:767px){@include input-large();}} 
+
+  }
+
+  .ya-school-gallery-section{
+   .btn{@media(max-width:767px){ @include input-medium(); }} 
+    .ya-gallery-block{
+      .ya-gallery-row{
+       @include makeFluidRow();
+        .ya-box-one{@include makeFluidColumn(2); @media(max-width:767px){
+              @include makeFluidColumn(9,0,0);
+            }}
+        .ya-box-two{@include makeFluidColumn(2); font-weight:bold;@media(max-width:767px){
+              @include makeFluidColumn(3,0,0);
+            }}
+      }
+    }
+  }
+
+.ya-school-location-section{
+  .btn{@media(max-width:767px){ @include input-medium(); }} 
+  .ya-note{.btn{@media(max-width:767px){width:100% !important;}} }
+  .ya-change-profile-image{@media(max-width:767px){@include input-large();}} 
+  .ya-location-block{
+    .ya-badge-block{@include makeFluidRow();}
+    .ya-location-row{
+        @extend .ya-grey-border-bottom;
+        @include makeFluidRow();
+        .ya-box-one{@include makeFluidColumn(8,0,0); }
+        .ya-box-two{@include makeFluidColumn(4); }
+        .ya-location-address{  span{color:$grey;}
+    }
+  }
+      
+  }
+  .ya-button-row{
+      @media(max-width:767px){
+      .help-inline{display:block;}
+      .ya-btn-pay{float:none;}
+      }
+    }
+  }
+  .ya-school-staff-section{
+    .btn{@media(max-width:767px){ @include input-medium(); }} 
+    .ya-staff-permission-panel{
+      .ya-read-more-less{float:right;}
+      .ya-help-text-block{width:100%; float:left;}
+    }
+    .ya-staff-block{word-wrap: break-word;
+      .ya-staff-header-row{font-weight:bold;@include makeFluidRow();@media(max-width:767px){ display:none;  }}
+      .ya-staff-row{@include makeFluidRow();@extend .ya-grey-border-bottom;
+        .ya-staff-name{@include makeFluidColumn(2.6,0,0);  @media(max-width:767px){ @include makeFluidColumn(9,0,0); font-weight:bold; font-size:16px; }}
+        .ya-staff-email{@include makeFluidColumn(4,0,0); @media(max-width:767px){ @include makeFluidColumn(12,0,0);  }}
+        .ya-staff-roles{@include makeFluidColumn(3,0,0);@media(max-width:767px){ @include makeFluidColumn(12,0,0);  }}
+        .ya-edit-roles{@include makeFluidColumn(1.4,0,0);text-align:right;@media(max-width:767px){ @include makeFluidColumn(12,0,0); text-align:left; }}
+        .ya-remove{@include makeFluidColumn(2,0,0);text-align:right;  @media(max-width:767px){@include makeFluidColumn(3,0,0); }}  
+
+          
+        .ya-label{
+          @media(max-width:767px){display:block; float:left; margin:0 3px 0 0;}
+        }
+        }        
+    }
+    .ya-read-more-less{display:block; 
+      .ya-label{float:left;padding: 2px 0 0;}
+      .ya-show-link-icon{float:left;}
+    }
+    .help-block{
+      margin:$marginZero; 
+      h3{
+        margin:$marginZero; padding: 20px 0 0;
+      }
+    }
+    .ya-help-text-block {
+      p{color:$grey;}
+    }
+    .ya-star{margin:0 3px;}
+
+  }
+  .ya-trainers-section{
+    .ya-trainers-block{word-wrap: break-word;
+       .ya-trainers-header-row{font-weight:bold;@include makeFluidRow();@media(max-width:767px){display:none;}}
+
+      .ya-trainers-row{@include makeFluidRow();@extend .ya-grey-border-bottom;
+        .ya-trainers-name{@include makeFluidColumn(2.3,0,0);@media(max-width:767px){ @include makeFluidColumn(9,0,0); font-weight:bold; font-size:17px;} }
+        .ya-trainers-designation{@include makeFluidColumn(2,0,0); @media(max-width:767px){ @include makeFluidColumn(12,0,0);}}
+        .ya-tracks{@include makeFluidColumn(4,0,0);@media(max-width:767px){ @include makeFluidColumn(12,0,0); margin:10px 0;}}
+        .ya-edit-roles{@include makeFluidColumn(2.7,0,0); text-align:right;@media(max-width:767px){ @include makeFluidColumn(12,0,0); text-align:left;}}
+        .ya-remove{@include makeFluidColumn(2,0,0);text-align:right;@media(max-width:767px){ @include makeFluidColumn(3,0,0);}}      
+        ul,li{margin:$marginZero;list-style-type: none;}
+        @media(max-width:767px){margin:0 0 5px 0;}
+      }
+      
+    }
+    .ya-label{  display:none;
+          @media(max-width:767px){display:block;margin:0;}
+    }
+    .ya-alert{@include makeFluidRow();}
+    .btn{@media(max-width:767px){ @include input-medium(); }} 
+  }
+
+  .ya-tracks-section{
+    .btn{@media(max-width:767px){ @include input-medium(); }} 
+    .ya-tracks-block{
+      .ya-track-header{@include makeFluidRow(); font-weight:bold;  margin:0 0 5px 0 !important; padding:0 !important;@extend .ya-grey-border-bottom;
+        @media (max-width: 767px) { display:none; }}
+      .ya-tracks-row{
+        @include makeFluidRow();
+
+        .ya-track-image{@include makeFluidColumn(3);  text-align:center; }
+        .ya-track-content{@include makeFluidColumn(9); }
+      
+        
+        .ya-column{  
+          @include makeFluidColumn(6);
+          .ya-track-name{@include makeFluidColumn(6); }
+          .ya-yoga-types{@include makeFluidColumn(6); }
+          .ya-status{@include makeFluidColumn(6); }
+          .ya-edit-track{@include makeFluidColumn(6); text-align:right;}
+             @media (max-width: 767px)
+             {
+                .ya-track-name{@include makeFluidColumn(12,0,0); }
+                .ya-yoga-types{@include makeFluidColumn(12,0,0); }
+                .ya-status{@include makeFluidColumn(12,0,0); }
+                .ya-edit-track{@include makeFluidColumn(12,0,0); text-align:left;}
+             }
+        }   
+        .ya-incomplete{ font-size:13px; margin:0 3px;}
+
+      
+      }
+       
+      
+      .ya-tracks-row-outer{@extend .ya-tracks-row; margin-bottom:15px;
+
+        @media (max-width: 767px){
+         .ya-tracks-row{ border-bottom: 2px solid #CCCCCC;    margin: 0 0 5px;    padding-bottom: 5px;}
+        } 
+      }
+    }
+    .ya-pay-btn{float:right; @media (max-width:767px){float:none;}}
+  }
+
+
+  .btn-link{color:$maroon; font-size:13px; padding:0;}
+  .ya-tick{color:$green; font-size:13px; margin:0 3px;}
+  .ya-incomplete{ font-size:13px; margin:0 3px;}
+
+
+
+    .ya-school-heading-section-bar {
+      background-color: white;
+      @include clearfix();
+      padding: 0 $margin_padding;
+      margin: $margin_padding * 2 0;
+      border: 1px solid #B63313;
+      border-radius: 3px;
+      h3{ 
+        padding:0; 
+        border:0 none;
+        color:#B63313;
+      }
+      cursor:pointer;
+      span[data-icon].ya-collapse-icon {
+        font-size: 50px;
+        margin: -4px 0 !important;
+        color:#B63313;
+      }
+    }
+
+
+  .ya-collapse-icon {
+    margin: 10px 0;
+    cursor: pointer;display: inline-block;
+  }
+  .ya-grey-border-bottom {
+    padding-bottom: 10px;
+    margin: $margin_padding 0;
+    border-bottom: 2px solid #ccc;
+  }
+  .ya-black-border-bottom {
+    @extend .ya-grey-border-bottom;
+    border-bottom: 2px solid #333;
+  }
+  .ya-section-content{}
+  
+  .ya-social-icons { 
+    .fs1 {
+      color: #909090;
+      display: inline;
+      font-size: 1.7em;
+      }
+  }
+.ya-widget h3{border:0 none;}
+.ya-additional-panel{
+   @include makeFluidRow(); margin:0 0 10px 0;
+  .ya-additional-panel-wrraper{
+    background:#fff9e6; @include border-radius(15px); padding:15px; border:2px solid #999999;    
+  }
+  .help-block{
+      h3{padding:0;}
+  }
+  ul,li{list-style-type:none; margin:0;}
+  .right{text-align:right;}
+  .left{text-align:left;}
+  .ya-add-staff-modal{background:#fff2cc;}
+  .ya-title{ border-bottom: 2px solid #CCCCCC;}
+  .ya-note{border:2px solid #CCCCCC;  @include border-radius(15px); padding:15px; background:#ffffff; margin:0 0 10px 0;.ya-button-row{text-align:left !important;}}
+  .ya-file{height:auto;}
+  .ya-profile-image{max-width:240px;margin: 0 auto;}
+  .ya-button-row-center{text-align:center;}
+  .ya-add-location-panel{
+    .ya-left-column{@include makeFluidColumn(8); @media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-right-column{@include makeFluidColumn(4); @media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-button-row{ @media (max-width:767px){text-align:center;}}
+  }/*end of ya-add-location-panel*/
+
+  .ya-edit-school-profile-panel{
+  .ya-left-column{@include makeFluidColumn(8); @media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-right-column{@include makeFluidColumn(4);@media (max-width:767px){@include makeFluidColumn(12,0,0); }
+    .ya-button-row{text-align:center;}
+    }
+    
+  }/* end of ya-edit-school-profile-panel*/
+
+  .ya-two-column-row{
+     @include makeFluidRow();
+    .ya-column-1{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+    .ya-column-2{@include makeFluidColumn(6);@media (max-width:767px){@include makeFluidColumn(12,0,0); }}
+  }
+  .ya-edit-school-profile-panel{
+   .ya-button-row{ @media (max-width:767px){text-align:center;}}
+  }
+
+}/*end of additional panel*/
+
+/*Global*/
+.ya-astrix{color:$maroon; font-size: 20px;    font-weight: normal;    margin-left: 5px;}
+.ya-show-link-icon{display: inline-block;
+    line-height: normal;
+    margin: 0 5px 0 0 !important;}
+
+.ya-help-icon {
+  color: $yellow !important;
+}
+
+$icon_font_size: 20px;
+span[data-icon] {
+  font-size: $icon_font_size;
+  margin-left: 10px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.ya-button-row
+{
+ @media (max-width: 767px){text-align:center;}
+}
+.ya-label {font-family: ProximaNova-Bold,arial,sans-sarif;}
+.ya-value {font-family: ProximaNova-Regular,arial,sans-sarif;}
+.ya-link{cursor:pointer;}
+/**/
+
+}/*end of main*/
+
+/********/
+.ya-manage-school {
+    padding: $margin_padding * 2;
+  @media (max-width: 767px) {
+    padding: $margin_padding * 2 $margin_padding;
+  } 
+} 
+/********/
