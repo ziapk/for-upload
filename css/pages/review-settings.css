@@ -1,0 +1,126 @@
+/* ####################################################
+NOTE
+scss file for review
+###################################################
+*/
+/* line 10, ../../css-src/pages/review-settings.scss */
+.ya-review-section {
+  margin-top: 30px;
+}
+/* line 12, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list {
+  margin: 0;
+  list-style: none outside none;
+}
+/* line 15, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item {
+  border-top: 1px solid #999;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 15px;
+}
+/* line 21, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-subject {
+  width: 100%;
+  display: inline-block;
+  background-color: #eee;
+}
+@media (max-width: 460px) {
+  /* line 25, ../../css-src/pages/review-settings.scss */
+  .ya-review-section .ya-review-list .ya-review-item .ya-review-item-subject h2 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 460px) {
+  /* line 30, ../../css-src/pages/review-settings.scss */
+  .ya-review-section .ya-review-list .ya-review-item .ya-review-item-subject h3 {
+    font-size: 16px;
+  }
+}
+/* line 35, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-subject > * {
+  padding-left: 8px;
+}
+/* line 39, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings {
+  margin: 15px 0 15px 5%;
+}
+/* line 41, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options {
+  width: 100%;
+  *zoom: 1;
+  margin-bottom: 15px;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options:before, .ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options:after {
+  clear: both;
+}
+/* line 46, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-items,
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-visible,
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-hidden {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-items:first-child,
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-visible:first-child,
+.ya-review-section .ya-review-list .ya-review-item .ya-review-item-settings .ya-review-item-settings-options .ya-option-hidden:first-child {
+  margin-left: 0;
+}
+/* line 51, ../../css-src/pages/review-settings.scss */
+.ya-review-section .ya-review-list .ya-review-item .ya-review-number {
+  float: left;
+  font-size: 19px;
+  font-weight: bold;
+  width: 5%;
+  margin-top: 12px;
+}
+@media (max-width: 767px) {
+  /* line 51, ../../css-src/pages/review-settings.scss */
+  .ya-review-section .ya-review-list .ya-review-item .ya-review-number {
+    font-size: 16px;
+    margin-top: 9px;
+    width: 40px;
+  }
+}
+
+/* line 67, ../../css-src/pages/review-settings.scss */
+.ya-reivew-setting-btn-list {
+  margin-left: 5%;
+  *zoom: 1;
+  list-style: none outside none;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-reivew-setting-btn-list:before, .ya-reivew-setting-btn-list:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-reivew-setting-btn-list:after {
+  clear: both;
+}
+/* line 71, ../../css-src/pages/review-settings.scss */
+.ya-reivew-setting-btn-list li {
+  float: left;
+  margin: 0 13px 0 0;
+}
+
+/* line 77, ../../css-src/pages/review-settings.scss */
+input[type="radio"] {
+  margin: 4px 5px 0;
+  -webkit-appearance: radio;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  vertical-align: top;
+}

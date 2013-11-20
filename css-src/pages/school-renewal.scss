@@ -1,0 +1,306 @@
+/* ####################################################
+NOTE
+scss file for review
+###################################################
+*/
+
+@import "../variables/variables";
+@import "../variables/mixins";
+$margin_padding: $defaultMargin + 5px;
+$yellow: #E5A053;
+$lead_font_size: 16px;
+
+.ya-main-content{
+	padding:20px;
+}
+.ya-article {
+    @include makeFluidRow();
+    .ya-main-section {
+        @include makeFluidColumn(9);
+		@media (max-width: 979px) {
+			@include makeFluidColumn(12, 0, 0);
+		}
+    }
+    .ya-right-sidebar {
+        @include makeFluidColumn(3);
+    }
+}
+
+
+.ya-school-renew-header {
+    @include makeFluidRow();
+    margin-bottom: $margin_padding * 2;
+    .ya-school-renew-header-left {
+        @include makeFluidColumn(3);
+    }
+    .ya-school-renew-header-right {
+      @include makeFluidColumn(9);
+  		@media (max-width: 767px) {
+  			@include makeFluidColumn(12, 0, 0);
+  		}
+      > h3 {
+        @media (max-width: 767px) {
+         font-size: 17px;
+        }
+      }
+    }
+}
+
+
+.ya-school-renew {
+    padding: $margin_padding * 2;
+	@media (max-width: 767px) {
+		padding: $margin_padding * 2 $margin_padding;
+	}
+	
+
+}
+.ya-annual-costs {
+  background-color: #fff9e6;  
+  border: 2px solid #999999;   
+  border-radius: 3px;
+  padding: $margin_padding;
+  @media (max-width: 767px) {
+    padding: 6px 10px;
+  }
+  .ya-section-content {
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+  span[data-icon] {
+    margin: 0 0 0 5px;
+    color: #4E453E;
+    font-size: 16px;
+  }
+  h3 {
+    @media (max-width: 767px) {
+      font-size: 17px;
+    }
+  }
+}
+.ya-school-renew-block {
+  @include makeFluidRow();
+  margin-bottom: $margin_padding;
+  position: relative;
+}
+
+.ya-help-icon {
+  color: $yellow !important;
+}
+
+$icon_font_size: 20px;
+span[data-icon] {
+  font-size: $icon_font_size;
+  margin: 10px;
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+.ya-school-renewal-date-block {
+  margin: $margin_padding * 2 0;
+  display: inline-block;
+  width: 100%;
+  .ya-school-renewal-date {
+    @include makeFluidColumn(9);
+    @media (max-width: 767px) {
+      @include makeFluidColumn(12);
+    }
+    .ya-school-renewal-date-label {
+      @include makeFluidColumn(3);
+      @media (max-width: 767px) {
+        @include makeFluidColumn(6);
+      }
+    }
+    .ya-school-renewal-date-value {
+      @include makeFluidColumn(9);
+      @media (max-width: 767px) {
+        @include makeFluidColumn(6);
+      }
+      .ya-action {
+        cursor: pointer;
+      }
+    }
+  }
+}
+.ya-school-renew-paybtn-region {
+    @media (max-width: 767px) {
+      text-align: center;
+      .ya-school-renew-paybtn {
+        float: none;
+      }
+    }
+}
+.ya-school-renew-paybtn {
+  margin-top: 38px;
+}
+.ya-total-calc-region {
+  color: $yellow;
+  font-weight: bold;
+  .ya-total-label {
+    margin-right: $margin_padding * 1.5;
+  }
+}
+
+.ui-datepicker {
+  font-size: 12px;
+}
+.ui-datepicker-trigger {
+  float: left;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+.ya-track-name {
+  @include makeFluidColumn(4);
+  img {
+    float: left;
+    margin-right: 10px;
+    @media (max-width: 767px) {
+      @include makeFluidColumn(6);
+      width: 70px;
+    }
+  }
+  @media (max-width: 767px) {
+    @include makeFluidColumn(6);
+  }
+}
+.ya-track-Status {
+  @include makeFluidColumn(4);
+}
+.ya-item-description {
+  @include makeFluidColumn(3);
+  @media (max-width: 767px) {
+    @include makeFluidColumn(4);
+  }
+} 
+.ya-amount-money {
+  @include makeFluidColumn(1);
+  margin-top: 10px;
+  @media (max-width: 767px) {
+    @include makeFluidColumn(2);
+  }
+}
+.ya-school-renew-section-bar {
+	color: $red;
+	@include clearfix(); // deleted border Color;
+	padding: 0 $margin_padding;
+	margin: $margin_padding * 2 0;
+	border: 1px solid $red; // color red and decreased its width.
+	line-height:24px;
+	@include  border-radius(4px); // use mixins and increased radius value.
+	.ya-plus-minus-icon { // this style overridden by previous span[data-icon]. so i moved in inside the parent selector.
+		margin: 0; // changed margin 10px to 0.
+		cursor: pointer;
+		font-size:40px;
+		line-height:24px;
+	  }
+}
+
+.ya-align-middle {
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+.ya-do-not-renew {
+  margin-left: $margin_padding;
+  @media (max-width: 767px) {
+   margin-left: 0;
+  }
+}
+.ya-lead {
+  font-size: $lead_font_size;
+  font-weight: bold;
+  margin-top: $margin_padding / 2;
+  display: inline-block;
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+.ya-grey-border-bottom {
+  padding-bottom: 10px;
+  margin: $margin_padding 0;
+  border-bottom: 2px solid #ccc;
+}
+.ya-black-border-bottom {
+  @extend .ya-grey-border-bottom;
+  border-bottom: 2px solid #333;
+}
+.ya-position-right-bottom {
+    bottom: 10px;
+    position: absolute;
+    right: 0;
+}
+
+.ya-tracks-section {
+  margin-bottom: $margin_padding;
+  @include clearfix();
+  .ya-alliance-active-rys {
+    @include makeFluidColumn(9);
+  }
+
+}
+.ya-locaions-section {
+  @extend .ya-tracks-section;
+  .ya-new-location {
+    background-color: #8FB576;
+    padding: 5px $margin_padding * 2;
+    border-radius: 8px;
+  }
+  .ya-primary-location {
+    @extend .ya-new-location;
+    background-color: #9fc5f8;
+    padding: 5px $margin_padding;
+  }
+}
+.ya-trainers-section {
+  @extend .ya-tracks-section;
+  .ya-trainer-include-container {
+    @include makeFluidRow();
+    .ya-trainer-include {
+      @include makeFluidColumn(1);
+      text-align: center;
+      margin-top: 1px;
+      font-size: 13px;
+      @media (max-width: 767px) {
+        @include makeFluidColumn(2);
+      } 
+    }
+    .ya-trainer-include-content {
+      @include makeFluidColumn(11);
+      @media (max-width: 767px) {
+        @include makeFluidColumn(10);
+      }
+      .ya-margin-left {
+        @media (max-width: 767px) {
+          margin-left: 0;
+        }
+      } 
+    }
+  }
+}
+.ya-green-font {
+  color: #119e20;
+}
+.ya-grey-font {
+  color: #666768
+}
+.ya-margin-left {
+  margin-left: $margin_padding * 2;
+}
+.ya-smallpos {
+  display: inline-block;
+   margin: 5px 0 0 0;
+}
+.ya-mediumpos {
+  display: inline-block;
+   margin: 10px 0 0 0;
+}
+
+// Added New Style for spacing.
+.ya-box-one{
+	margin-bottom:20px;
+}
+.ya-box-two{
+	@extend .ya-box-one;
+}

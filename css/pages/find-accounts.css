@@ -1,0 +1,121 @@
+/* ####################################################
+SCSS file for Staff Find Accounts
+###################################################
+*/
+/* line 7, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts {
+  padding: 0 20px;
+}
+@media (max-width: 767px) {
+  /* line 7, ../../css-src/pages/find-accounts.scss */
+  .ya-staff-find-accounts {
+    padding: 0 15px;
+  }
+}
+/* line 16, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .btn-large span[data-icon] {
+  font-size: 24px;
+  top: 2px;
+}
+/* line 22, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts input[type="text"] {
+  width: 92%;
+}
+/* line 25, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts select {
+  width: 100%;
+}
+/* line 29, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .nav-tabs {
+  margin: 30px 0;
+}
+/* line 32, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .nav-tabs li {
+  width: 25%;
+  text-align: center;
+}
+/* line 35, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .nav-tabs li a {
+  font-size: 20px;
+}
+/* line 41, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .ya-button-column {
+  padding-top: 15px;
+}
+/* line 44, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .ya-button-column button {
+  margin-bottom: 20px;
+}
+/* line 48, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .nav-list a {
+  margin-bottom: 0;
+}
+/* line 51, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .btn-navbar {
+  padding: 6px 10px;
+  margin: 10px;
+}
+/* line 55, ../../css-src/pages/find-accounts.scss */
+.ya-staff-find-accounts .btn-navbar .icon-bar {
+  background-color: #F5F5F5;
+  margin-right: 0;
+  position: static;
+  border-radius: 1px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  height: 2px;
+  width: 18px;
+}
+
+/* line 68, ../../css-src/pages/find-accounts.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 5px 0 0;
+}
+
+/* line 71, ../../css-src/pages/find-accounts.scss */
+.btn {
+  min-width: inherit;
+}
+
+@media (max-width: 767px) {
+  /* line 75, ../../css-src/pages/find-accounts.scss */
+  .ya-staff-find-accounts .nav-tabs li {
+    float: none;
+    width: auto;
+    margin: 0;
+  }
+
+  /* line 82, ../../css-src/pages/find-accounts.scss */
+  .nav-tabs > .active > a,
+  .nav-tabs > .active > a:hover,
+  nav-tabs > .active > a:focus {
+    border: 1px solid #ddd;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+  }
+
+  /* line 88, ../../css-src/pages/find-accounts.scss */
+  .ya-staff-find-accounts input[type="text"] {
+    width: 100%;
+    height: auto;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+/* line 97, ../../css-src/pages/find-accounts.scss */
+.navbar .nav {
+  float: none;
+}
+/* line 99, ../../css-src/pages/find-accounts.scss */
+.navbar .nav li {
+  float: none;
+}
+
+/* line 104, ../../css-src/pages/find-accounts.scss */
+.riSingle {
+  width: 100% !important;
+  display: block !important;
+}

@@ -2,15 +2,13 @@
 SCSS file for Staff Find Accounts
 ###################################################
 */
-
-// @import "vendor/responsive";
-
-// REPLACE THIS WHEN THIS PAGE GETS ADDED TO REAL PAGE
-// .main-box {
-//   padding:40px 30px;
-// }
-
+@import "../variables/variables";
+@import "../variables/mixins";
 .ya-staff-find-accounts{
+	padding:0 20px;
+	@include for-screen(mobile-screen){
+		padding:0 15px;
+	}
 	
 	// TODO: DELETE THIS WHEN YOU HAVE A STANDARD WAY OF HANDLING THIS SITEWIDE
 	//  
@@ -102,4 +100,8 @@ input[type="checkbox"]{
 			float:none;
 		}
 	}
+}
+.riSingle{
+	width:100% !important;
+	display:block !important;
 }

@@ -1,0 +1,238 @@
+/* ####################################################
+NOTE
+scss file for school review
+###################################################
+*/
+/* line 11, ../../css-src/pages/school-reviews.scss */
+.ya-article {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-article:before, .ya-article:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-article:after {
+  clear: both;
+}
+/* line 13, ../../css-src/pages/school-reviews.scss */
+.ya-article .ya-main-section {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-article .ya-main-section:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 13, ../../css-src/pages/school-reviews.scss */
+  .ya-article .ya-main-section {
+    float: left;
+    margin-left: 0%;
+    width: 99.99979%;
+    *width: 99.94659%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-article .ya-main-section:first-child {
+    margin-left: 0;
+  }
+}
+/* line 19, ../../css-src/pages/school-reviews.scss */
+.ya-article .ya-sidebar {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-article .ya-sidebar:first-child {
+  margin-left: 0;
+}
+
+/* line 27, ../../css-src/pages/school-reviews.scss */
+.ya-reviews {
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  /* line 27, ../../css-src/pages/school-reviews.scss */
+  .ya-reviews {
+    padding: 30px 15px;
+  }
+}
+
+/* line 34, ../../css-src/pages/school-reviews.scss */
+.ya-overall-rating {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-overall-rating:before, .ya-overall-rating:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-overall-rating:after {
+  clear: both;
+}
+/* line 36, ../../css-src/pages/school-reviews.scss */
+.ya-overall-rating .ya-star {
+  font-size: 17px;
+}
+
+/* line 41, ../../css-src/pages/school-reviews.scss */
+.ya-widget h3 {
+  border: none;
+  margin: 0 0 15px;
+}
+/* line 44, ../../css-src/pages/school-reviews.scss */
+.ya-widget h3 b, .ya-widget h3 strong {
+  font-weight: normal;
+}
+
+/* line 49, ../../css-src/pages/school-reviews.scss */
+.ya-select {
+  background-image: linear-gradient(to bottom, #efefef 0%, #ffffff 100%);
+  font-size: 13px;
+  max-width: 230px;
+  width: auto;
+}
+
+/* line 57, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-filter {
+  margin-top: -4px;
+}
+/* line 60, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .input-append {
+  margin-top: 6px;
+}
+@media (max-width: 979px) {
+  /* line 60, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append {
+    width: 230px !important;
+    margin-top: 7px !important;
+  }
+  /* line 64, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append .input-small {
+    width: 177px;
+  }
+}
+@media (max-width: 979px) and (max-width: 500px) {
+  /* line 64, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append .input-small {
+    width: 84px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 60, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append {
+    width: 137px !important;
+  }
+}
+/* line 75, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .input-append .btn {
+  margin-top: 0;
+}
+/* line 79, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls {
+  width: 100%;
+  display: inline-block;
+}
+/* line 82, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls > * {
+  margin-left: 0.6%;
+}
+@media (max-width: 1250px) {
+  /* line 82, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls > * {
+    margin-left: 0;
+  }
+}
+@media (max-width: 979px) {
+  /* line 82, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls > * {
+    width: 250px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+}
+@media (max-width: 500px) {
+  /* line 82, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls > * {
+    width: 137px;
+  }
+}
+/* line 98, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls > *:first-child {
+  margin-left: 0;
+}
+@media (max-width: 979px) {
+  /* line 102, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls > button.btn {
+    width: 230px;
+  }
+}
+@media (max-width: 500px) {
+  /* line 102, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls > button.btn {
+    width: 136px;
+  }
+}
+
+/* line 112, ../../css-src/pages/school-reviews.scss */
+.ya-input-xmini {
+  width: 40px;
+  height: 30px;
+}
+
+/* line 116, ../../css-src/pages/school-reviews.scss */
+.btn.hidden-desktop {
+  margin-top: 0;
+}
+
+/* line 121, ../../css-src/pages/school-reviews.scss */
+.ya-latest-comments-items {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-latest-comments-items:before, .ya-latest-comments-items:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-latest-comments-items:after {
+  clear: both;
+}
+/* line 123, ../../css-src/pages/school-reviews.scss */
+.ya-latest-comments-items .ya-latest-comments-item {
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-latest-comments-items .ya-latest-comments-item:first-child {
+  margin-left: 0;
+}
+@media (max-width: 979px) {
+  /* line 123, ../../css-src/pages/school-reviews.scss */
+  .ya-latest-comments-items .ya-latest-comments-item {
+    float: left;
+    margin-left: 0%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+    margin-top: 13px;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-latest-comments-items .ya-latest-comments-item:first-child {
+    margin-left: 0;
+  }
+}

@@ -1,0 +1,141 @@
+/* ####################################################
+NOTE
+scss file for school review
+###################################################
+*/
+
+@import "../variables/variables";
+@import "../variables/mixins";
+
+
+.ya-article {
+    @include makeFluidRow();
+    .ya-main-section {
+        @include makeFluidColumn(9);
+		@media (max-width: 767px) {
+			@include makeFluidColumn(12, 0, 0);
+		}
+    }
+    .ya-sidebar {
+        @include makeFluidColumn(3);
+    }
+}
+
+
+$margin_padding: 15px;
+$xmin_size: 40px;
+.ya-reviews {
+    padding: $margin_padding * 2;
+	@media (max-width: 767px) {
+		padding: $margin_padding * 2 $margin_padding;
+	}
+
+}
+.ya-overall-rating {
+    @include makeFluidRow();
+	.ya-star {
+		font-size: 17px;
+	}
+}
+.ya-widget {
+	h3 {
+		border: none;
+		margin: 0 0 $margin_padding;
+		b, strong{
+			font-weight:normal;
+		}
+	}
+}
+.ya-select {
+    background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 100%);
+    font-size: 13px;
+    max-width: 230px;
+    width: auto;
+}
+
+.ya-all-reviews {
+	.ya-filter {
+	     margin-top: -4px;
+	}
+	.input-append {
+		margin-top: 6px;	
+		@media (max-width: 979px) {
+			width: 230px !important;
+			.input-small {
+			    width: 177px;
+				@media (max-width: 500px) {
+					width: 84px;
+				}	
+			}
+			margin-top: 7px !important;
+		}
+		@media (max-width: 500px) {
+			width: 137px !important;
+		}	
+		.btn {
+			margin-top: 0;	
+		}
+	}
+	.ya-all-review-controls {
+		width:100%;
+		display:inline-block;
+		> * {
+				margin-left:0.6%;
+				@media (max-width: 1250px) {
+					margin-left:0;
+	
+				}
+				@media (max-width: 979px) {
+					width: 250px;
+					margin-left: 0;
+					margin-top: 0;
+	
+				}
+				@media (max-width: 500px) {
+					width: 137px;
+	
+				}
+				&:first-child {
+				    margin-left: 0;
+				}
+			}
+		> button.btn {
+			@media (max-width: 979px) {
+				width: 230px;
+			}
+			@media (max-width: 500px) {
+				width: 136px;
+			}
+		}			
+	}	
+}
+.ya-input-xmini {
+	width: $xmin_size;
+	height: 30px; 
+}
+.btn.hidden-desktop {
+    margin-top: 0;
+}
+
+
+.ya-latest-comments-items {
+    @include makeFluidRow();
+    .ya-latest-comments-item {
+        @include makeFluidColumn(6);
+		@media (max-width: 979px) {
+			 @include makeFluidColumn(12, 0, 0);
+			 margin-left:0;
+			 margin-top:13px;
+		}
+    }
+}
+
+
+
+
+
+
+
+
+
+

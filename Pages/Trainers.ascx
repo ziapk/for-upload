@@ -1,7 +1,6 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Trainers.ascx.cs" Inherits="Christoc.Modules.SchoolRenewal.Pages.Trainers" %>
 <asp:Panel runat="server" ID="PnlTrainer">
-    <div style="float: left; margin-bottom: 20px; width: 100%;">
-        <div style="float: left; width: 100%" class="ya-section-content ya-grey-border-bottom">
+        <div class="ya-section-content">
             <div class="ya-section-content">
                 <div class="pull-right visible-phone">
                     <span>
@@ -150,5 +149,4 @@
             <span>$<asp:Label ID="LBLTotal" runat="server"></asp:Label>
             </span>
         </div>
-    </div>
 </asp:Panel>

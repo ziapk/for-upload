@@ -1,0 +1,650 @@
+/* ####################################################
+NOTE
+scss file for review
+###################################################
+*/
+/* line 13, ../../css-src/pages/school-renewal.scss */
+.ya-main-content {
+  padding: 20px;
+}
+
+/* line 16, ../../css-src/pages/school-renewal.scss */
+.ya-article {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-article:before, .ya-article:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-article:after {
+  clear: both;
+}
+/* line 18, ../../css-src/pages/school-renewal.scss */
+.ya-article .ya-main-section {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-article .ya-main-section:first-child {
+  margin-left: 0;
+}
+@media (max-width: 979px) {
+  /* line 18, ../../css-src/pages/school-renewal.scss */
+  .ya-article .ya-main-section {
+    float: left;
+    margin-left: 0%;
+    width: 99.99979%;
+    *width: 99.94659%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-article .ya-main-section:first-child {
+    margin-left: 0;
+  }
+}
+/* line 24, ../../css-src/pages/school-renewal.scss */
+.ya-article .ya-right-sidebar {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-article .ya-right-sidebar:first-child {
+  margin-left: 0;
+}
+
+/* line 30, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-header {
+  width: 100%;
+  *zoom: 1;
+  margin-bottom: 30px;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-header:before, .ya-school-renew-header:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-header:after {
+  clear: both;
+}
+/* line 33, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-header .ya-school-renew-header-left {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-school-renew-header .ya-school-renew-header-left:first-child {
+  margin-left: 0;
+}
+/* line 36, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-header .ya-school-renew-header-right {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-school-renew-header .ya-school-renew-header-right:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 36, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renew-header .ya-school-renew-header-right {
+    float: left;
+    margin-left: 0%;
+    width: 99.99979%;
+    *width: 99.94659%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-school-renew-header .ya-school-renew-header-right:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 41, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renew-header .ya-school-renew-header-right > h3 {
+    font-size: 17px;
+  }
+}
+
+/* line 50, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew {
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  /* line 50, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renew {
+    padding: 30px 15px;
+  }
+}
+
+/* line 58, ../../css-src/pages/school-renewal.scss */
+.ya-annual-costs {
+  background-color: #fff9e6;
+  border: 2px solid #999999;
+  border-radius: 3px;
+  padding: 15px;
+}
+@media (max-width: 767px) {
+  /* line 58, ../../css-src/pages/school-renewal.scss */
+  .ya-annual-costs {
+    padding: 6px 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 66, ../../css-src/pages/school-renewal.scss */
+  .ya-annual-costs .ya-section-content {
+    display: none;
+  }
+}
+/* line 71, ../../css-src/pages/school-renewal.scss */
+.ya-annual-costs span[data-icon] {
+  margin: 0 0 0 5px;
+  color: #4E453E;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  /* line 76, ../../css-src/pages/school-renewal.scss */
+  .ya-annual-costs h3 {
+    font-size: 17px;
+  }
+}
+
+/* line 82, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-block {
+  width: 100%;
+  *zoom: 1;
+  margin-bottom: 15px;
+  position: relative;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-block:before, .ya-school-renew-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-block:after {
+  clear: both;
+}
+
+/* line 88, ../../css-src/pages/school-renewal.scss */
+.ya-help-icon {
+  color: #e5a053 !important;
+}
+
+/* line 93, ../../css-src/pages/school-renewal.scss */
+span[data-icon] {
+  font-size: 20px;
+  margin: 10px;
+}
+@media (max-width: 767px) {
+  /* line 93, ../../css-src/pages/school-renewal.scss */
+  span[data-icon] {
+    font-size: 18px;
+  }
+}
+
+/* line 100, ../../css-src/pages/school-renewal.scss */
+.ya-school-renewal-date-block {
+  margin: 30px 0;
+  display: inline-block;
+  width: 100%;
+}
+/* line 104, ../../css-src/pages/school-renewal.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 104, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date:first-child {
+    margin-left: 0;
+  }
+}
+/* line 109, ../../css-src/pages/school-renewal.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-label {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-label:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 109, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-label {
+    float: left;
+    margin-left: 2.12765%;
+    width: 48.93607%;
+    *width: 48.88287%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-label:first-child {
+    margin-left: 0;
+  }
+}
+/* line 115, ../../css-src/pages/school-renewal.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-value {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-value:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 115, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-value {
+    float: left;
+    margin-left: 2.12765%;
+    width: 48.93607%;
+    *width: 48.88287%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-value:first-child {
+    margin-left: 0;
+  }
+}
+/* line 120, ../../css-src/pages/school-renewal.scss */
+.ya-school-renewal-date-block .ya-school-renewal-date .ya-school-renewal-date-value .ya-action {
+  cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  /* line 126, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renew-paybtn-region {
+    text-align: center;
+  }
+  /* line 129, ../../css-src/pages/school-renewal.scss */
+  .ya-school-renew-paybtn-region .ya-school-renew-paybtn {
+    float: none;
+  }
+}
+
+/* line 134, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-paybtn {
+  margin-top: 38px;
+}
+
+/* line 137, ../../css-src/pages/school-renewal.scss */
+.ya-total-calc-region {
+  color: #e5a053;
+  font-weight: bold;
+}
+/* line 140, ../../css-src/pages/school-renewal.scss */
+.ya-total-calc-region .ya-total-label {
+  margin-right: 22.5px;
+}
+
+/* line 145, ../../css-src/pages/school-renewal.scss */
+.ui-datepicker {
+  font-size: 12px;
+}
+
+/* line 148, ../../css-src/pages/school-renewal.scss */
+.ui-datepicker-trigger {
+  float: left;
+  margin: 4px 5px;
+  cursor: pointer;
+}
+
+/* line 153, ../../css-src/pages/school-renewal.scss */
+.ya-track-name {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-track-name:first-child {
+  margin-left: 0;
+}
+/* line 155, ../../css-src/pages/school-renewal.scss */
+.ya-track-name img {
+  float: left;
+  margin-right: 10px;
+}
+@media (max-width: 767px) {
+  /* line 155, ../../css-src/pages/school-renewal.scss */
+  .ya-track-name img {
+    float: left;
+    margin-left: 2.12765%;
+    width: 48.93607%;
+    *width: 48.88287%;
+    width: 70px;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-track-name img:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 153, ../../css-src/pages/school-renewal.scss */
+  .ya-track-name {
+    float: left;
+    margin-left: 2.12765%;
+    width: 48.93607%;
+    *width: 48.88287%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-track-name:first-child {
+    margin-left: 0;
+  }
+}
+
+/* line 167, ../../css-src/pages/school-renewal.scss */
+.ya-track-Status {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-track-Status:first-child {
+  margin-left: 0;
+}
+
+/* line 170, ../../css-src/pages/school-renewal.scss */
+.ya-item-description {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-item-description:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 170, ../../css-src/pages/school-renewal.scss */
+  .ya-item-description {
+    float: left;
+    margin-left: 2.12765%;
+    width: 31.91483%;
+    *width: 31.86163%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-item-description:first-child {
+    margin-left: 0;
+  }
+}
+
+/* line 176, ../../css-src/pages/school-renewal.scss */
+.ya-amount-money {
+  float: left;
+  margin-left: 2.12765%;
+  width: 6.38297%;
+  *width: 6.32977%;
+  margin-top: 10px;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-amount-money:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 176, ../../css-src/pages/school-renewal.scss */
+  .ya-amount-money {
+    float: left;
+    margin-left: 2.12765%;
+    width: 14.89359%;
+    *width: 14.84039%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-amount-money:first-child {
+    margin-left: 0;
+  }
+}
+
+/* line 183, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-section-bar {
+  color: #b4341d;
+  *zoom: 1;
+  padding: 0 15px;
+  margin: 30px 0;
+  border: 1px solid #b4341d;
+  line-height: 24px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-section-bar:before, .ya-school-renew-section-bar:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-school-renew-section-bar:after {
+  clear: both;
+}
+/* line 191, ../../css-src/pages/school-renewal.scss */
+.ya-school-renew-section-bar .ya-plus-minus-icon {
+  margin: 0;
+  cursor: pointer;
+  font-size: 40px;
+  line-height: 24px;
+}
+
+/* line 199, ../../css-src/pages/school-renewal.scss */
+.ya-align-middle {
+  height: 100px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* line 204, ../../css-src/pages/school-renewal.scss */
+.ya-do-not-renew {
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  /* line 204, ../../css-src/pages/school-renewal.scss */
+  .ya-do-not-renew {
+    margin-left: 0;
+  }
+}
+
+/* line 210, ../../css-src/pages/school-renewal.scss */
+.ya-lead {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7.5px;
+  display: inline-block;
+}
+@media (max-width: 767px) {
+  /* line 210, ../../css-src/pages/school-renewal.scss */
+  .ya-lead {
+    font-size: 14px;
+    line-height: 1;
+  }
+}
+
+/* line 220, ../../css-src/pages/school-renewal.scss */
+.ya-grey-border-bottom, .ya-black-border-bottom {
+  padding-bottom: 10px;
+  margin: 15px 0;
+  border-bottom: 2px solid #ccc;
+}
+
+/* line 225, ../../css-src/pages/school-renewal.scss */
+.ya-black-border-bottom {
+  border-bottom: 2px solid #333;
+}
+
+/* line 229, ../../css-src/pages/school-renewal.scss */
+.ya-position-right-bottom {
+  bottom: 10px;
+  position: absolute;
+  right: 0;
+}
+
+/* line 235, ../../css-src/pages/school-renewal.scss */
+.ya-tracks-section, .ya-locaions-section, .ya-trainers-section {
+  margin-bottom: 15px;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-tracks-section:before, .ya-locaions-section:before, .ya-trainers-section:before, .ya-tracks-section:after, .ya-locaions-section:after, .ya-trainers-section:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-tracks-section:after, .ya-locaions-section:after, .ya-trainers-section:after {
+  clear: both;
+}
+/* line 238, ../../css-src/pages/school-renewal.scss */
+.ya-tracks-section .ya-alliance-active-rys, .ya-locaions-section .ya-alliance-active-rys, .ya-trainers-section .ya-alliance-active-rys {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-tracks-section .ya-alliance-active-rys:first-child, .ya-locaions-section .ya-alliance-active-rys:first-child, .ya-trainers-section .ya-alliance-active-rys:first-child {
+  margin-left: 0;
+}
+
+/* line 245, ../../css-src/pages/school-renewal.scss */
+.ya-locaions-section .ya-new-location, .ya-locaions-section .ya-primary-location {
+  background-color: #8FB576;
+  padding: 5px 30px;
+  border-radius: 8px;
+}
+/* line 250, ../../css-src/pages/school-renewal.scss */
+.ya-locaions-section .ya-primary-location {
+  background-color: #9fc5f8;
+  padding: 5px 15px;
+}
+
+/* line 258, ../../css-src/pages/school-renewal.scss */
+.ya-trainers-section .ya-trainer-include-container {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-trainers-section .ya-trainer-include-container:before, .ya-trainers-section .ya-trainer-include-container:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-trainers-section .ya-trainer-include-container:after {
+  clear: both;
+}
+/* line 260, ../../css-src/pages/school-renewal.scss */
+.ya-trainers-section .ya-trainer-include-container .ya-trainer-include {
+  float: left;
+  margin-left: 2.12765%;
+  width: 6.38297%;
+  *width: 6.32977%;
+  text-align: center;
+  margin-top: 1px;
+  font-size: 13px;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-trainers-section .ya-trainer-include-container .ya-trainer-include:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 260, ../../css-src/pages/school-renewal.scss */
+  .ya-trainers-section .ya-trainer-include-container .ya-trainer-include {
+    float: left;
+    margin-left: 2.12765%;
+    width: 14.89359%;
+    *width: 14.84039%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-trainers-section .ya-trainer-include-container .ya-trainer-include:first-child {
+    margin-left: 0;
+  }
+}
+/* line 269, ../../css-src/pages/school-renewal.scss */
+.ya-trainers-section .ya-trainer-include-container .ya-trainer-include-content {
+  float: left;
+  margin-left: 2.12765%;
+  width: 91.48917%;
+  *width: 91.43597%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-trainers-section .ya-trainer-include-container .ya-trainer-include-content:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 269, ../../css-src/pages/school-renewal.scss */
+  .ya-trainers-section .ya-trainer-include-container .ya-trainer-include-content {
+    float: left;
+    margin-left: 2.12765%;
+    width: 82.97855%;
+    *width: 82.92535%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-trainers-section .ya-trainer-include-container .ya-trainer-include-content:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 274, ../../css-src/pages/school-renewal.scss */
+  .ya-trainers-section .ya-trainer-include-container .ya-trainer-include-content .ya-margin-left {
+    margin-left: 0;
+  }
+}
+
+/* line 282, ../../css-src/pages/school-renewal.scss */
+.ya-green-font {
+  color: #119e20;
+}
+
+/* line 285, ../../css-src/pages/school-renewal.scss */
+.ya-grey-font {
+  color: #666768;
+}
+
+/* line 288, ../../css-src/pages/school-renewal.scss */
+.ya-margin-left {
+  margin-left: 30px;
+}
+
+/* line 291, ../../css-src/pages/school-renewal.scss */
+.ya-smallpos {
+  display: inline-block;
+  margin: 5px 0 0 0;
+}
+
+/* line 295, ../../css-src/pages/school-renewal.scss */
+.ya-mediumpos {
+  display: inline-block;
+  margin: 10px 0 0 0;
+}
+
+/* line 301, ../../css-src/pages/school-renewal.scss */
+.ya-box-one, .ya-box-two {
+  margin-bottom: 20px;
+}

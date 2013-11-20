@@ -5,6 +5,7 @@
 <%@ Register Src="~/DesktopModules/YA.Controls/Menus/SideMenu.ascx" TagPrefix="uc1" TagName="SideMenu" %>
 <%@ Register TagPrefix="telerik" Namespace="Telerik.Web.UI" Assembly="Telerik.Web.UI" %>
 <%@ Register TagPrefix="dnnn" Namespace="DotNetNuke.Web.Client.ClientResourceManagement" Assembly="DotNetNuke.Web.Client" %>
+<dnnn:DnnCssInclude runat="server" FilePath="css/pages/school-renewal.css" Priority="300" PathNameAlias="SkinPath"/>
 <dnnn:DnnJsInclude runat="server" FilePath="~/DesktopModules/YA.Client/viewmodels/school/schoolrenewal-viewmodels.js" Priority="140" />
 <dnnn:DnnJsInclude runat="server" FilePath="~/DesktopModules/YA.Client/viewmodels/locations/locations-viewmodels.js" Priority="150" />
 <dnnn:DnnJsInclude runat="server" FilePath="~/DesktopModules/YA.Client/viewmodels/locations/addlocation-viewmodels.js" Priority="150" />
@@ -112,7 +113,7 @@
         </div>
     </div>
     <div class="row-fluid">
-        <div class="span9">
+        <div class="span12">
             <div class="ya-school-renewal-date-block">
                 <h3>School Renewal Date</h3>
                 <div class="ya-school-renew-block ya-black-border-bottom">
@@ -142,7 +143,7 @@
                                 <%-- <input type="text" class="ya-datepicker input-small pull-left" />--%>
                                 <telerik:RadDatePicker ID="RdpDatePicker" runat="server" AutoPostBack="True" OnSelectedDateChanged="RdpDatePicker_OnSelectedDateChanged" CssClass="ya-datepicker input-small pull-left"></telerik:RadDatePicker>
                                 <span class="ya-action ya-smallpos">
-                                    <asp:LinkButton runat="server" ID="LBReset" Text="Reset to 1 year" OnClick="LBReset_OnClick"></asp:LinkButton>
+                                    <asp:LinkButton runat="server" ID="LBReset" Text="Reset to 1 year" CssClass="ya-action" OnClick="LBReset_OnClick"></asp:LinkButton>
                                 </span>
                             </div>
                         </div>
@@ -195,7 +196,7 @@
                 </div>
             </div>
         </div>
-        <!--span9 end -->
+        <!--span12 end -->
     </div>
     <!--row-fluid end -->
 </div>

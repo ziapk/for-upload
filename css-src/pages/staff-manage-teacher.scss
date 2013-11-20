@@ -1,52 +1,7 @@
+@import "../variables/variables";
 @import "../variables/mixins";
-
-
-// Clearfix
-// --------
-// For clearing floats like a boss h5bp.com/q
-@mixin clearfix {
-  *zoom: 1;
-  &:before,
-  &:after {
-    display: table;
-    content: "";
-    // Fixes Opera/contenteditable bug:
-    // http://nicolasgallagher.com/micro-clearfix-hack/#comment-36952
-    line-height: 0;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
-$maroon: #96171a;
-$blue:#3b237b;
-$blue2:#1e398d;
-$grey:#5f6a72;
-$white:#ffffff;
-$black:#000000;
-$grey2:#b4b3af;
+$maroon: #96171a; $blue:#3b237b; $blue2:#1e398d; $grey:#5f6a72; $white:#ffffff; $black:#000000; $grey2:#b4b3af; 
 $yellow: #E5A053;
-
-
-$gridFluidColumnWidth: 6.38298%;
-$gridFluidGutterWidth: 2.12766%;
-
-@mixin makeFluidRow() {
-  width: 100%;
-  @include clearfix();
-}
-@mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
-  float: left;
-  margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
-  width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
-  *width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1)) - 0.0532%;
-
-  &:first-child {
-        margin-left: 0;
-  }
-}
-
 
 /** Global Fonts **/
 $Normal: 'ProximaNova-Regular';
@@ -125,14 +80,15 @@ $PageHeading4: 18px $Semibold;
   }
 
   .ya-main-content{
-	/*@media (max-width:480px){
-		padding:20px 15px;
-	}
-	@media (min-width: 768px) and (max-width: 979px){
-		padding:20px 15px;
-	}*/
+	padding:20px;
+	@include for-screen(mobile-screen){padding:15px;} // Add for Spacing Haroon 18 Nov
   }
-
+	.input-append{
+		.btn{
+			margin-top:0;
+			height: 30px;
+		}
+	}
   @mixin ya-grey-border-bottom {
 		padding-bottom: 15px;
 		margin: $margin_padding 0;
@@ -257,7 +213,7 @@ $PageHeading4: 18px $Semibold;
 
 					.ya-datepicker{@include makeFluidColumn(9);}
 				}
-				.ya-filter-btn{margin:22px 0 0 0;}
+				.ya-filter-btn{margin:0 0 15px;}
 			}
 			.ya-activities-note{
 				@include makeFluidRow();

@@ -1,0 +1,1598 @@
+/** Global Fonts **/
+/* line 16, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-two-column-row {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-two-column-row:before, .ya-two-column-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-two-column-row:after {
+  clear: both;
+}
+/* line 18, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-two-column-row .ya-column-1 {
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-two-column-row .ya-column-1:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 18, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-two-column-row .ya-column-1 {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0 !important;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-two-column-row .ya-column-1:first-child {
+    margin-left: 0;
+  }
+}
+/* line 24, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-two-column-row .ya-column-2 {
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-two-column-row .ya-column-2:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 24, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-two-column-row .ya-column-2 {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0 !important;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-two-column-row .ya-column-2:first-child {
+    margin-left: 0;
+  }
+}
+
+/* line 43, ../../css-src/pages/staff-manage-teacher.scss */
+span[data-icon] {
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  /* line 43, ../../css-src/pages/staff-manage-teacher.scss */
+  span[data-icon] {
+    font-size: 18px;
+  }
+}
+
+/* line 57, ../../css-src/pages/staff-manage-teacher.scss */
+h1 {
+  font: 36px "ProximaNova-Semibold";
+}
+@media (max-width: 460px) {
+  /* line 57, ../../css-src/pages/staff-manage-teacher.scss */
+  h1 {
+    font-size: 25px;
+  }
+}
+
+/* line 63, ../../css-src/pages/staff-manage-teacher.scss */
+h2 {
+  font: 28px "ProximaNova-Semibold";
+}
+@media (max-width: 460px) {
+  /* line 63, ../../css-src/pages/staff-manage-teacher.scss */
+  h2 {
+    font-size: 21px;
+  }
+}
+
+/* line 69, ../../css-src/pages/staff-manage-teacher.scss */
+h3 {
+  font: 20px "ProximaNova-Semibold";
+}
+@media (max-width: 460px) {
+  /* line 69, ../../css-src/pages/staff-manage-teacher.scss */
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/* line 75, ../../css-src/pages/staff-manage-teacher.scss */
+h4 {
+  font: 18px "ProximaNova-Semibold";
+}
+@media (max-width: 460px) {
+  /* line 75, ../../css-src/pages/staff-manage-teacher.scss */
+  h4 {
+    font-size: 16px;
+  }
+}
+
+/* line 82, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-main-content {
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  /* line 82, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-main-content {
+    padding: 15px;
+  }
+}
+
+/* line 87, ../../css-src/pages/staff-manage-teacher.scss */
+.input-append .btn {
+  margin-top: 0;
+  height: 30px;
+}
+
+/* line 102, ../../css-src/pages/staff-manage-teacher.scss */
+.ui-datepicker {
+  font-size: 12px;
+}
+
+/* line 105, ../../css-src/pages/staff-manage-teacher.scss */
+.ui-datepicker-trigger {
+  display: inline-block;
+  margin: 4px 0 0 5px;
+  cursor: pointer;
+}
+
+/* line 114, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-left {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-left:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 114, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-left {
+    display: none;
+  }
+}
+/* line 117, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+  /**communication block end **/
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 117, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right:first-child {
+    margin-left: 0;
+  }
+}
+/* line 120, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-page-title {
+  padding-bottom: 10px;
+  color: #B4341D;
+  margin: 15px 0;
+  border-bottom: 2px solid #333;
+}
+/* line 121, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-alert {
+  margin-top: 15px;
+  background-color: #ffe599;
+  border: 2px solid #ffd966;
+  color: #c1920c;
+  margin-bottom: 20px;
+}
+/* line 125, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-alert span[data-icon] {
+  font-size: 17px;
+  float: right;
+}
+/* line 127, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-button-row {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-button-row:before, .ya-manage-header .ya-manage-header-right .ya-button-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-button-row:after {
+  clear: both;
+}
+/* line 127, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-button-row .btn {
+  min-width: 155px;
+}
+/* line 128, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-read-more-less {
+  display: block;
+}
+/* line 129, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-read-more-less .ya-label {
+  float: left;
+  padding: 2px 0 0 0;
+}
+/* line 130, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-read-more-less .ya-show-link-icon {
+  float: left;
+  margin: 0;
+}
+/* line 133, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-left {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-left:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 133, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-left {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-left:first-child {
+    margin-left: 0;
+  }
+}
+/* line 140, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-control-box {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+  border: 2px solid #333;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: #EEEEEE;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-control-box:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 140, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-control-box {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-control-box:first-child {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1200px) {
+  /* line 149, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-control-box .btn {
+    width: auto;
+    min-width: inherit;
+  }
+}
+/* line 157, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-right {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+  text-align: center;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-right:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 157, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-right {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+    text-align: left;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-header-box .ya-header-box-right:first-child {
+    margin-left: 0;
+  }
+}
+/* line 166, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-two-column-row .ya-label {
+  font-family: "ProximaNova-Regular";
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-two-column-row .ya-label:first-child {
+  margin-left: 0;
+}
+/* line 167, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-two-column-row .ya-value {
+  font-family: "ProximaNova-Bold";
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+  overflow: hidden;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-two-column-row .ya-value:first-child {
+  margin-left: 0;
+}
+/* line 171, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-header-box .ya-resend-email {
+  margin: 10px 0 0 0;
+}
+/* line 173, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-controls {
+  margin: 15px 0 0 0;
+}
+/* line 175, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-header-box {
+  float: left;
+  margin-left: 2.12765%;
+  width: 99.99979%;
+  *width: 99.94659%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-header-box:first-child {
+  margin-left: 0;
+}
+/* line 178, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-two-column-row .ya-label {
+  font-family: "ProximaNova-Regular";
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-two-column-row .ya-label:first-child {
+  margin-left: 0;
+}
+/* line 179, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-two-column-row .ya-value {
+  font-family: "ProximaNova-Bold";
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-two-column-row .ya-value:first-child {
+  margin-left: 0;
+}
+/* line 181, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-header-box .ya-resend-email-2 {
+  margin: 3px 0 0 0;
+}
+/* line 183, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-section-content {
+  padding: 0 5px;
+}
+/* line 184, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-account-block {
+  width: 100%;
+  *zoom: 1;
+  margin: 0 0 50px 0;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-account-block:before, .ya-manage-header .ya-manage-header-right .ya-user-account-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-user-account-block:after {
+  clear: both;
+}
+/* line 185, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-account-block {
+  width: 100%;
+  *zoom: 1;
+  margin: 0 0 50px 0;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-account-block:before, .ya-manage-header .ya-manage-header-right .ya-school-account-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-account-block:after {
+  clear: both;
+}
+/* line 186, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-account-block {
+  width: 100%;
+  *zoom: 1;
+  margin: 0 0 50px 0;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-account-block:before, .ya-manage-header .ya-manage-header-right .ya-teacher-account-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-account-block:after {
+  clear: both;
+}
+/* line 188, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-block {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-block:before, .ya-manage-header .ya-manage-header-right .ya-block:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-block:after {
+  clear: both;
+}
+/* line 190, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-roles-wrapper .ya-help-icon {
+  margin-right: 5px;
+}
+/* line 193, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-label {
+  float: left;
+  margin-left: 2.12765%;
+  width: 14.89359%;
+  *width: 14.84039%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-label:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 193, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-label {
+    float: left;
+    margin-left: 2.12765%;
+    width: 48.93607%;
+    *width: 48.88287%;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-label:first-child {
+    margin-left: 0;
+  }
+}
+/* line 197, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-value {
+  font-family: "ProximaNova-Bold";
+}
+/* line 198, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-photo-gallery-wrapper .ya-button-row {
+  margin: 10px 0 0 0;
+}
+/* line 201, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row:before, .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row:after {
+  clear: both;
+}
+/* line 202, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-note-type {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-note-type:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 202, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-note-type {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-note-type:first-child {
+    margin-left: 0;
+  }
+}
+/* line 208, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 208, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box:first-child {
+    margin-left: 0;
+  }
+}
+/* line 214, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box .ya-datepicker {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-date-box .ya-datepicker:first-child {
+  margin-left: 0;
+}
+/* line 216, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-filter-row .ya-filter-btn {
+  margin: 0 0 15px;
+}
+/* line 218, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note:before, .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note:after {
+  clear: both;
+}
+/* line 220, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1 {
+  float: left;
+  margin-left: 2.12765%;
+  width: 14.89359%;
+  *width: 14.84039%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 220, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1 {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1:first-child {
+    margin-left: 0;
+  }
+}
+/* line 222, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1 h4 {
+  margin: 0;
+}
+/* line 223, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-1 h5 {
+  margin: 0;
+}
+/* line 225, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-2 {
+  float: left;
+  margin-left: 2.12765%;
+  width: 70.21262%;
+  *width: 70.15942%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-2:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 225, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-2 {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-2:first-child {
+    margin-left: 0;
+  }
+}
+/* line 226, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-3 {
+  float: left;
+  margin-left: 2.12765%;
+  width: 10.63828%;
+  *width: 10.58508%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-3:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 226, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-3 {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-3:first-child {
+    margin-left: 0;
+  }
+}
+/* line 227, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-activities-note .ya-column-3 .btn {
+  width: 100%;
+}
+/* line 230, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means:before, .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means:after {
+  clear: both;
+}
+/* line 232, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means h3 {
+  display: inline-block;
+  float: left;
+}
+/* line 233, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-read-more-less {
+  color: #96171a;
+  font-family: "ProximaNova-Semibold";
+  float: left;
+  display: inline-block;
+  margin: 9px 0 0 10px;
+}
+/* line 234, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details:before, .ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details:after {
+  clear: both;
+}
+/* line 235, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details h3 {
+  color: #000000;
+  display: block;
+  padding-bottom: 15px;
+  margin: 15px 0;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  float: none;
+}
+/* line 236, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-historical-notes-wrapper .ya-notes-type-means .ya-notes-type-means-details p {
+  color: #b4b3af;
+}
+/* line 241, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-wrapper .ya-label {
+  font-family: "ProximaNova-Regular";
+  float: left;
+  margin-left: 2.12765%;
+  width: 40.42545%;
+  *width: 40.37225%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-wrapper .ya-label:first-child {
+  margin-left: 0;
+}
+/* line 242, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-wrapper .ya-value {
+  font-family: "ProximaNova-Bold";
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-wrapper .ya-value:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 244, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-section {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-legacy-iMIS-information-section:first-child {
+    margin-left: 0;
+  }
+}
+/* line 248, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-school-controls {
+  margin: 15px 0 0 0;
+}
+/* line 250, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel {
+  margin: 20px 0;
+  background-color: #FFE599;
+  border: 2px solid #333;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  height: 190px;
+  overflow-y: scroll;
+}
+/* line 252, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel table {
+  margin: 0;
+}
+/* line 254, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel .table th, .ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel .table td {
+  padding: 5px 0;
+}
+/* line 257, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel .table td {
+  border: 0;
+}
+/* line 258, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel thead tr {
+  padding-bottom: 15px;
+  margin: 15px 0;
+  border-bottom: 2px solid #ccc;
+  border-bottom: 2px solid #333;
+}
+/* line 259, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-request-wrapper .ya-request-panel select {
+  margin: 0;
+}
+/* line 265, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-two-column-row .ya-column-1 {
+  width: 260px;
+}
+/* line 266, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-two-column-row .ya-label {
+  font-family: "ProximaNova-Regular";
+  width: 150px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+/* line 267, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-two-column-row .ya-value {
+  font-family: "ProximaNova-Bold";
+  width: 100px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+/* line 268, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-two-column-row .ya-button-column {
+  float: left;
+  margin-left: 2.12765%;
+  width: 48.93607%;
+  *width: 48.88287%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-two-column-row .ya-button-column:first-child {
+  margin-left: 0;
+}
+/* line 270, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block {
+  margin: 15px 0;
+}
+/* line 272, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-label {
+  font-family: "ProximaNova-Regular";
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+  margin-bottom: 5px;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-label:first-child {
+  margin-left: 0;
+}
+/* line 273, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-value {
+  font-family: "ProximaNova-Bold";
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+  margin-bottom: 5px;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-value:first-child {
+  margin-left: 0;
+}
+/* line 274, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-link {
+  margin-bottom: 5px;
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-teacher-details-block .ya-certificate-block .ya-link:first-child {
+  margin-left: 0;
+}
+/* line 280, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-communication-type-box {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-communication-type-box:first-child {
+  margin-left: 0;
+}
+/* line 281, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-date-of-communication-box {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-date-of-communication-box:first-child {
+  margin-left: 0;
+}
+/* line 282, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-date-of-communication-box .ya-datepicker {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+  float: left;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-block .ya-log-communication-panel .ya-date-of-communication-box .ya-datepicker:first-child {
+  margin-left: 0;
+}
+/* line 287, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-messages-wrapper label {
+  font-family: "ProximaNova-Semibold";
+  font-size: 18px;
+}
+/* line 288, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-messages-wrapper .help-inline {
+  color: #b4b3af;
+  font-family: "ProximaNova-Regular";
+  padding: 0 0 0 20px;
+}
+/* line 289, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-messages-wrapper .ya-button-row {
+  text-align: right;
+}
+/* line 294, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row {
+  margin: 30px 0;
+}
+/* line 296, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-show-internal-notes {
+  float: left;
+  padding-top: 4px;
+}
+@media (max-width: 767px) {
+  /* line 296, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-show-internal-notes {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* line 304, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-select {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+  margin-bottom: 0;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-select:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 304, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-select {
+    float: none;
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+/* line 311, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-filter-btn {
+  float: left;
+  margin-left: 15px;
+}
+@media (max-width: 767px) {
+  /* line 311, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-filter-row .ya-filter-btn {
+    float: none;
+    margin: 10px 0;
+    width: auto;
+  }
+}
+/* line 322, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note-label {
+  text-align: left;
+  color: #B4B3AF;
+  padding: 0 0 3px 15px;
+}
+/* line 325, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note {
+  padding: 0 0 20px 0;
+}
+/* line 329, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note .ya-bubble {
+  position: relative;
+  background: #ffffff;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  border: #000000 solid 2px;
+  padding: 15px 15px;
+  min-width: 430px;
+  max-width: 650px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  /* line 329, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note .ya-bubble {
+    min-width: inherit;
+  }
+}
+/* line 344, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note .ya-bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 16px 0;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -16px;
+  left: 31px;
+}
+/* line 358, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-note .ya-bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 18px 17px 0;
+  border-color: #000000 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -18px;
+  left: 30px;
+}
+/* line 371, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-staff .ya-icon {
+  margin: 0 3px 0 0;
+}
+/* line 374, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note-label {
+  text-align: right;
+  color: #B4B3AF;
+  padding: 0 10px 3px 0;
+}
+/* line 377, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note {
+  padding: 0 0 20px 0;
+  float: right;
+}
+@media (max-width: 767px) {
+  /* line 377, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note {
+    float: none;
+  }
+}
+/* line 384, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note .ya-bubble {
+  position: relative;
+  padding: 15px 15px;
+  min-width: 430px;
+  max-width: 650px;
+  height: auto;
+  background: #ffffff;
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+  border: #000000 solid 2px;
+}
+@media (max-width: 767px) {
+  /* line 384, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note .ya-bubble {
+    min-width: inherit;
+  }
+}
+/* line 399, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note .ya-bubble:after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 17px 16px 0;
+  border-color: #ffffff transparent;
+  display: block;
+  width: 0;
+  z-index: 1;
+  bottom: -16px;
+  right: 25px;
+}
+/* line 413, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-note .ya-bubble:before {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 18px 17px 0;
+  border-color: #000000 transparent;
+  display: block;
+  width: 0;
+  z-index: 0;
+  bottom: -18px;
+  right: 24px;
+}
+/* line 426, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-member .ya-icon {
+  margin: 0 3px 0 0;
+}
+/* line 430, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-internal .ya-note-label, .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-system .ya-note-label {
+  text-align: left;
+  color: #B4B3AF;
+  padding: 0 0 3px 0px;
+}
+/* line 433, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-internal .ya-note, .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-system .ya-note {
+  padding: 0 0 20px 0;
+}
+/* line 437, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-internal .ya-note .ya-bubble, .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-system .ya-note .ya-bubble {
+  position: relative;
+  background: #ffffff;
+  border: #000000 solid 2px;
+  padding: 15px 15px;
+  min-width: 430px;
+  max-width: 650px;
+  height: auto;
+}
+@media (max-width: 767px) {
+  /* line 437, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-internal .ya-note .ya-bubble, .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-system .ya-note .ya-bubble {
+    min-width: inherit;
+  }
+}
+/* line 448, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-internal .ya-icon, .ya-manage-header .ya-manage-header-right .ya-communication-discussion-wrapper .ya-discussion-block .ya-note-system .ya-icon {
+  margin: 0 3px 0 0;
+}
+/* line 454, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper:before, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper:after {
+  clear: both;
+}
+/* line 456, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column {
+  float: left;
+  margin-left: 2.12765%;
+  width: 23.40421%;
+  *width: 23.35101%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 456, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column:first-child {
+    margin-left: 0;
+  }
+}
+/* line 462, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-social-icons .fs1 {
+  color: #909090;
+  display: inline;
+  font-size: 1.7em;
+}
+/* line 468, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-address-box {
+  margin: 15px 0 15px 0;
+}
+/* line 469, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-languages ul, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-languages li, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-teachers ul, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-left-column .ya-teachers li {
+  margin: 0;
+  list-style-type: none;
+}
+/* line 471, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column {
+  float: left;
+  margin-left: 2.12765%;
+  width: 74.46793%;
+  *width: 74.41473%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 471, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column:first-child {
+    margin-left: 0;
+  }
+}
+/* line 477, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-directory-address {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-directory-address:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 477, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-directory-address {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-directory-address:first-child {
+    margin-left: 0;
+  }
+}
+/* line 483, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-shipping-address {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-shipping-address:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 483, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-shipping-address {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-shipping-address:first-child {
+    margin-left: 0;
+  }
+}
+/* line 490, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-billing-address {
+  float: left;
+  margin-left: 2.12765%;
+  width: 31.91483%;
+  *width: 31.86163%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-billing-address:first-child {
+  margin-left: 0;
+}
+@media (max-width: 767px) {
+  /* line 490, ../../css-src/pages/staff-manage-teacher.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-billing-address {
+    float: left;
+    margin-left: 2.12765%;
+    width: 99.99979%;
+    *width: 99.94659%;
+    margin-left: 0;
+  }
+  /* line 46, ../../css-src/variables/_mixins.scss */
+  .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-billing-address:first-child {
+    margin-left: 0;
+  }
+}
+/* line 496, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-panel {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-panel:before, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-panel:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-panel:after {
+  clear: both;
+}
+/* line 498, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-bio-block .ya-read-more-less {
+  color: #96171a;
+  font-family: "ProximaNova-Semibold";
+  float: right;
+  display: block;
+}
+/* line 499, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-bio-block .ya-bio-details {
+  width: 100%;
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-bio-block .ya-bio-details:before, .ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-bio-block .ya-bio-details:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-bio-block .ya-bio-details:after {
+  clear: both;
+}
+/* line 501, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-billing-address-btn {
+  margin: 36px 0 19px 0;
+}
+/* line 503, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-agreement-dates .ya-label {
+  float: left;
+  margin-left: 2.12765%;
+  width: 40.42545%;
+  *width: 40.37225%;
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-agreement-dates .ya-label:first-child {
+  margin-left: 0;
+}
+/* line 505, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-agreement-dates .ya-value {
+  float: left;
+  margin-left: 2.12765%;
+  width: 57.44669%;
+  *width: 57.39349%;
+  font-family: "ProximaNova-Bold";
+}
+/* line 46, ../../css-src/variables/_mixins.scss */
+.ya-manage-header .ya-manage-header-right .ya-profile-details-wrapper .ya-right-column .ya-agreement-dates .ya-value:first-child {
+  margin-left: 0;
+}
+
+/****/
+/* line 517, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-help-icon {
+  color: #e5a053 !important;
+}
+
+/* line 518, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-star {
+  margin: 0 3px;
+  color: #96171a;
+}
+
+/* line 519, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-astrix {
+  color: #96171a;
+  font-size: 20px;
+  font-weight: normal;
+  margin-left: 5px;
+}
+
+/* line 520, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-link {
+  padding: 0;
+  font-family: "ProximaNova-Bold";
+  color: #96171a;
+}
+
+/* line 521, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-heading-section-bar {
+  background-color: white;
+  *zoom: 1;
+  padding: 0 15px;
+  margin: 30px 0;
+  border: 1px solid #B63313;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-heading-section-bar:before, .ya-heading-section-bar:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-heading-section-bar:after {
+  clear: both;
+}
+/* line 536, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-heading-section-bar h3 {
+  padding: 0;
+  border: none;
+  color: #B63313;
+}
+/* line 537, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-heading-section-bar small {
+  margin: 0 0 0 10px;
+}
+
+/* line 543, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-collapse-icon {
+  margin: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 42px !important;
+  color: #B63313;
+}
+
+/**this page is for desktop so width is fixed**/
+/* line 552, ../../css-src/pages/staff-manage-teacher.scss */
+.container {
+  width: 1170px;
+}
+
+/****/
+/* line 556, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel {
+  width: 100%;
+  *zoom: 1;
+  margin: 15px 0;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-additional-panel:before, .ya-additional-panel:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-additional-panel:after {
+  clear: both;
+}
+/* line 558, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-additional-panel-wrraper {
+  background: #fff9e6;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  border: 2px solid #999999;
+}
+/* line 562, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .help-block h3 {
+  padding: 0;
+}
+/* line 564, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel ul, .ya-additional-panel li {
+  list-style-type: none;
+  margin: 0;
+}
+/* line 565, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .right {
+  text-align: right;
+}
+/* line 566, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .left {
+  text-align: left;
+}
+/* line 567, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-modal {
+  background: #fff2cc;
+}
+/* line 568, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-title {
+  border-bottom: 2px solid #CCCCCC;
+}
+/* line 569, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-note {
+  border: 2px solid #CCCCCC;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  padding: 15px;
+  background: #ffffff;
+  margin: 0 0 10px 0;
+}
+/* line 569, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-note .ya-button-row {
+  text-align: left !important;
+}
+/* line 570, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-file {
+  height: auto;
+}
+/* line 571, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-profile-image {
+  max-width: 240px;
+  margin: 0 auto;
+}
+/* line 572, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-additional-panel .ya-button-row-center {
+  text-align: center;
+}
+
+/*end of additional panel*/
+/* line 578, ../../css-src/pages/staff-manage-teacher.scss */
+input.span12 {
+  *width: 95% !important;
+  *min-height: 20px !important;
+  *height: 20px !important;
+}
+
+/* line 583, ../../css-src/pages/staff-manage-teacher.scss */
+input.span9 {
+  *min-height: 20px !important;
+  *height: 20px !important;
+}
+
+/* line 588, ../../css-src/pages/staff-manage-teacher.scss */
+.ya-read-more-less.collapsed {
+  background: none !important;
+}
+
+/* line 594, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 textarea.span12 {
+  *width: 95% !important;
+}
+/* line 599, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-header-box .ya-control-box {
+  width: 19%;
+}
+/* line 600, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-header-box .ya-control-box .btn {
+  width: 140px;
+}
+/* line 603, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-request-wrapper {
+  font-size: 13px;
+}
+/* line 604, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-request-wrapper .ya-request-panel {
+  overflow-x: hidden;
+}
+/* line 605, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-request-wrapper label {
+  font-size: 13px;
+}
+/* line 608, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-button-column .btn {
+  margin: 0 0 5px 0;
+}
+/* line 613, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-historical-notes-wrapper .ya-filter-row .ya-date-box .ya-datepicker {
+  margin-left: 0;
+}
+/* line 615, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-historical-notes-wrapper .ya-filter-row .ya-filter-btn {
+  margin: 25px 0 0 20px;
+}
+/* line 620, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-date-of-communication-box .ya-datepicker {
+  margin: 0;
+  width: 71%;
+}
+/* line 625, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-communication-discussion-wrapper .ya-filter-row .ya-filter-btn {
+  margin-top: 4px;
+}
+/* line 626, ../../css-src/pages/staff-manage-teacher.scss */
+#ie7 .ya-communication-discussion-wrapper .ya-filter-row .ya-show-internal-notes {
+  margin-top: 4px;
+}

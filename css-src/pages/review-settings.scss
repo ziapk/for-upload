@@ -3,35 +3,8 @@ NOTE
 scss file for review
 ###################################################
 */
+@import "../variables/variables";
 @import "../variables/mixins";
-@mixin clearfix {
-  *zoom: 1;
-	&:before, &:after {
-	  display: table;
-	  content: "";
-	  line-height: 0;
-	}
-	&:after {
-	  clear: both;
-	}
-}
-$gridFluidColumnWidth: 6.38298%;
-$gridFluidGutterWidth: 2.12766%;
-
-@mixin makeFluidRow() {
-  width: 100%;
-  @include clearfix();
-}
-@mixin makeFluidColumn($columns: 1, $offset: 0, $marginRate: 1) {
-  float: left;
-  margin-left: (($gridFluidColumnWidth * $offset) + ($gridFluidGutterWidth * ($offset - 1)) + ($gridFluidGutterWidth * 2)) * $marginRate;
-  width: ($gridFluidColumnWidth * $columns) + ($gridFluidGutterWidth * ($columns - 1));
-  
-  &:first-child {
-        margin-left: 0;
-  }
-}
-
 $margin_padding: 15px;
 $icon_font_size: 30px;
 .ya-review-section {
@@ -81,43 +54,30 @@ $icon_font_size: 30px;
 			    font-weight: bold;
 			    width: 5%;
 				margin-top: 12px;
-					@media (max-width: 460px) {
+					@media (max-width: 767px) { // I changes resolution becase we required same styles for 480px resolution.
 						font-size: 16px;
 						margin-top: 9px;
+						width:40px;// on mobile screen this overlapping
 					}		
 			}				
 		}
 	}
 	
 }
-.ya-reivew-setting-footer {
-	width: 300px;
-	margin: 0 auto;
-}	
 .ya-reivew-setting-btn-list {
+	margin-left:5%; // lineup with top content.
+	@include clearfix(); // added clearfix because its child floats.
 	list-style: none outside none;
-	margin: 0;
 	li {
 		float: left;
-		margin: 0 13px;
+		margin: 0 13px 0 0; // need margin right only.
 	}	
 }	
 
 input[type="radio"] {
-	margin: 0 5px;
+	margin: 4px 5px 0; //added margin top 4px;
 	-webkit-appearance: radio;
-	box-sizing: border-box;
+	@include box-sizing(border-box); // use mixins
 	vertical-align:top;
 }
 	
-a:link, a:active, a:visited{
-	border:inherit;
-}
-.btn-success {
-  @include buttonBackground(#A4D584, #8FB576);
-  color: white !important;
-  border-width: 1px !important;
-  border-style: solid !important;
-  border-color: #8fb576 #8fb576 #68904e !important;
-  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25) !important;
-}
