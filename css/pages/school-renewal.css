@@ -642,9 +642,10 @@ span[data-icon] {
 .ya-mediumpos {
   display: inline-block;
   margin: 10px 0 0 0;
+  min-width: 140px;
 }
 
-/* line 301, ../../css-src/pages/school-renewal.scss */
+/* line 302, ../../css-src/pages/school-renewal.scss */
 .ya-box-one, .ya-box-two {
   margin-bottom: 20px;
 }
