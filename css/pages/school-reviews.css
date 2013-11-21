@@ -56,7 +56,7 @@ scss file for school review
 
 /* line 27, ../../css-src/pages/school-reviews.scss */
 .ya-reviews {
-  padding: 30px;
+  padding: 15px 20px;
 }
 @media (max-width: 767px) {
   /* line 27, ../../css-src/pages/school-reviews.scss */
@@ -65,7 +65,16 @@ scss file for school review
   }
 }
 
-/* line 34, ../../css-src/pages/school-reviews.scss */
+/* line 36, ../../css-src/pages/school-reviews.scss */
+.controls-width, .ya-select, .ya-all-reviews .ya-filter, .ya-all-reviews .input-append, .ya-all-reviews .ya-all-review-controls .ya-select,
+.ya-all-reviews .ya-all-review-controls .ya-programs,
+.ya-all-reviews .ya-all-review-controls .ya-tracks {
+  display: block;
+  margin: 0 !important;
+  width: 100% !important;
+}
+
+/* line 42, ../../css-src/pages/school-reviews.scss */
 .ya-overall-rating {
   width: 100%;
   *zoom: 1;
@@ -80,122 +89,148 @@ scss file for school review
 .ya-overall-rating:after {
   clear: both;
 }
-/* line 36, ../../css-src/pages/school-reviews.scss */
+/* line 44, ../../css-src/pages/school-reviews.scss */
 .ya-overall-rating .ya-star {
   font-size: 17px;
 }
 
-/* line 41, ../../css-src/pages/school-reviews.scss */
+/* line 48, ../../css-src/pages/school-reviews.scss */
+.ya-rating-bar {
+  *zoom: 1;
+}
+/* line 15, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-rating-bar:before, .ya-rating-bar:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+/* line 22, ../../css-src/vendor/bootstrap/_mixins.scss */
+.ya-rating-bar:after {
+  clear: both;
+}
+/* line 50, ../../css-src/pages/school-reviews.scss */
+.ya-rating-bar > * {
+  float: left;
+  margin-right: 5px;
+}
+/* line 54, ../../css-src/pages/school-reviews.scss */
+.ya-rating-bar .rrtItem {
+  padding: 0 !important;
+}
+/* line 57, ../../css-src/pages/school-reviews.scss */
+.ya-rating-bar > small {
+  margin-top: 4px;
+}
+
+/* line 62, ../../css-src/pages/school-reviews.scss */
 .ya-widget h3 {
   border: none;
   margin: 0 0 15px;
 }
-/* line 44, ../../css-src/pages/school-reviews.scss */
+/* line 65, ../../css-src/pages/school-reviews.scss */
 .ya-widget h3 b, .ya-widget h3 strong {
   font-weight: normal;
 }
 
-/* line 49, ../../css-src/pages/school-reviews.scss */
-.ya-select {
-  background-image: linear-gradient(to bottom, #efefef 0%, #ffffff 100%);
+/* line 73, ../../css-src/pages/school-reviews.scss */
+select.ya-select {
+  background-color: whitesmoke;
+  background-image: -moz-linear-gradient(top, #efefef, white);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#efefef), to(white));
+  background-image: -webkit-linear-gradient(top, #efefef, white);
+  background-image: -o-linear-gradient(top, #efefef, white);
+  background-image: linear-gradient(to bottom, #efefef, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEFEFEF', endColorstr='#FFFFFFFF', GradientType=0);
   font-size: 13px;
-  max-width: 230px;
-  width: auto;
 }
 
-/* line 57, ../../css-src/pages/school-reviews.scss */
+/* line 78, ../../css-src/pages/school-reviews.scss */
 .ya-all-reviews .ya-filter {
-  margin-top: -4px;
+  margin: 0 !important;
 }
-/* line 60, ../../css-src/pages/school-reviews.scss */
-.ya-all-reviews .input-append {
-  margin-top: 6px;
+/* line 84, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .input-append .ya-text-box {
+  width: 130px;
 }
-@media (max-width: 979px) {
-  /* line 60, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .input-append {
-    width: 230px !important;
-    margin-top: 7px !important;
-  }
-  /* line 64, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .input-append .input-small {
-    width: 177px;
-  }
-}
-@media (max-width: 979px) and (max-width: 500px) {
-  /* line 64, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .input-append .input-small {
-    width: 84px;
-  }
-}
-@media (max-width: 500px) {
-  /* line 60, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .input-append {
-    width: 137px !important;
-  }
-}
-/* line 75, ../../css-src/pages/school-reviews.scss */
+/* line 87, ../../css-src/pages/school-reviews.scss */
 .ya-all-reviews .input-append .btn {
-  margin-top: 0;
-}
-/* line 79, ../../css-src/pages/school-reviews.scss */
-.ya-all-reviews .ya-all-review-controls {
-  width: 100%;
-  display: inline-block;
-}
-/* line 82, ../../css-src/pages/school-reviews.scss */
-.ya-all-reviews .ya-all-review-controls > * {
-  margin-left: 0.6%;
-}
-@media (max-width: 1250px) {
-  /* line 82, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .ya-all-review-controls > * {
-    margin-left: 0;
-  }
+  margin: 0 0 0 -1px;
 }
 @media (max-width: 979px) {
   /* line 82, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .ya-all-review-controls > * {
-    width: 250px;
-    margin-left: 0;
-    margin-top: 0;
+  .ya-all-reviews .input-append {
+    display: table !important;
+  }
+  /* line 93, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append .btn,
+  .ya-all-reviews .input-append .ya-text-box {
+    display: table-cell !important;
+    float: none;
+    width: 100%;
+  }
+  /* line 98, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .input-append .btn {
+    width: 10%;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 767px) {
   /* line 82, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .ya-all-review-controls > * {
-    width: 137px;
+  .ya-all-reviews .input-append {
+    width: 100% !important;
+    *width: 99.94681% !important;
   }
 }
-/* line 98, ../../css-src/pages/school-reviews.scss */
-.ya-all-reviews .ya-all-review-controls > *:first-child {
+/* line 110, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls table {
+  width: 100% !important;
+}
+/* line 113, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls .ya-review-control {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  margin-top: 0 !important;
+  margin-bottom: 15px !important;
+  margin-left: 2.12766%;
+  *margin-left: 2.07447%;
+  width: 23.40426% !important;
+  *width: 23.35106% !important;
+}
+/* line 127, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews .ya-all-review-controls .ya-review-control:first-child {
   margin-left: 0;
 }
 @media (max-width: 979px) {
-  /* line 102, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .ya-all-review-controls > button.btn {
-    width: 230px;
+  /* line 113, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls .ya-review-control {
+    width: 48.93617% !important;
+    *width: 48.88298% !important;
+  }
+  /* line 132, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls .ya-review-control:nth-child(Odd) {
+    margin-left: 0;
   }
 }
-@media (max-width: 500px) {
-  /* line 102, ../../css-src/pages/school-reviews.scss */
-  .ya-all-reviews .ya-all-review-controls > button.btn {
-    width: 136px;
+@media (max-width: 767px) {
+  /* line 136, ../../css-src/pages/school-reviews.scss */
+  .ya-all-reviews .ya-all-review-controls .ya-review-control.ya-input-append {
+    width: 100% !important;
+    *width: 99.94681% !important;
   }
 }
 
-/* line 112, ../../css-src/pages/school-reviews.scss */
+/* line 142, ../../css-src/pages/school-reviews.scss */
 .ya-input-xmini {
   width: 40px;
   height: 30px;
 }
 
-/* line 116, ../../css-src/pages/school-reviews.scss */
-.btn.hidden-desktop {
-  margin-top: 0;
-}
-
-/* line 121, ../../css-src/pages/school-reviews.scss */
+/* line 148, ../../css-src/pages/school-reviews.scss */
 .ya-latest-comments-items {
   width: 100%;
   *zoom: 1;
@@ -210,7 +245,7 @@ scss file for school review
 .ya-latest-comments-items:after {
   clear: both;
 }
-/* line 123, ../../css-src/pages/school-reviews.scss */
+/* line 150, ../../css-src/pages/school-reviews.scss */
 .ya-latest-comments-items .ya-latest-comments-item {
   float: left;
   margin-left: 2.12765%;
@@ -222,7 +257,7 @@ scss file for school review
   margin-left: 0;
 }
 @media (max-width: 979px) {
-  /* line 123, ../../css-src/pages/school-reviews.scss */
+  /* line 150, ../../css-src/pages/school-reviews.scss */
   .ya-latest-comments-items .ya-latest-comments-item {
     float: left;
     margin-left: 0%;
@@ -235,4 +270,16 @@ scss file for school review
   .ya-latest-comments-items .ya-latest-comments-item:first-child {
     margin-left: 0;
   }
+}
+
+/* line 161, ../../css-src/pages/school-reviews.scss */
+.alert .LblReviewsLast30Days {
+  float: none;
+  margin: 0;
+}
+
+/* line 168, ../../css-src/pages/school-reviews.scss */
+.ya-all-reviews h3 {
+  border-bottom: 1px solid #888888;
+  padding-bottom: 5px;
 }

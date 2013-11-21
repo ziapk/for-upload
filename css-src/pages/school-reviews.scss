@@ -25,16 +25,37 @@ scss file for school review
 $margin_padding: 15px;
 $xmin_size: 40px;
 .ya-reviews {
-    padding: $margin_padding * 2;
+    padding: 15px 20px;
 	@media (max-width: 767px) {
 		padding: $margin_padding * 2 $margin_padding;
 	}
 
 }
+
+// Added for Controls
+.controls-width {
+	display:block;
+	margin:0 !important;
+	width:100% !important;
+}
+
 .ya-overall-rating {
     @include makeFluidRow();
 	.ya-star {
 		font-size: 17px;
+	}
+}
+.ya-rating-bar{
+	@include clearfix();
+	> *{
+		float:left;
+		margin-right:5px;
+	}
+	.rrtItem{
+		padding:0 !important;
+	}
+	> small{
+		margin-top:4px;
 	}
 }
 .ya-widget {
@@ -47,74 +68,80 @@ $xmin_size: 40px;
 	}
 }
 .ya-select {
-    background-image: linear-gradient(to bottom, #EFEFEF 0%, #FFFFFF 100%);
-    font-size: 13px;
-    max-width: 230px;
-    width: auto;
+	@extend .controls-width; // Extend with controls
 }
-
+select.ya-select{
+	@include gradient-vertical(#EFEFEF, $endColor: #FFFFFF); // use mixins and seperate for <select /> tag only.
+    font-size: 13px;
+}
 .ya-all-reviews {
 	.ya-filter {
-	     margin-top: -4px;
+		@extend .controls-width; // Extend with controls
+		margin: 0 !important;
 	}
 	.input-append {
-		margin-top: 6px;	
-		@media (max-width: 979px) {
-			width: 230px !important;
-			.input-small {
-			    width: 177px;
-				@media (max-width: 500px) {
-					width: 84px;
-				}	
-			}
-			margin-top: 7px !important;
+		@extend .controls-width;
+		.ya-text-box{
+			width:130px;
 		}
-		@media (max-width: 500px) {
-			width: 137px !important;
-		}	
 		.btn {
-			margin-top: 0;	
+			margin: 0 0 0 -1px;	
 		}
+		@include for-screen(tablet-screen){ // special styles for tablet
+			display:table !important;
+			.btn,
+			.ya-text-box{
+				display:table-cell !important;
+				float:none;
+				width:100%;
+			}
+			.btn{
+				width:10%;
+			}
+		}
+		@include for-screen(mobile-screen){	width:100% !important;	*width: 99.94681% !important;} // special style for mobile
 	}
 	.ya-all-review-controls {
-		width:100%;
-		display:inline-block;
-		> * {
-				margin-left:0.6%;
-				@media (max-width: 1250px) {
+		.ya-select,
+		.ya-programs,
+		.ya-tracks{
+			@extend .controls-width;
+		}
+		table{
+			width:100% !important;
+		}
+		.ya-review-control{
+		  display: block;
+		  width: 100%;
+		  min-height: 30px;
+		  -webkit-box-sizing: border-box;
+		  -moz-box-sizing: border-box;
+		  box-sizing: border-box;
+		  float: left;
+		  margin-top:0 !important;
+		  margin-bottom:15px !important;
+		  margin-left: 2.12766%;
+		  *margin-left: 2.07447%;
+		  width: 23.40426% !important;
+		  *width: 23.35106% !important;
+			&:first-child{
+				margin-left:0;
+			}
+			@include for-screen(tablet-screen){
+				width: 48.93617% !important; *width: 48.88298% !important;
+				&:nth-child(Odd){
 					margin-left:0;
-	
-				}
-				@media (max-width: 979px) {
-					width: 250px;
-					margin-left: 0;
-					margin-top: 0;
-	
-				}
-				@media (max-width: 500px) {
-					width: 137px;
-	
-				}
-				&:first-child {
-				    margin-left: 0;
 				}
 			}
-		> button.btn {
-			@media (max-width: 979px) {
-				width: 230px;
+			&.ya-input-append{
+				@include for-screen(mobile-screen){	width:100% !important;	*width: 99.94681% !important;} // special style for mobile
 			}
-			@media (max-width: 500px) {
-				width: 136px;
-			}
-		}			
+		}
 	}	
-}
+}	
 .ya-input-xmini {
 	width: $xmin_size;
 	height: 30px; 
-}
-.btn.hidden-desktop {
-    margin-top: 0;
 }
 
 
@@ -128,6 +155,20 @@ $xmin_size: 40px;
 			 margin-top:13px;
 		}
     }
+}
+
+// for alert
+.alert .LblReviewsLast30Days{
+	float:none;
+	margin:0;
+}
+
+// for border bottom of heading
+.ya-all-reviews{
+	h3{
+		border-bottom:1px solid $grayDark;
+		padding-bottom:5px;
+	}
 }
 
 
